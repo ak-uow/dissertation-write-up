@@ -1,0 +1,17 @@
+---
+title: Main Title
+subtitle: Subtlitle goes here
+abstract: Long description abstract goes here
+author: Author Name Here
+date: Enter Date Here
+#include-before
+#include-after
+toc-depth: 2
+toc-title: Table of Contents
+chapters: true
+css:
+  - ../assets/css/modest.css
+  - ../assets/css/custom.css
+papersize: A4
+fontsize: 12pt
+---
