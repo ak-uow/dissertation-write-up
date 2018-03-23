@@ -1,0 +1,3 @@
+var ids = s.split('\n');
+var ids_only = ids.filter( id => id.indexOf('ID  - ') == 0).map(ss => "@" + ss.substring(6));
+
