@@ -14,4 +14,6 @@ css:
   - ../assets/css/custom.css
 papersize: A4
 fontsize: 12pt
+bibliography: poster-bib.ris
+csl: ../build/harvard-university-of-westminster.csl
 ---
