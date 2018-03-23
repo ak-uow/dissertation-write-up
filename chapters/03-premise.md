@@ -4,8 +4,6 @@ csl: ../build/harvard-university-of-westminster.csl
 ---
 
 <section>
-# Chapter Heading Here
-
 Content goes here
 
 [@RefWorks:doc:5aaeef26e4b04d63969fbe08]
@@ -16,5 +14,4 @@ Content goes here
 Silent ref?
 
 [-@RefWorks:doc:5aaeef26e4b04d63969fbe08]
-
 </section>
