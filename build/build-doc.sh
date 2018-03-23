@@ -11,10 +11,9 @@ echo "data_dir: $data_dir"
 list_of_files=$(ls ../chapters/*.md)
 
 bib_file=../chapters/poster-bib.bib
-cls_file=harvard-university-of-westminster.csl
 
-echo pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file --csl=$csl_file -s -o ../out/$out_file.html -w html5
-pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file --csl=$csl_file -s -o ../out/$out_file.html -w html5
+echo pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
+pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
 
 if [ $? -eq 0 ]; then
     echo
