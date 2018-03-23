@@ -10,13 +10,10 @@ echo "data_dir: $data_dir"
 
 list_of_files=$(ls ../chapters/*.md)
 
-#pandoc --toc $list_of_files -s -o ../out/$out_file.html -w html5
-echo pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files -s -o ../out/$out_file.html -w html5
+bib_file=../chapters/poster-bib.bib
 
-#pandoc --toc $list_of_files -s -o ../out/$out_file.html -w html5
-#--chapters
-#pandoc  --data-dir=.. --toc --chapters --filter ./rewrite-assets.py $list_of_files -s -o ../out/$out_file.html -w html5
-pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files -s -o ../out/$out_file.html -w html5
+echo pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
+pandoc  --data-dir=.. --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
 
 if [ $? -eq 0 ]; then
     echo

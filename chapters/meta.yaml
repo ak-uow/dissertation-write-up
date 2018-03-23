@@ -14,7 +14,7 @@ css:
   - ../assets/css/custom.css
 papersize: A4
 fontsize: 12pt
-bibliography: ../chapters/poster-bib.bib
+#bibliography: chapters/poster-bib.bib
 csl: ../build/harvard-university-of-westminster.csl
 nocite: |
   @RefWorks:doc:5ab4245ae4b0689719ed4e46, @RefWorks:doc:5ab2cab2e4b0770b05a27381, @RefWorks:doc:5aaef4d2e4b003f4468bafcd, @RefWorks:doc:5aaeef26e4b04d63969fbe08, @RefWorks:doc:5aaeeeefe4b0a5268cd125ed, @RefWorks:doc:5aaeea0fe4b03d53f0cecda3, @RefWorks:doc:5aaed2dfe4b0392658e46ea2, @RefWorks:doc:5aaed1f4e4b009ad5f9d10e4, @RefWorks:doc:5aaafea6e4b0392658e3ede2, @RefWorks:doc:5aaafe6ee4b0392658e3edda, @RefWorks:doc:5aa9d30be4b060edba1894dc, @RefWorks:doc:5aa9d299e4b032e83820b6c2, @RefWorks:doc:5aa9a478e4b0ed364f3b5f2e, @RefWorks:doc:5a73ed7ee4b0645cd2d425e1, @RefWorks:doc:5a71e408e4b0d609eec82cef, @RefWorks:doc:5a71dc44e4b03ce0ba20a6d5
