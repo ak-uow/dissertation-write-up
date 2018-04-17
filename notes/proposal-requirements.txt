@@ -1,0 +1,28 @@
+The Proposal
+The project proposal is a report which summarises the project you are
+intending to undertake. In particular, it consists of:
+
+The project’s aim(s) - what is the purpose of the project
+
+The project’s objectives -what will you do- in the form of measurable
+or quantifable activities or deliverables, to meet the project aims.
+
+The project’s background and context - in the form of a
+comprehensive review of the relevant literature, including an
+annotated bibliography at the end of the report.
+
+The project’s methodology - your plan of execution, including a task
+schedule (in the form of a simple GANTT chart).
+
+The project’s expected outcomes. Here it would be very helpful if
+you could explicitly outline a test which would allow for an objective
+judgement of whether the project’s aim(s) and objectives have been
+met, i.e. based on which criteria you will be able to objectively claim
+whether the project has been a success.
+
+The project proposal should be in report form with a length of 7-12 pages
+(font size 11, including diagrams and references). The front page of the
+report should be headed with the (provisional) title of your project, your
+name and ID number, your course and the name of your supervisor. The
+supervisor should be a member of staf who has agreed to/has been given
+responsibility to act as your supervisor. 1
