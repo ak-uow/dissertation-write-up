@@ -1,8 +1,4 @@
-﻿---
-bibliography: poster-bib.bib
-csl: ../build/harvard-university-of-westminster.csl
----
-
+﻿
 <!--
 Andrew Keats - w1663560 - University of Westminster
 Msc. Interaction Design & Computing

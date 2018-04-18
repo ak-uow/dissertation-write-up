@@ -5,7 +5,7 @@ intending to undertake. In particular, it consists of:
 The project’s aim(s) - what is the purpose of the project
 
 The project’s objectives -what will you do- in the form of measurable
-or quantifable activities or deliverables, to meet the project aims.
+or quantifiable activities or deliverables, to meet the project aims.
 
 The project’s background and context - in the form of a
 comprehensive review of the relevant literature, including an

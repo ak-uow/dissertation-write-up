@@ -46,11 +46,29 @@ $if(title)$
 $if(subtitle)$
 <h2 class="subtitle">$subtitle$</h2>
 $endif$
-$for(author)$
-<p class="author">$author$</p>
-$endfor$
-$if(date)$
-<p class="date">$date$</p>
+$if(descriptor)$
+<h3 class="descriptor">$descriptor$
+    $if(date)$
+    <span class="date"> &ndash; $date$</span>
+    $endif$
+</h3>
+$endif$
+$if(author)$
+<p class="author">$author.name$
+    $if(author.role)$
+    <span class="author-organisation-id"> &ndash; $author.organisation-id$</span>
+    $endif$
+    $if(author.role)$
+    <span class="author-role">$author.role$</span>
+    $endif$
+</p>
+$if(author.email)$
+<p class="author-email">$author.email$</p>
+$endif$
+$endif$
+
+$if(supervisor)$
+<p class="supervisor">Supervisor: $supervisor$</p>
 $endif$
 </header>
 $endif$
