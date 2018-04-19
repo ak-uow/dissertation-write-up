@@ -39,5 +39,5 @@ perl -i -pe 'BEGIN{undef $/;} s:/Rect.*?Contents \(This document was created wit
 
 if [ $? -eq 0 ]; then
     echo
-    echo "Building complete!"
+    echo "Build complete!"
 fi

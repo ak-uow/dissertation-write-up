@@ -2,7 +2,6 @@
 title: Creating positive user experiences for audiences of proximity marketing and pervasive advertising
 subtitle: What synergistic combination of emergent and social technology creates optimal customer engagement with consumer brands within the physical retail space?
 #abstract: Long description abstract goes here
-#author: Andrew Keats
 descriptor: Masters Thesis Proposal
 author: {
   name: Andrew Keats,
@@ -29,5 +28,5 @@ papersize: A4
 fontsize: 11pt
 #bibliography: chapters/poster-bib.bib
 csl: ../build/harvard-university-of-westminster.csl
-#create a modified csl file for annotation
+# ^ csl: create a modified csl file for annotation
 ---

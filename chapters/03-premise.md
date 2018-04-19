@@ -9,13 +9,7 @@ The experience of engagement between consumer and provider has become more and m
 Additionally, brand loyalty is a somewhat intangible target that businesses aim for to secure future success and new technology will attempt to improve for businesses [@RefWorks:doc:5a71e408e4b0d609eec82cef][@RefWorks:doc:5a71dc44e4b03ce0ba20a6d5] and solutions that utlise a mixture of technology will be able to create a better experience for the customer too [@RefWorks:doc:5a73ed7ee4b0645cd2d425e1][@RefWorks:doc:5a73d86ee4b05d2b53fe0bf9].
 
 </section>
-<section>
 
-#Aims & Objectives
-
-Ultimately this project aims to explore ways to make more compelling experiences for end-users, when they interact with proximity-marketing enabled physical advertising. Investigating approaches to consumer engagement through the combined use of disparate cutting-edge technologies, like IoT devices, AR, and Blockchain, alongside Social Media in order create richer, deeper and longer lasting relationships between consumers and brands.
-
-</section>
 <section>
 
 #Objectives:
