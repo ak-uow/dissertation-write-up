@@ -1,5 +1,36 @@
 /**Overrides*/
+/*Start print only styles*/
 @media print {
+
+    /*@page {
+        @bottom-center {
+            content: counter(page);
+        }
+    }
+
+    @page :first {
+        @bottom-center {
+            content: normal;
+        }
+    }*/
+
+    @page copy {
+        @bottom-center {
+            content: counter(page);
+        }
+    }
+
+    section {
+        page: copy;
+    }
+
+    section:first-of-type {
+        counter-reset: page 1;
+    }
+
+    #TOC ul a::after {
+        content: leader('.') target-counter(attr(href), page);
+    }
 
     html {
         font-size: 11pt;
@@ -14,7 +45,14 @@
         background-color: lightpink!important;
         background:url(../img/westminster-logo.jpg) scroll no-repeat bottom right !important;
         background-size: 5cm !important;
-        background-position: 13.64cm 26.29cm !important;
+        /*background-position: 13.64cm 26.29cm !important;*/
+    }
+
+    header #logo {
+        width: 5cm;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
     h1.toc,
@@ -58,6 +96,9 @@
         height: 10cm;
     }
 }
+/*End print only styles*/
+
+/*Start global styles*/
 
 h1, h2, h3 {
     text-align: left;
@@ -198,3 +239,11 @@ img.third-page-height {
     display: block;
     margin: auto;
 }
+
+#TOC ul {
+    list-style-type: decimal;
+}
+#TOC ul a {
+    text-decoration: none;
+}
+/*End global only styles*/

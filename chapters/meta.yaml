@@ -17,6 +17,7 @@ supervisor: Ashif Tejani
 date: April 2018
 #include-before
 #include-after
+logo-url: ../assets/img/westminster-logo.jpg
 toc-depth: 2
 toc-title: Table of Contents
 chapters: true
