@@ -32,46 +32,114 @@
 <nav id="TOC">
 <ul>
 <li><a href="#introduction">Introduction</a></li>
+<li><a href="#aims-and-objectives">Aims and Objectives</a><ul>
+<li><a href="#aims">Aims</a></li>
+<li><a href="#objectives">Objectives</a></li>
+</ul></li>
 <li><a href="#background-context">Background Context</a></li>
-<li><a href="#aims-objectives">Aims &amp; Objectives</a></li>
-<li><a href="#objectives">Objectives:</a></li>
-<li><a href="#methodology">Methodology</a></li>
+<li><a href="#objectives-1">Objectives:</a></li>
+<li><a href="#methodology">Methodology</a><ul>
+<li><a href="#literature-survey">Literature survey</a></li>
+<li><a href="#technical-research">Technical research</a></li>
+<li><a href="#implementation">Implementation</a><ul>
+<li><a href="#design">Design</a></li>
+<li><a href="#development">Development</a></li>
+</ul></li>
+<li><a href="#data-collection-and-sampling">Data collection and sampling</a><ul>
+<li><a href="#ethics-and-consent">Ethics and consent</a></li>
+<li><a href="#validity-of-research">Validity of research</a></li>
+</ul></li>
+<li><a href="#data-analysis">Data analysis</a></li>
+</ul></li>
 <li><a href="#final-outcome">Final Outcome</a></li>
 <li><a href="#references">References</a></li>
 </ul>
 </nav>
-<!--
-Andrew Keats - w1663560 - University of Westminster
-Msc. Interaction Design & Computing
-Supervisor: Ashif Tejani-->
 <section>
 <h1 id="introduction">Introduction</h1>
-<p>Our physical and digital environments are becoming more &amp; more overcrowded with advertising; increasingly, the intended audience is acclimated to the noise of current forms of advertising media. The question for future advertising, is how to create more captivating interactions that stand-out from the competition while delivering deeper relationships between user &amp; brand?</p>
+<p>Our physical and digital environments are becoming more &amp; more overcrowded with advertising; increasingly, the intended audience is acclimated to the noise of current forms of advertising media. The question for future advertising, is how to create more captivating interactions that stand-out from the competition while delivering deeper relationships between user &amp; brand? In the near future, the overlapping concepts of Proximity Marketing and Pervasive Advertising are likely to converge in ways that create context aware interactions, triggered by the user's location which are able to provide richer engagement with the user; by leveraging data that is not available to traditional forms of advertising, like personal data or environmental data the new forms of interactive physical advertising will be able to connect with their audience to a degree greater than ever before. Up until now, only online advertising has been able to take advantage of contextual data and user data to deliver more relevant advertising to the user; the advent of the Internet of Things, which promises to lead to ubiquitous computing, creates a paradigm shift where all sort of objects and locations will be online and connected to data sources. With this new found power, the interaction between the physical space and people needs to be well executed lest it invoke negative reactions from consumers, that is to say users may not feel comfortable with these new experiences should they appear to infringe on privacy. What will be needed is a well balanced approach to instigating these new interactive experiences and requesting consensual use of personal data.</p>
+<h1 id="aims-and-objectives">Aims and Objectives</h1>
+<h2 id="aims">Aims</h2>
+<p>The purpose of this thesis is to explore various user experiences simulating a location based interaction with an internet connected physical device, acting as the node of the proximity marketing, pervasive advertising experience. The different user experiences, will essentially be run as experiement to be compared and contrasted, all diverging from one common control experiment and using combinations of different elements of social, reward and interactive technologies to guage which experience have the best net positive results. Essentially, investigating the combined use of disparate cutting-edge technologies of IoT devices, AR, Blockchain, alongside Social Media within the scope of proximity marketing, to identify the best outcomes. Ultimately this project aims to explore ways to make more compelling and positive experiences for end-users when engaging with novel forms of internet connected, location based, phyisically invoked advertising or marketing; determining which user experience experiments are most successful, will provide business insight that can be used in the future when creating real-world experiences. This in turn should create richer, deeper and longer lasting relationships between consumers and brands. As well as providing a report on user preferences for proximity marketing, a secondary goal would be to deliver a means of setting up, deploying and delivering these advertising interactions, through a web interface.</p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Design a series of user experience experiments
+<ul>
+<li>all instigated by an IoT beacon</li>
+<li>the experiments will involve one or more of the following: AR, Blockchain, Social Media.</li>
+<li>create a proto-persona of the intended user</li>
+<li>Estimated time frame: 3 days</li>
+</ul></li>
+<li>Develop the user experience experiments
+<ul>
+<li>implementation well take advantage of modern web technologies, Android smartphone features and Bluetooth</li>
+<li>1 control experiment and 6 combinations of aforementioned technology</li>
+<li>Estimated time frame: 14 days</li>
+</ul></li>
+<li>Create an experiment task runner
+<ul>
+<li>facilitating the running of experiments</li>
+<li>enabling easy switching between experiments</li>
+<li>Estimated time frame: 7 days</li>
+</ul></li>
+<li>Experiments will be run with participants of user testing sessions
+<ul>
+<li>2 phases, the first being comprehensive, the second using only the 3 most successful experiements</li>
+<li>Observations will be gathered</li>
+<li>Qualitative and quantitative data will be collected from participants</li>
+<li>Sample size goals: 20 users (phase 1) and 10 users (phase 2)</li>
+<li>Estimated time frame: 7 days (phase 1) &amp; 4 days (phase 2)</li>
+</ul></li>
+<li>Analysis of data gathered will be undertaken
+<ul>
+<li>Establishing which experiments are most popular
+<ul>
+<li>Determining with which to continue user testing</li>
+</ul></li>
+<li>Providing insight into possible improvements</li>
+<li>Creating a report of findings</li>
+<li>Assert qualified arguments for best user experience</li>
+<li>Estimated time frame 3 days (phase 1) and 2 days (phase 2)</li>
+</ul></li>
+<li>Expand on test runner to turn it into a user friendly web interface
+<ul>
+<li>This is a secondary, stretch goal</li>
+<li>Commodifying the existing source code</li>
+<li>Creating a prototype of a potential product or service.</li>
+<li>A form of CMS</li>
+<li>Estimated time frame: 14-21 days (any time remaining)</li>
+</ul></li>
+</ul>
 </section>
 <section>
 <h1 id="background-context">Background Context</h1>
 <p>The facet of daily life this project aims to examine and expand upon is that of the interface between marketeer and consumer. With the rise of the web, e-commerce, social-media and online advertising the way users would interact with the products and services was re-imagined <span class="citation" data-cites="RefWorks:doc:5ab2cab2e4b0770b05a27381">(Mangold and Faulds, 2009, p357–365)</span>. The convergence of technologies has often had the ability to transform they way we live and like the impact of the smartphone, the Internet of Things is set to trigger a paradigm shift that will transform they way we interact with the world around us; this future digital connectedness is set to re-invent advertising <span class="citation" data-cites="RefWorks:doc:5aaeea0fe4b03d53f0cecda3">(Krumm, 2011, p66–73)</span>. For over a decade the potential for a digitally connected environment has been considered a reality <span class="citation" data-cites="RefWorks:doc:5aaeef26e4b04d63969fbe08">(Riekki et al., 2006, p40–46)</span>. However, it is only in recent years that it has become truly viable thanks to improvements in technology, such as telecommunications infrastructure and low-energy computing power like BLE <span class="citation" data-cites="RefWorks:doc:5aaafe6ee4b0392658e3edda">(Kallas, 2016)</span>. The experience of engagement between consumer and provider has become more and more important as our post-industrial society has developed, the product or service itself is not the only differentiator, now the relationship between the two parties is increasingly prized as a means to ensuring repeat business from returning customers <span class="citation" data-cites="RefWorks:doc:5a7b2167e4b020cb798b152f">(II and Gilmore, 1998)</span>. Additionally, brand loyalty is a somewhat intangible target that businesses aim for to secure future success and new technology will attempt to improve for businesses <span class="citation" data-cites="RefWorks:doc:5a71e408e4b0d609eec82cef">(Kowalewski et al., 2017)</span><span class="citation" data-cites="RefWorks:doc:5a71dc44e4b03ce0ba20a6d5">( Making blockchain real for customer loyalty programs | deloitte uS, no date)</span> and solutions that utlise a mixture of technology will be able to create a better experience for the customer too <span class="citation" data-cites="RefWorks:doc:5a73ed7ee4b0645cd2d425e1">(Scholz and Smith, 2016, p149–161)</span><span class="citation" data-cites="RefWorks:doc:5a73d86ee4b05d2b53fe0bf9">(Ramos, 2016)</span>.</p>
 </section>
 <section>
-<h1 id="aims-objectives">Aims &amp; Objectives</h1>
-<p>Ultimately this project aims to explore ways to make more compelling experiences for end-users, when they interact with proximity-marketing enabled physical advertising. Investigating approaches to consumer engagement through the combined use of disparate cutting-edge technologies, like IoT devices, AR, and Blockchain, alongside Social Media in order create richer, deeper and longer lasting relationships between consumers and brands.</p>
-</section>
-<section>
-<h1 id="objectives">Objectives:</h1>
+<h1 id="objectives-1">Objectives:</h1>
 <p>Devise &amp; build a series of experiments for user research Collect user feedback, make tweaks to top 3 experiments Re-run user research to determine best outcome Finalise findings and create final proof-of-concept</p>
 </section>
 <section>
 <h1 id="methodology">Methodology</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus elit non ultrices pulvinar. Sed posuere est enim, et feugiat lorem maximus sed. Nullam molestie viverra leo. Quisque sit amet imperdiet nisl. Aenean ultricies sapien in ipsum mollis ultricies. Nulla facilisis facilisis velit, vel feugiat urna consequat sed. Nulla nibh ante, sodales sed tellus nec, congue lobortis justo.</p>
-<p>Integer porta, orci sed porttitor venenatis, nibh sem semper est, sed fermentum quam risus vitae purus. Vivamus mauris odio, accumsan eu purus id, eleifend aliquet purus. Vivamus congue egestas nunc, et mollis metus consequat ac. Vestibulum venenatis accumsan est ut ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed auctor quam. Donec enim ipsum, tempus quis elit vel, sagittis finibus eros. Suspendisse placerat sapien sit amet aliquam molestie. Praesent vulputate laoreet turpis, vel efficitur nibh tincidunt eu. Integer dictum convallis faucibus.</p>
-<p>In eget vestibulum diam. Pellentesque urna leo, finibus sit amet tincidunt in, ultricies in eros. Donec id auctor augue. Mauris a facilisis dui. Sed venenatis sem in pulvinar dictum. Ut at cursus nibh, vitae cursus odio. Maecenas in urna vel magna mattis rutrum eu sit amet felis. In nec tortor dignissim, feugiat mauris vitae, maximus mauris.</p>
-<p>Sed in diam odio. Duis rutrum dui neque, non lobortis lorem varius quis. Aenean interdum porta libero eget iaculis. Quisque urna quam, porttitor vitae imperdiet molestie, malesuada et mauris. Suspendisse a egestas sapien. Integer accumsan urna non nisi iaculis volutpat. Nunc ac metus quis massa convallis tempus eget non tortor. Mauris fermentum, tortor sit amet mollis pretium, lorem lorem viverra justo, vel rhoncus enim libero ut lacus. Ut eu odio justo. Ut porttitor, augue id eleifend vestibulum, nisi felis tempus orci, quis feugiat metus leo id enim. Aenean malesuada blandit sapien, at venenatis sem posuere ac. Cras a tortor elementum, semper leo non, tincidunt justo. Phasellus consectetur ligula eget ante semper condimentum. Aenean egestas non orci vitae finibus. Ut pretium euismod metus at auctor.</p>
-<p>Maecenas vestibulum ante nisi. Sed vulputate orci sit amet nisl lacinia faucibus. Suspendisse aliquam a tellus vehicula laoreet. Cras quis urna sapien. Morbi convallis arcu ac tellus ullamcorper dictum. Etiam tellus nisl, dictum vitae rutrum rutrum, aliquet eu tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vel purus aliquet, elementum massa eget, consectetur magna.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus elit non ultrices pulvinar. Sed posuere est enim, et feugiat lorem maximus sed. Nullam molestie viverra leo. Quisque sit amet imperdiet nisl. Aenean ultricies sapien in ipsum mollis ultricies. Nulla facilisis facilisis velit, vel feugiat urna consequat sed. Nulla nibh ante, sodales sed tellus nec, congue lobortis justo.</p>
-<p>Integer porta, orci sed porttitor venenatis, nibh sem semper est, sed fermentum quam risus vitae purus. Vivamus mauris odio, accumsan eu purus id, eleifend aliquet purus. Vivamus congue egestas nunc, et mollis metus consequat ac. Vestibulum venenatis accumsan est ut ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed auctor quam. Donec enim ipsum, tempus quis elit vel, sagittis finibus eros. Suspendisse placerat sapien sit amet aliquam molestie. Praesent vulputate laoreet turpis, vel efficitur nibh tincidunt eu. Integer dictum convallis faucibus.</p>
-<p>In eget vestibulum diam. Pellentesque urna leo, finibus sit amet tincidunt in, ultricies in eros. Donec id auctor augue. Mauris a facilisis dui. Sed venenatis sem in pulvinar dictum. Ut at cursus nibh, vitae cursus odio. Maecenas in urna vel magna mattis rutrum eu sit amet felis. In nec tortor dignissim, feugiat mauris vitae, maximus mauris.</p>
-<p>Sed in diam odio. Duis rutrum dui neque, non lobortis lorem varius quis. Aenean interdum porta libero eget iaculis. Quisque urna quam, porttitor vitae imperdiet molestie, malesuada et mauris. Suspendisse a egestas sapien. Integer accumsan urna non nisi iaculis volutpat. Nunc ac metus quis massa convallis tempus eget non tortor. Mauris fermentum, tortor sit amet mollis pretium, lorem lorem viverra justo, vel rhoncus enim libero ut lacus. Ut eu odio justo. Ut porttitor, augue id eleifend vestibulum, nisi felis tempus orci, quis feugiat metus leo id enim. Aenean malesuada blandit sapien, at venenatis sem posuere ac. Cras a tortor elementum, semper leo non, tincidunt justo. Phasellus consectetur ligula eget ante semper condimentum. Aenean egestas non orci vitae finibus. Ut pretium euismod metus at auctor.</p>
-<p>Maecenas vestibulum ante nisi. Sed vulputate orci sit amet nisl lacinia faucibus. Suspendisse aliquam a tellus vehicula laoreet. Cras quis urna sapien. Morbi convallis arcu ac tellus ullamcorper dictum. Etiam tellus nisl, dictum vitae rutrum rutrum, aliquet eu tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vel purus aliquet, elementum massa eget, consectetur magna.</p>
+<h2 id="literature-survey">Literature survey</h2>
+<p>Supporting secondary data will be acquired through university library resources and search features as well as Google Scholar; external providers of research papaers such as Springer, IEEE and ACM will be used to gather relevant papers. Other relevant material will be collected if it extremely pertinent and insufficient academic content exists; examples sources would be online publications, blogs, company websites and corporate whitepapers and case studies. Where possible long form literature such as books will be sourced but given the bleeding-edge nature of the project most artifacts will be journal articles and research papers or online sources. All secondary research will be collated and categorised with a reference manager (RefWorks) in order to help organise the body of research and search through the contents. These secondary sources will be used to inform and frame the user testing, analysis and findings.</p>
+<h2 id="technical-research">Technical research</h2>
+<p>Given the scope of the project, it is not possible to deliver the project in the given time frame without taking advantage of third party libraries; the intent is to investigate the relevant open-source libraries that are suitable to assist in realising the implementation. This research will be documented, with justifications provided for the libraries and any other software chosen for inclusion in the project.</p>
+<h2 id="implementation">Implementation</h2>
+<h3 id="design">Design</h3>
+<p>The design phase will be conducted in Lean UX manner, to deliver minimum viable products for each experiment; there will be a proto-persona to work with when creating basic wire-frames and wire-flows describing each user journey. The wire-frames and wire-flows will be minimal, rather than desigj visual and will be used only to provide guidelines for the prototypes.</p>
+<h3 id="development">Development</h3>
+<p>The development will be composed of many parts: Initially, the main concern will be ability to configure an IoT beacon to advertise a website so that an Android smartphone is notified and directed to that particular URL; the next phase will be to create static web content (using HTML, CSS and JavaScript) to fulfil the remit of each experiment; after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment. For the sake of quick prototyping, where possible the code base will primarily be JavaScript to be run on NodeJS, acting as an HTTP server or command line interface. Other languages will be used where necessary. Supporting software such as GitHub for versioning and Trello for project management will be used to track progress.</p>
+<h4 id="extra-development">Extra Development</h4>
+<p>After the user testing research has been conducted the aim will be to create a user friendly web interface, effectively a CMS tailored to the task of linking beacons with web-based content. This effort is a secondary goal, acting as a proof-of-concept for offering commercial software for retailers with to easily distribute this form of location based interactive content. It should rte-use parts fo the tst runner but allow for more flexiblilty and ease of use thanks to a database driven GUI.</p>
+<h2 id="data-collection-and-sampling">Data collection and sampling</h2>
+<p>During the practical research phase, a fictional scenario will be constructed as the context for the physically initiated digital interaction; user testing participants will be given some basic idea of the premise of the situation and what to do to begin the the user journey; no other guidance will be provided for particpants so that they can be observed as impartially as possible when interacting with each user journey. Observations will be noted as the participants undertake each experiment and once a particpant has finished all tests they will be asked to complete a questionnaire to gather qualitiative and quantitative data about the entire experience.</p>
+<h3 id="ethics-and-consent">Ethics and consent</h3>
+<p>The users will be picked as to be those considered of sound body and mind and adults over the age of 18; these particpants will be required to complete a consent form informing them of the purpose of the research, allowing them to opt-out, request further information and agree for the data they provide to be used as part of the body of research. User data will be anonymised in order to safegaurd the privacy of the participants.</p>
+<h3 id="validity-of-research">Validity of research</h3>
+<p>In order to ensure that the data gathered isn't skewed based on learnt behaviour from one experiment to the next, the order in which the experiments are run will be randomised, with the exception of the control, baseline experiment which will always go first and will serve to set expectations. In this way, the research gathering should not create a bias for any particular experiment.</p>
+<h2 id="data-analysis">Data analysis</h2>
+<p>... TBD</p>
 </section>
 <section>
 <h1 id="final-outcome">Final Outcome</h1>
