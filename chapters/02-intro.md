@@ -34,6 +34,7 @@ The purpose of this thesis is to explore various user experiences simulating a l
     - Determining with which to continue user testing
   - Providing insight into possible improvements
   - Creating a report of findings
+  - Assert qualified arguments for best user experience
   - Estimated time frame 3 days (phase 1) and 2 days (phase 2)
 - Expand on test runner to turn it into a user friendly web interface
   - This is a secondary, stretch goal
