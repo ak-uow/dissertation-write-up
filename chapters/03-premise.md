@@ -9,14 +9,3 @@ The experience of engagement between consumer and provider has become more and m
 Additionally, brand loyalty is a somewhat intangible target that businesses aim for to secure future success and new technology will attempt to improve for businesses [@RefWorks:doc:5a71e408e4b0d609eec82cef][@RefWorks:doc:5a71dc44e4b03ce0ba20a6d5] and solutions that utlise a mixture of technology will be able to create a better experience for the customer too [@RefWorks:doc:5a73ed7ee4b0645cd2d425e1][@RefWorks:doc:5a73d86ee4b05d2b53fe0bf9].
 
 </section>
-
-<section>
-
-#Objectives:
-
-Devise & build a series of experiments for user research
-Collect  user feedback, make tweaks to top 3 experiments
-Re-run user research to determine best outcome
-Finalise findings and create final proof-of-concept
-
-</section>
