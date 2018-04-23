@@ -28,6 +28,11 @@
         counter-reset: page 1;
     }
 
+    /*We don't want repeated hrefs in the bibliography!*/
+    a[href]:after {
+        content: normal;
+    }
+
     #TOC ul a::after {
         content: leader('.') target-counter(attr(href), page);
     }
@@ -247,3 +252,6 @@ img.third-page-height {
     text-decoration: none;
 }
 /*End global only styles*/
+#refs div p em:last-child strong {
+    display: block;
+}

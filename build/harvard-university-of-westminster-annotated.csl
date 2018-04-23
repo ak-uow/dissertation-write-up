@@ -169,9 +169,9 @@
     <names variable="author director"/>
   </macro>
   <macro name="annotation">
-    <group display="indent" delimiter=" " prefix=" ">
-        <text value="Annotation:"/>
-        <text variable="note" />
+    <group display="indent" delimiter=" " prefix="&#10;">
+        <text font-weight="bold" display="indent" value="Annotation:"/>
+        <text display="indent" variable="note" />
     </group>
   </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year">
@@ -201,7 +201,7 @@
     <layout suffix=".">
       <choose>
         <if type="article-journal book chapter paper-conference webpage" match="any">
-          <group suffix=".">
+          <group suffix="." display="block">
             <text macro="author"/>
             <text macro="year-date" prefix=" (" suffix=")."/>
             <text macro="title" prefix=" "/>
@@ -217,7 +217,7 @@
           </group>
         </if>
         <else-if type="article-newspaper article-magazine" match="any">
-          <group>
+          <group  display="block">
             <text macro="author"/>
             <text macro="year-date" prefix=" (" suffix=")."/>
             <text macro="title" prefix=" "/>
@@ -228,7 +228,7 @@
           </group>
         </else-if>
         <else-if type="report" match="any">
-          <group>
+          <group  display="block">
             <text macro="author"/>
             <text macro="year-date" prefix=" (" suffix="). "/>
             <text macro="title"/>
@@ -256,7 +256,7 @@
         </else-if>
         <else-if type="legal_case" match="any">
           <text variable="title" font-style="italic" suffix=" "/>
-          <group prefix="[" suffix="]">
+          <group  display="block" prefix="[" suffix="]">
             <date form="text" date-parts="year-month-day" variable="issued">
               <date-part name="year"/>
             </date>
@@ -264,7 +264,7 @@
           <text variable="page" prefix=" "/>
         </else-if>
         <else-if type="motion_picture" match="any">
-          <group>
+          <group display="block">
             <text variable="title"/>
             <date form="text" variable="issued" prefix=" (" suffix=").">
               <date-part name="year"/>
@@ -281,7 +281,7 @@
           </group>
         </else-if>
         <else-if type="broadcast" match="any">
-          <group>
+          <group display="block">
             <text variable="title"/>
             <date form="text" variable="issued" prefix=" (" suffix=").">
               <date-part name="year"/>
@@ -305,7 +305,7 @@
           </group>
         </else-if>
         <else>
-          <group>
+          <group display="block">
             <text macro="author"/>
             <text macro="year-date" prefix=" (" suffix=")."/>
             <group suffix=".">
@@ -330,10 +330,10 @@
           </group>
         </else>
       </choose>
-      <group>
+      <group display="block">
         <text macro="access"/>
       </group>
-      <text macro="annotation"/>
+      <text macro="annotation" font-style="italic"/>
     </layout>
   </bibliography>
 </style>
