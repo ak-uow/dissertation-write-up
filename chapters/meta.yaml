@@ -27,6 +27,6 @@ logo:
 papersize: A4
 fontsize: 11pt
 #bibliography: chapters/poster-bib.bib
-csl: ../build/harvard-university-of-westminster.csl
+csl: ../build/harvard-university-of-westminster-annotated.csl
 # ^ csl: create a modified csl file for annotation
 ---

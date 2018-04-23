@@ -168,6 +168,9 @@
   <macro name="Director">
     <names variable="author director"/>
   </macro>
+  <macro name="annotation">
+    <text value=" Annotation! " />
+  </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year">
     <sort>
       <key macro="author-short"/>
@@ -327,6 +330,7 @@
       <group>
         <text macro="access"/>
       </group>
+      <text macro="annotation"/>
     </layout>
   </bibliography>
 </style>
