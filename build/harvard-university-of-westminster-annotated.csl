@@ -172,7 +172,7 @@
     <choose>
       <if match="any" variable="note">
         <text value=" Annotation: " prefix="."/>
-        <!--text variable="note"/-->
+        <text variable="note" />
       </if>
     </choose>
   </macro>
