@@ -169,12 +169,10 @@
     <names variable="author director"/>
   </macro>
   <macro name="annotation">
-    <choose>
-      <if match="any" variable="note">
-        <text value=" Annotation: " prefix="."/>
+    <group display="indent" delimiter=" " prefix=" ">
+        <text value="Annotation:"/>
         <text variable="note" />
-      </if>
-    </choose>
+    </group>
   </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true" collapse="year">
     <sort>
