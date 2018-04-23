@@ -11,7 +11,7 @@ echo "out_dir: $out_dir"
 
 list_of_files=$(ls ../chapters/*.md)
 
-bib_file=../chapters/poster-bib.bib
+bib_file=../chapters/proposal-refs.bib
 
 echo pandoc  --data-dir=$data_dir --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
 pandoc  --data-dir=$data_dir --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
