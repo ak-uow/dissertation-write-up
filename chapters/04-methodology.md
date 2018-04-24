@@ -77,6 +77,8 @@ That quantitative data will be used to measure the opinions of participants alon
 
 The resulting dataset will be processed through R to anonymously segment the users by age and gender to determine which groups are most receptive to the experiences. The experiements themselves will be compared to see which are most popular overall as well is in particular to the more positive demographics.
 
-# Estimated timeframe
-<PUT GANTT CHART HERE!>
+# Estimated timeline
+
+![A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work.](../assets/img/gantt-project-timeline.png "A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work.")
+
 </section>
