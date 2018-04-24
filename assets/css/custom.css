@@ -46,12 +46,12 @@
         /*background-image: url(../assets/img/westminster-logo.jpg);*/
     }
 
-    body header {
+    /*body header {
         background-color: lightpink!important;
         background:url(../img/westminster-logo.jpg) scroll no-repeat bottom right !important;
         background-size: 5cm !important;
-        /*background-position: 13.64cm 26.29cm !important;*/
-    }
+        /*background-position: 13.64cm 26.29cm !important;*\/
+    }*/
 
     header #logo {
         width: 5cm;
