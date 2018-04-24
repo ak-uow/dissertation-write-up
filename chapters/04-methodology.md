@@ -22,6 +22,21 @@ The development will be composed of many parts: Initially, the main concern will
 For the sake of quick prototyping, where possible the code base will primarily be JavaScript to be run on NodeJS, acting as an HTTP server or command line interface. Other languages will be used where necessary.
 Supporting software such as GitHub for versioning and Trello for project management will be used to track progress.
 
+### Experiment list
+
+Below is a table explicitly defining the the make-up of 8 experiment as combinations of the proposed set of technollogies to be explored. The first experiement is to be considered the control as it merely promts the user by way of a bluetooth (or wifi) beacon to visit a basic web page on their smartphone. All the other experiments build upon this interaction adn experience by making the web page more interesting by adjusting the content to simulate interactions that take advantage of the three other technologies.
+
+| Experiment | Alias ID       | IoT Beacon | Interactive AR | Blockchain Reward | Social Media |
+|-----------:|----------------|:----------:|:--------------:|:-----------------:|:------------:|
+|          1 | iotb-x-x-x     |      ✔️     |                |                   |              |
+|          2 | iotb-iar-x-x   |      ✔️     |        ✔️       |                   |              |
+|          3 | iotb-br-x-x    |      ✔️     |                |         ✔️         |              |
+|          4 | iotb-sm-x-x    |      ✔️     |                |                   |       ✔️      |
+|          5 | iotb-iar-br-x  |      ✔️     |        ✔️       |         ✔️         |              |
+|          6 | iotb-iar-sm-x  |      ✔️     |        ✔️       |                   |       ✔️      |
+|          7 | iotb-br-sm-x   |      ✔️     |                |         ✔️         |       ✔️      |
+|          8 | iotb-iar-br-sm |      ✔️     |        ✔️       |         ✔️         |       ✔️      |
+
 #### Extra Development
 
 After the user testing research has been conducted the aim will be to create a user friendly web interface, effectively a CMS tailored to the task of linking beacons with web-based content. This effort is a secondary goal, acting as a proof-of-concept for offering commercial software for retailers with to easily distribute this form of location based interactive content. It should rte-use parts fo the tst runner but allow for more flexiblilty and ease of use thanks to a database driven GUI.
