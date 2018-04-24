@@ -317,9 +317,9 @@
                 <else-if type="song" match="any">
                   <text value="[song]" prefix=" "/>
                 </else-if>
-                <else>
+                <!--else>
                   <text value="[]" prefix=" "/>
-                </else>
+                </else-->
               </choose>
             </group>
             <text macro="editor"/>

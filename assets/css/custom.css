@@ -245,9 +245,9 @@ img.third-page-height {
     margin: auto;
 }
 
-#TOC ul {
+/*#TOC ul {
     list-style-type: decimal;
-}
+}*/
 #TOC ul a {
     text-decoration: none;
 }
