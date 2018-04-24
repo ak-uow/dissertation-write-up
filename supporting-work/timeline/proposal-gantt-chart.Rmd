@@ -45,7 +45,7 @@ task3c <- c('Experiment Tweaks', '2018-07-19', '2018-07-27')
 task4 <- c('Experiment Runner', '2018-06-25', '2018-06-29')
 task5 <- c('User Testing 1', '2018-07-02', '2018-07-13')
 task5b <- c('User Testing 2', '2018-07-30', '2018-08-03')
-task6 <- c('Data Analysis 1', '2018-07-16', '2018-06-18')
+task6 <- c('Data Analysis 1', '2018-07-16', '2018-07-18')
 task6b <- c('Data Analysis 2', '2018-08-06', '2018-08-08')
 task7 <- c('Web Interface', '2018-08-09', '2018-08-22')
 task8 <- c('Thesis rework', '2018-08-13', '2018-08-24')
@@ -65,14 +65,16 @@ tasks_df_melted <- melt(tasks_df, measure.vars = c('start', 'end'))
 start_date <- as.Date('2018-05-23')
  
 ggplot(tasks_df_melted, aes(value, task)) + 
-  geom_line(size = 10) +
-  labs(x = '', y = '', title = 'Project timeline') +
-  theme_bw(base_size = 20) +
+  geom_line(size = 7) +
+  labs(x = '', y = '') +
+  theme_bw(base_size = 14) +
   theme(plot.title = element_text(hjust = 0.5),
         panel.grid.major.x = element_line(colour="black", linetype = "dashed"),
+        panel.grid.major.y = element_line(colour="black", linetype = "dashed"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
-        axis.text.x = element_text(angle = 0)) +
-  scale_x_date(date_labels = "%Y %b", limits = c(start_date, NA), date_breaks = '1 year')
+        axis.text.x = element_text(angle = 90)) +
+        scale_y_discrete(limits = rev(levels(tasks_df_melted$task))) +
+  scale_x_date(date_labels = "%d %b", limits = c(start_date, NA), date_breaks = '1 week')
 
 ```
