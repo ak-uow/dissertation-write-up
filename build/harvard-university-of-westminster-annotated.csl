@@ -62,7 +62,7 @@
   <macro name="access">
     <choose>
       <if variable="URL DOI" match="any">
-        <text value=" Available from " prefix="."/>
+        <text value=" Available from " prefix=". "/>
         <text variable="URL"/>
         <group delimiter=" " prefix=" [" suffix="]">
           <text term="accessed" text-case="capitalize-first"/>
