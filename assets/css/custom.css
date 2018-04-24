@@ -248,6 +248,9 @@ img.third-page-height {
 /*#TOC ul {
     list-style-type: decimal;
 }*/
+#TOC ul {
+    list-style-type: none;
+}
 #TOC ul a {
     text-decoration: none;
 }

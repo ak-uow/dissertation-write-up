@@ -22,7 +22,7 @@ Ultimately this project aims to explore ways to make more compelling and positiv
     - Estimated time frame: 3 days
 - Develop the user experience experiments
     - implementation well take advantage of modern web technologies, Android smartphone features and Bluetooth
-    - 1 control experiment and 6 combinations of aforementioned technology
+    - 1 control experiment and 7 combinations of aforementioned technology
     - Estimated time frame: 14 days
 - Create an experiment task runner
     - facilitating the running of experiments
