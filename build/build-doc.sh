@@ -3,7 +3,7 @@
 # set the script to exit after any error
 set -e
 
-out_file="Cw1_w1663560_AndrewKeats"
+out_file="thesis-proposal_w1663560_AndrewKeats"
 data_dir=..
 out_dir=$data_dir/out
 
