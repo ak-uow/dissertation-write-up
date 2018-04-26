@@ -1,5 +1,65 @@
 /**Overrides*/
+/*Start print only styles*/
 @media print {
+
+    /*@page {
+        @bottom-center {
+            content: counter(page);
+        }
+    }
+
+    @page :first {
+        @bottom-center {
+            content: normal;
+        }
+    }*/
+
+    @page copy {
+        @bottom-center {
+            content: counter(page);
+        }
+    }
+
+    section {
+        page: copy;
+    }
+
+    section:first-of-type {
+        counter-reset: page 1;
+    }
+
+    /*We don't want repeated hrefs in the bibliography!*/
+    a[href]:after {
+        content: normal;
+    }
+
+    #TOC ul a::after {
+        content: leader('.') target-counter(attr(href), page);
+    }
+
+    html {
+        font-size: 11pt;
+    }
+
+    header {
+        height: 27.5cm;
+        /*background-image: url(../assets/img/westminster-logo.jpg);*/
+    }
+
+    /*body header {
+        background-color: lightpink!important;
+        background:url(../img/westminster-logo.jpg) scroll no-repeat bottom right !important;
+        background-size: 5cm !important;
+        /*background-position: 13.64cm 26.29cm !important;*\/
+    }*/
+
+    header #logo {
+        width: 5cm;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
     h1.toc,
     body > section {
         page-break-before: always;
@@ -41,6 +101,9 @@
         height: 10cm;
     }
 }
+/*End print only styles*/
+
+/*Start global styles*/
 
 h1, h2, h3 {
     text-align: left;
@@ -69,7 +132,26 @@ p {
 }
 
 header h1 {
-    font-size: 3.3rem
+    font-size: 3rem;
+    border-bottom: none;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    line-height: 1.23;
+    margin-bottom: 1.34rem;
+}
+
+header h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+header h3 {
+    /*margin-top: 1rem;*/
+    padding-bottom: .25rem;
+}
+
+header p {
+    margin-bottom: 0;
 }
 
 table {
@@ -161,4 +243,18 @@ img.half-page-height,
 img.third-page-height {
     display: block;
     margin: auto;
+}
+
+/*#TOC ul {
+    list-style-type: decimal;
+}*/
+#TOC ul {
+    list-style-type: none;
+}
+#TOC ul a {
+    text-decoration: none;
+}
+/*End global only styles*/
+#refs div p em:last-child strong {
+    display: block;
 }

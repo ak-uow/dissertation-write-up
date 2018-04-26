@@ -1,0 +1,80 @@
+---
+title: "proposal-gantt-chart"
+author: "Andrew Keats"
+date: "24 April 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+#The following options are for outputing the images
+knitr::opts_chunk$set(dev="png", 
+                      dev.args=list(type="cairo"),
+                      fig.path = "images/",
+                      dpi=120)
+```
+
+
+```{r deps-f1, echo=FALSE, include=FALSE, message=FALSE}
+mirrorUrl = "http://cran.ma.imperial.ac.uk"
+
+# Install and load all packages up-front!
+if(!require(readxl)) install.packages("readxl", repos = mirrorUrl)
+if(!require(ggplot2)) install.packages("ggplot2", repos = mirrorUrl)
+if(!require(reshape2)) install.packages("reshape2", repos = mirrorUrl)
+
+library(ggplot2)
+library(reshape2)
+
+# clear workspace
+rm(list = ls())
+```
+
+
+```{r chart-styles}
+```
+
+```{r tasks}
+#Create tasks as vectors in the format: name, start date, end date.
+
+task1 <- c('Thesis write-up', '2018-05-23', '2018-09-07')
+task2 <- c('Literature survey', '2018-05-23', '2018-05-29')
+task3 <- c('Experiment Design', '2018-05-30', '2018-06-05')
+task3b <- c('Experiment Development', '2018-06-06', '2018-06-22')
+task3c <- c('Experiment Tweaks', '2018-07-19', '2018-07-27')
+task4 <- c('Experiment Runner', '2018-06-25', '2018-06-29')
+task5 <- c('User Testing 1', '2018-07-02', '2018-07-13')
+task5b <- c('User Testing 2', '2018-07-30', '2018-08-03')
+task6 <- c('Data Analysis 1', '2018-07-16', '2018-07-18')
+task6b <- c('Data Analysis 2', '2018-08-06', '2018-08-08')
+task7 <- c('Web Interface', '2018-08-09', '2018-08-22')
+task8 <- c('Thesis rework', '2018-08-13', '2018-08-24')
+task9 <- c('Finalise thesis', '2018-08-27', '2018-09-07')
+
+tasks_df <- as.data.frame(rbind(task1, task2, task3, task3b, task3c, task4, task5, task5b, task6, task6b, task7, task8, task9))
+names(tasks_df) <- c('task', 'start', 'end')
+tasks_df$task <- factor(tasks_df$task, levels = tasks_df$task)
+tasks_df$start <- as.Date(tasks_df$start)
+tasks_df$end <- as.Date(tasks_df$end)
+tasks_df_melted <- melt(tasks_df, measure.vars = c('start', 'end'))
+
+```
+
+```{r create-plot}
+# starting date to begin plot
+start_date <- as.Date('2018-05-23')
+ 
+ggplot(tasks_df_melted, aes(value, task)) + 
+  geom_line(size = 7) +
+  labs(x = '', y = '') +
+  theme_bw(base_size = 14) +
+  theme(plot.title = element_text(hjust = 0.5),
+        panel.grid.major.x = element_line(colour="black", linetype = "dashed"),
+        panel.grid.major.y = element_line(colour="gray", size = 6),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.text.x = element_text(angle = 90)) +
+        scale_y_discrete(limits = rev(levels(tasks_df_melted$task))) +
+  scale_x_date(date_labels = "%d %b", limits = c(start_date, NA), date_breaks = '1 week')
+
+```

@@ -1,6 +1,6 @@
 <section>
 
-# References
+# Annotated Bibliography
 
 <div id="refs"></div>
 
