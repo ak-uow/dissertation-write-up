@@ -1,0 +1,8 @@
+#1 baseline
+#2 (Augmented Reality)
+#3 (Loyalty Reward)
+#4 (Social Media)
+#5 (Loyalty Reward, Augmented Reality)
+#6 (Augmented Reality, Social Media)
+#7 (Loyalty Reward, Social Media)
+#8 (Loyalty Reward, Augmented Reality, Social Media)
