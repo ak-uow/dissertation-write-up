@@ -49,7 +49,15 @@ One core concept of User Experience Design is the Persona which was helpful in c
 The Persona, being a fictional yet beliveable for the experience being developed allows the design and development of software and experiences without disgining just for one person.
 While in this case only one Persona was created, the aim was to encapsulate in this fictional character the optimal qualities that it was supposed the perfect candidate for the advertisments would possess.
 There is a little bit of creative guess work involved in this stage, especially when creating a persona from scratch without having previous user research, from an earlier iteration to work with.
-Perefably, this kind of User Experience Research is continuous and iterative, changing and refining the understanding of the potential users.
+Preferably, this kind of User Experience Research is continuous and iterative, changing and refining the understanding of the potential users.
+
+The persona creation made use of a previously created template, that was re-used to create a brand new character to build the projects around. 
+The sorts of traits you can see described in the persona are all that would make this person, were they real, potentially very receptive to novel forms of advertising instigated by an Internet of Things (IoT) enabled device.
+Melanie Thompson, as the persona was dubbed, was made to be a an adopter of mobile contactless payments, regular player of games (on consoles and smartphone), and a frequent sharer of personal experiences on Social Media;
+She was also designed to be keen on saving money or getting money back from existing loyalty schemes. 
+A royalty free image was used to give the persona a face and all of the imagined personality was composited using LibreOffice Draw (an open-source alternative to Micrsosoft PowerPoint).
+
+!! insert persona image
 
 #### Wireframes 
 
@@ -59,7 +67,28 @@ in taking this approach, there was some discretionary design decisions at this s
 For clarity, in order to look at user perceptions of the composition each experiment, the user journeys were designed to force the particpants of the study to go down a particular path; 
 this was justified as a design choice because among the the entirety of the experiments were permutations, that covered the other scenarios.
 
+The choice of Figma as the wireframing tool was ultimately down to three compelling qualities: 
+The software is accessible both in Desktop and Web form meaning it's easy to continue work from one device to another; 
+Figma has an easy-to-user, comprehensive feature set, including some very strong vector design tools (comparable with other market leaders in the UX Design space), reusable components, and clickable prototypes;
+It also has a feature complete student offering for free.
+
+One of the most significan design decisions made at this point in the project was to define the initial context of the experience as a vending machine. 
+The experiments were intended to explore the various combinations of technology
+
+!! insert annotated wireframes
+
 ### Visual Designs
+
+The Visual Designs are distinct from the UX work because they were created as part of building the mock advertising that the participants were to experience, as opposed to working documents.
+These design fall into two categories, those that were largely ad-hoc base on the UX wireframes for the mobile screens, and those that were necessary to create the background scenario. 
+
+#### Mobile Screen Designs
+
+!! Write about how these follow the UX
+
+#### Building the Brand
+
+!! write about creating Fave, bottle, vending machine, Augmented reality
 
 ### Development
 
