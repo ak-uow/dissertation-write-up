@@ -28,6 +28,8 @@ Given the scope of the project, it was not possible to deliver the project in th
 This research is documented below, with justifications provided for the libraries and any other software chosen for inclusion in the project. 
 Hardware research is also covered.
 
+!! TODO: Add more info here about technologies used...
+
 ## Implementation
 
 The implementation phase constituted a significant portion of the study and was composed of following distinct efforts.
@@ -78,8 +80,7 @@ The experiments were intended to explore the various combinations of technology 
 it's worth recognising that, it's very likely that a different starting point for the scenarios would lead to different participant feedback due to the participant assumptions based on the initial context.
 That is to say that while the choice of vending machine was intended to create a plausible situation for a contactless payment that also led to an IoT triggered advertisement on the smartphone, different people load the context with different contextual backstories; 
 the assumed location of the vending machine was left to the individual, so while some might have imagined a more social surrounding like a canteen, others could and in fact did, imagine situations where the vending machine was in a more high footfall location. 
-The personally envisaged place in which the advertisement is triggered undoubtedly influenced the individuals perception of the experience, especially with regards to how much time they might have to spare or how transient that experience might normally be.
-
+The personally envisaged place in which the advertisement is triggered undoubtedly influenced the individuals' perceptions of the experience, especially with regards to how much time they might have to spare or how transient that experience might normally be.
 
 !! insert annotated wireframes
 
@@ -90,11 +91,26 @@ These design fall into two categories, those that were largely ad-hoc based on t
 
 #### Mobile Screen Designs
 
-!! Write about how these follow the UX
+The mobile phone screen designs were largely influenced by the UX wireframes, and were designed in the browser as part of the development process; 
+this lean approach enabled a faster development process and allowed for more effort to be focused on elements absent from the wireframes.
+Designing in the browser enabled more time to address the transition effects between the views/stages of the adverts, as well as the animations belonging to a given view.
+The content utilised HTML 5, CSS and JavaScript, so the animations made heavy use of CSS animations and transitions coupled with JavaScript to trigger the view state changes.
+The content was designed for exclusively for mobile given the limited time frame and the scope of the experiment being smartphone centric; 
+further design and development would look to target larger handheld devices such as tablet which might also be used if to hand in a real-world situation. 
+Designing for Laptop or Desktop was largely pointless and therefore excluded.
 
 #### Building the Brand
 
 !! write about creating Fave, bottle, vending machine, Augmented reality
+
+Beyond just creating passable advertising material, it became apparent that for the experiments to run as smoothly as possible, trying to create experiences as true to life as possible was worth attempting.
+To that end, despite the artificial surroundings of the office space from which the User Research was conducted, the experience could simulate reality by building a convincing (yet imaginary) soft drink brand to provide a more concrete framework of context.
+Consequently extra work went into fleshing out the idea of the 'Fave' soft drink brand that was already partially nascent in the wireframes. 
+The main drawback with this is that a brand of consumable product is rarely universally accepted, especially if it doesn't have an extremely high level of utility.
+So, as the qualitative feedback will attest, developing a more defined visual easthetic and brand tone, probably induced some negative reception for some even if it also had a net positive effect; 
+it's hard to say whether changes would be made to this aspect of the experiments were the experiments to be recreated, given the requirement of some form of attachment to the commodity being tested as part of the study.
+
+In terms of actual artwork that was created as part of building 'Fave', the fictional soft-drink brand, there was the creation of a 'Fave' branded vending machine, a 3D mesh of a 'Fave' bottle, and a custom bottle label.
 
 ### Development
 
@@ -104,7 +120,7 @@ Supporting software such as GitHub for versioning and Trello for project managem
 
 #### Experiment list
 
-Below is a table explicitly defining the the make-up of 8 experiment as combinations of the proposed set of technologies to be explored. The first experiment is to be considered the control as it merely prompts the user by way of a Bluetooth (or WiFi) beacon to visit a basic web page on their smartphone. All the other experiments build upon this interaction and experience by making the web page more interesting by adjusting the content to simulate interactions that take advantage of the three other technologies.
+Below is a table explicitly defining the the make-up of 8 experiment as combinations of the proposed set of technologies to be explored. The first experiment is to be considered the control as it merely prompts the user by way of a Bluetooth (or Wi-Fi) beacon to visit a basic web page on their smartphone. All the other experiments build upon this interaction and experience by making the web page more interesting by adjusting the content to simulate interactions that take advantage of the three other technologies.
 
 | Experiment | Alias ID       | IoT Beacon | Interactive AR | Blockchain Reward | Social Media |
 |-----------:|----------------|:----------:|:--------------:|:-----------------:|:------------:|
@@ -120,7 +136,7 @@ Below is a table explicitly defining the the make-up of 8 experiment as combinat
 
 #### Prototype Server
 
-#### Command Line Tess Runner
+#### Command Line Test Runner
 
 ## User Experience Research
 
