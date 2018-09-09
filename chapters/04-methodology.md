@@ -7,8 +7,8 @@ These are: Research; Preparatory Implementation; User Experience Research; Data 
 The initial phase was one of research into prior work with regard to academic study but also existing technology (both software and hardware) pertinent to the project.
 Once the first phase was complete, research did not entirely stop but continued to inform the implementation stage which was made of many parts, given the complex nature of a multi-faceted project of this nature.
 Upon approaching completion of creating all the necessary software, visual content and configurations in order to conduct the research, it was time to invite potential test subjects to take part in the study.
-After a minumum sample size has been reached it was then possible to process the data in order to be able to later discern meaningful findings from the experiments.
-Naturally, interpretation of the results is the last phase which has been a matter of taking a second look at the quantitive data in conjunction with the qualitative feedback in order to posit not only where the most successful experiments but also to discuss room for improvement.
+After a minimum sample size has been reached it was then possible to process the data in order to be able to later discern meaningful findings from the experiments.
+Naturally, interpretation of the results is the last phase which has been a matter of taking a second look at the quantitative data in conjunction with the qualitative feedback in order to posit not only where the most successful experiments but also to discuss room for improvement.
 
 ## Research
 
@@ -30,7 +30,7 @@ Hardware research is also covered.
 
 ## Implementation
 
-The implemntation phase constituted a significant portion of the study and was composed of following distinct efforts.
+The implementation phase constituted a significant portion of the study and was composed of following distinct efforts.
 
 - User Experience Design
 - Visual Designs
@@ -40,14 +40,14 @@ The implemntation phase constituted a significant portion of the study and was c
 ### User Experience Design
 
 The User Experience design work was in two parts. Firstly is was important to create a Persona as a bedrock for the rest of the work. 
-Secondly, wireframes were created to visually describe the user journey for each of the advertisment variations; 
+Secondly, wireframes were created to visually describe the user journey for each of the advertisement variations; 
 it was at this stage that some critical decisions were made about the user experience, which ultimately shaped the study.
 
 #### Persona creation
 
 One core concept of User Experience Design is the Persona which was helpful in creating the rest of the work. 
-The Persona, being a fictional yet beliveable for the experience being developed allows the design and development of software and experiences without disgining just for one person.
-While in this case only one Persona was created, the aim was to encapsulate in this fictional character the optimal qualities that it was supposed the perfect candidate for the advertisments would possess.
+The Persona, being a fictional yet believable for the experience being developed allows the design and development of software and experiences without designing just for one person.
+While in this case only one Persona was created, the aim was to encapsulate in this fictional character the optimal qualities that it was supposed the perfect candidate for the advertisements would possess.
 There is a little bit of creative guess work involved in this stage, especially when creating a persona from scratch without having previous user research, from an earlier iteration to work with.
 Preferably, this kind of User Experience Research is continuous and iterative, changing and refining the understanding of the potential users.
 
@@ -55,16 +55,17 @@ The persona creation made use of a previously created template, that was re-used
 The sorts of traits you can see described in the persona are all that would make this person, were they real, potentially very receptive to novel forms of advertising instigated by an Internet of Things (IoT) enabled device.
 Melanie Thompson, as the persona was dubbed, was made to be a an adopter of mobile contactless payments, regular player of games (on consoles and smartphone), and a frequent sharer of personal experiences on Social Media;
 She was also designed to be keen on saving money or getting money back from existing loyalty schemes. 
-A royalty free image was used to give the persona a face and all of the imagined personality was composited using LibreOffice Draw (an open-source alternative to Micrsosoft PowerPoint).
+A royalty free image was used to give the persona a face and all of the imagined personality was composited using LibreOffice Draw (an open-source alternative to Microsoft PowerPoint).
 
 !! insert persona image
 
 #### Wireframes 
 
 The Wireframes were created in Lean UX manner, though using online software called Figma to allow for a degree of fidelity while creating reference material to work against.
-These wireframes were created within the context of each other experiment in order to scrutinise the difference between the user journeys;
+These wireframes were created within the context of each other experiment in order to scrutinise the difference between the user journeys; 
+it's also worth noting that for the purpose of the user experience study, the design iterations were effectively created in parallel;
 in taking this approach, there was some discretionary design decisions at this stage that led to user interfaces that were not necessarily reflective of how a real-world example might be executed.
-For clarity, in order to look at user perceptions of the composition each experiment, the user journeys were designed to force the particpants of the study to go down a particular path; 
+For clarity, in order to look at user perceptions of the composition each experiment, the user journeys were designed to force the participants of the study to go down a particular path; 
 this was justified as a design choice because among the the entirety of the experiments were permutations, that covered the other scenarios.
 
 The choice of Figma as the wireframing tool was ultimately down to three compelling qualities: 
@@ -72,15 +73,20 @@ The software is accessible both in Desktop and Web form meaning it's easy to con
 Figma has an easy-to-user, comprehensive feature set, including some very strong vector design tools (comparable with other market leaders in the UX Design space), reusable components, and clickable prototypes;
 It also has a feature complete student offering for free.
 
-One of the most significan design decisions made at this point in the project was to define the initial context of the experience as a vending machine. 
-The experiments were intended to explore the various combinations of technology
+One of the most significant design decisions made at this point in the project was to define the initial context of the experience as a vending machine. 
+The experiments were intended to explore the various combinations of technology - as previously mentioned IoT, Social Media, Augmented Reality, and Digital Rewards - rather than comparing different starting contexts;
+it's worth recognising that, it's very likely that a different starting point for the scenarios would lead to different participant feedback due to the participant assumptions based on the initial context.
+That is to say that while the choice of vending machine was intended to create a plausible situation for a contactless payment that also led to an IoT triggered advertisement on the smartphone, different people load the context with different contextual backstories; 
+the assumed location of the vending machine was left to the individual, so while some might have imagined a more social surrounding like a canteen, others could and in fact did, imagine situations where the vending machine was in a more high footfall location. 
+The personally envisaged place in which the advertisement is triggered undoubtedly influenced the individuals perception of the experience, especially with regards to how much time they might have to spare or how transient that experience might normally be.
+
 
 !! insert annotated wireframes
 
 ### Visual Designs
 
 The Visual Designs are distinct from the UX work because they were created as part of building the mock advertising that the participants were to experience, as opposed to working documents.
-These design fall into two categories, those that were largely ad-hoc base on the UX wireframes for the mobile screens, and those that were necessary to create the background scenario. 
+These design fall into two categories, those that were largely ad-hoc based on the UX wireframes for the mobile screens, and those that were necessary to create the background scenario. 
 
 #### Mobile Screen Designs
 
@@ -114,7 +120,7 @@ Below is a table explicitly defining the the make-up of 8 experiment as combinat
 
 #### Prototype Server
 
-#### Commband Line Tess Runner
+#### Command Line Tess Runner
 
 ## User Experience Research
 
