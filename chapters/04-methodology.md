@@ -198,11 +198,45 @@ Further research into the nature of the broadcasting signal would be of interest
 
 #### Experiment Server
 
-will be composed of many parts: Initially, the main concern will be ability to configure an IoT beacon to advertise a website so that an Android smartphone is notified and directed to that particular URL; the next phase will be to create static web content (using HTML, CSS and JavaScript) to fulfil the remit of each experiment; after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment.
+The different advertisements were all build using a shared codebase with the intent of being hosted on the same server, using the Express HTTP library on top of the NodeJS runtime.
+The CSS styling was mostly written in a technology called SCSS to aid in code re-use when designing and developing the animations and transitions.
+The HTML was generated using a form of server-side templating technology called EJS which was picked for its simplicity as a framework and in turn the relative rapidity of development.
+Client-side JavaScript was created to simulate button and form interactions as well as a few time delayed animations; 
+these files were hosted separately from any server-side JavaScript logic which was mostly used for URL routing and a small amount of persistent server-side state. 
+The routing logic was no more complicated than it needed to be, with a homepage just for the ease of manually accessing the experiment URLs, then routing to each of the experiments and lastly a simple redirect endpoint as well as another endpoint that acted as entry point for the mechanism that set which URL the redirect endpoint would point to.
+To clarify, the most complicated internal workings of the server were exposed by a GET HTTP request that would update which experiment would be accessed from the static redirect URL; 
+this is a very insecure method of accomplishing this outcome but was justified since no sensitive data is permanently stored on the server. 
+That being said, if any of this codebase were to be adapted for a production environment, this would be one of the first thing to have to change.
+No database technology was required to deliver any of the experiences but is was possible to add a user's email address to the server when updating the redirect value, reasons for which will be explained under the user research methodology.
+
+Initially the idea was to run the whole experiment with local servers on a local network conducting the experiment in a closed environment over Wi-Fi. 
+This was mistakenly in the attempt to keep things simple. One technical issue caused this strategy to be changed however and that turned out to be the requirement for web browsers to only offer user consented web-cam over the HTTPS protocol;
+prior to finding this out during the development stage everything was running over HTTP. The reason for requiring access to the web-cam may not seem obvious but any Augmented Reality experience makes use of a camera as well as superimposed content.
+So, once work began on the AR scene, this requirement presented itself and a quick and simple solution was sourced, in the form of free Heroku hosting of the web-server codebase;
+the decision to go with Heroku was made because of ease of deployment and automatic HTTPS configuration, in addition to the basic hosting being free. 
+Like some of the other choices made to deliver these experiments, this would probably not translate into a production choice but a quick and easy option that meant more time could be spent working on the AR game content.
+
+##### Augmented Reality Game
+
+The AR game was more a proof-of-concept, to illustrate the potential for this experience to be presented over the web to a mobile device and demonstrate the prospective impact this technology could have on interactive advertising.
+Given the main goal didn't focus on gameplay or performance, this led to some experiential issues that would ideally be resolved were the experiment to be rebuilt for an improved iteration.
+To that end, the whole Augmented Reality element would probably be revisited without the use of AFrame (a technology developed by Mozilla to enable easy construction of 3D scenes) because in conjunction with spatial recognition via the web-cam, this could become a clunky experience at times;
+it's also relevant that the mobile device used was a 2014 model Samsung, so it's likely a new phone used for testing would have improved the latency in processing the scene.
+The kernel of the AR game idea was that the user would be able to play a tune on three bottles of 'Fave' soft-drink with staggered levels of drink within the bottles, to indicate different notes created by the different bottles.
+The AR game would to play the user a three note melody (while enlarging the bottle that was currently being 'played') and the user was meant to repeat the pattern.
+The presentation of the bottles would be triggered by the program identifying the previously mentioned AR marker through the camera, such that the bottles would float in front of the vending machine.
+The stretch goal of the game element was to enable the microphone as well it create some form of directional blowing over the bottles to imitate actually blowing over the tops of bottles; 
+this was de-scoped quite soon given a significant technical issue that was to arise.
+The use of third-party libraries (as well as AFrame, a library called ARJS was used to support the Augmented Reality features) made it difficult to fix an issue to do with the 3D spatial mappings between the web-cam and the 3D objects;
+while the bottles would render without issue, there was an issue with targeting bottles with click events, though this was not an issue when test on a PC, only mobile devices.
+The AR element was consequently made simpler to ensure some form of interactivity as a challenge but mitigating for the inability for individual bottles to be targeted;
+with that in mind the solution was that any click on the screen after the tune had completed would replay the tune.
+With more time, this part of the experience could certainly be improved but the best was made of the situation.
 
 #### Command Line Test Runner
 
 !! talk about the CLI
+after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment.
 
 ## User Experience Research
 
