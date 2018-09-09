@@ -10,9 +10,13 @@ With this new found power, the interaction between the physical space and people
 What will be needed is a well balanced approach to instigating these new interactive experiences and requesting consensual use of personal data.
 All that being said, the purpose of this study has been to create a series of interactive adverts that test audience perceptions to novel forms of advertising. 
 Of course there are limitations as to what can be tested in one study, so these advertising experiences were built around a core premise, that an Internet of Things enabled physical space would be the trigger point for an advertisement that would be launched on a user's smartphone.
-Seven derivations were constructed based on the control experiment and all eight experiments were presented to participants of the study over course of ten days such that they were able to compare and contrast the experiences.
+The other technologies that were being explored in the study were Social Media, Augmented Reality and a form of Digital Reward.
+Seven variations were constructed based on the control experiment and all eight experiments were presented to participants of the study over course of ten days such that they were able to compare and contrast the experiences.
+The user experience experiments were conducted in a fictional context, using a mocked environment which had been set up within some hired office space, with users sourced through online community forums and from local businesses.
+Once the data had been gathered, the data was analysed in various ways in an attempt derive conclusive evidence as to which type of advertisment would be most effective and for which demographic of the population.
+What follows is a documentation of the work involved creating the content, running the user experience studay, and the results it delivered.
 
-# Aims and Objectives
+<!--# Aims and Objectives
 
 ## Aims
 The purpose of this thesis is to explore various user experiences simulating a location based interaction with an wirelessly connected physical device, acting as the node of the proximity marketing, pervasive advertising experience. The remaining medium of interaction will be a smartphone. The different user experiences, will essentially be run as experiments to be compared and contrasted, all diverging from one common control experiment and using combinations of different elements of social, reward and interactive technologies to gauge which experience have the best net positive results. Essentially, investigating the combined use of disparate cutting-edge technologies of IoT devices, AR, Blockchain, alongside Social Media within the scope of proximity marketing, to identify the best outcomes.
@@ -55,7 +59,7 @@ Ultimately this project aims to explore ways to make more compelling and positiv
     - Creating a prototype of a potential product or service.
     - A form of CMS
     - Estimated time frame: 14-21 days (any time remaining)
-
+-->
 
 
 </section>
