@@ -30,14 +30,34 @@ Hardware research is also covered.
 
 ## Implementation
 
-- Wireframes
+The implemntation phase constituted a significant portion of the study and was composed of following distinct efforts.
+
+- User Experience Design
 - Visual Designs
-- Prototype Server
-- Test Runner
+- Prototype Server Development
+- Test Runner Development
 
-### UX Design
+### User Experience Design
 
-The design phase will be conducted in Lean UX manner, to deliver minimum viable products for each experiment; there will be a proto-persona to work with when creating basic wire-frames and wire-flows describing each user journey. The wire-frames and wire-flows will be minimal, rather than design visuals and will be used only to provide guidelines for the prototypes.
+The User Experience design work was in two parts. Firstly is was important to create a Persona as a bedrock for the rest of the work. 
+Secondly, wireframes were created to visually describe the user journey for each of the advertisment variations; 
+it was at this stage that some critical decisions were made about the user experience, which ultimately shaped the study.
+
+#### Persona creation
+
+One core concept of User Experience Design is the Persona which was helpful in creating the rest of the work. 
+The Persona, being a fictional yet beliveable for the experience being developed allows the design and development of software and experiences without disgining just for one person.
+While in this case only one Persona was created, the aim was to encapsulate in this fictional character the optimal qualities that it was supposed the perfect candidate for the advertisments would possess.
+There is a little bit of creative guess work involved in this stage, especially when creating a persona from scratch without having previous user research, from an earlier iteration to work with.
+Perefably, this kind of User Experience Research is continuous and iterative, changing and refining the understanding of the potential users.
+
+#### Wireframes 
+
+The Wireframes were created in Lean UX manner, though using online software called Figma to allow for a degree of fidelity while creating reference material to work against.
+These wireframes were created within the context of each other experiment in order to scrutinise the difference between the user journeys;
+in taking this approach, there was some discretionary design decisions at this stage that led to user interfaces that were not necessarily reflective of how a real-world example might be executed.
+For clarity, in order to look at user perceptions of the composition each experiment, the user journeys were designed to force the particpants of the study to go down a particular path; 
+this was justified as a design choice because among the the entirety of the experiments were permutations, that covered the other scenarios.
 
 ### Visual Designs
 
