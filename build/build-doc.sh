@@ -3,7 +3,7 @@
 # set the script to exit after any error
 set -e
 
-out_file="thesis-proposal_w1663560_AndrewKeats"
+out_file="msc-idc_dissertation_w1663560_AndrewKeats"
 data_dir=..
 out_dir=$data_dir/out
 
@@ -16,8 +16,8 @@ list_of_files=$(ls ../chapters/*.md)
 
 bib_file=../chapters/proposal-refs.bib
 
-echo pandoc  --data-dir=$data_dir --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
-pandoc  --data-dir=$data_dir --toc --chapters ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
+echo pandoc  --data-dir=$data_dir --toc --top-level-division=chapter ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
+pandoc  --data-dir=$data_dir --toc --top-level-division=chapter ../chapters/meta.yaml $list_of_files --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
 
 if [ $? -eq 0 ]; then
     echo

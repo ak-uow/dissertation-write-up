@@ -1,6 +1,6 @@
 #!/bin/bash
 
-out_file="Cw1_w166356_AndrewKeats"
+out_file="msc-idc_dissertation_w1663560_AndrewKeats"
 
 echo "Building doc!"
 

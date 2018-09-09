@@ -2,18 +2,17 @@
 title: Creating positive user experiences for audiences of proximity marketing and pervasive advertising
 subtitle: What synergistic combination of emergent and social technology creates optimal customer engagement with consumer brands within the physical retail space?
 #abstract: Long description abstract goes here
-descriptor: Masters Thesis Proposal
-author: {
-  name: Andrew Keats,
-  organisation: University of Westminster,
-  department: Department of Computer Science,
-  role: MSc Interaction Design & Computing,
-  organisation-id: w1663560,
-  location: "London, United Kingdom",
-  email: w1663560@my.westminster.ac.uk,
-}
+descriptor: Masters Thesis
+author:
+  name: Andrew Keats
+  organisation: University of Westminster
+  department: Department of Computer Science
+  role: MSc Interaction Design & Computing
+  organisation-id: w1663560
+  location: "London, United Kingdom"
+  email: w1663560@my.westminster.ac.uk
 supervisor: Ashif Tejani
-date: April 2018
+date: September 2018
 #include-before
 #include-after
 logo-url: ../assets/img/westminster-logo.jpg

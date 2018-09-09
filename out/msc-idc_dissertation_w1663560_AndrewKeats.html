@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Creating positive user experiences for audiences of proximity marketing and pervasive advertising</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="../assets/css/modest.css">
+  <link rel="stylesheet" href="../assets/css/custom.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<h1 class="title">Creating positive user experiences for audiences of proximity marketing and pervasive advertising</h1>
+<h2 class="subtitle">What synergistic combination of emergent and social technology creates optimal customer engagement with consumer brands within the physical retail space?</h2>
+<h3 class="descriptor">Masters Thesis
+        <span class="date"> &ndash; April 2018</span>
+    </h3>
+<p class="author">Andrew Keats
+        <span class="author-organisation-id"> &ndash; w1663560</span>
+            <span class="author-role">MSc Interaction Design &amp; Computing</span>
+    </p>
+<p class="author-email">w1663560@my.westminster.ac.uk</p>
+
+<p class="supervisor">Supervisor: Ashif Tejani</p>
+<img id="logo" src="../assets/img/westminster-logo.jpg" />
+</header>
+<h1 class="toc">Table of Contents</h1>
+<nav id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#aims-and-objectives">Aims and Objectives</a><ul>
+<li><a href="#aims">Aims</a></li>
+<li><a href="#objectives">Objectives</a></li>
+</ul></li>
+<li><a href="#methodology">Methodology</a><ul>
+<li><a href="#literature-survey">Literature survey</a></li>
+<li><a href="#technical-research">Technical research</a></li>
+<li><a href="#implementation">Implementation</a><ul>
+<li><a href="#design">Design</a></li>
+<li><a href="#development">Development</a></li>
+<li><a href="#experiment-list">Experiment list</a></li>
+</ul></li>
+<li><a href="#data-collection-and-sampling">Data collection and sampling</a><ul>
+<li><a href="#ethics-and-consent">Ethics and consent</a></li>
+<li><a href="#validity-of-research">Validity of research</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#incentivisation">Incentivisation</a></li>
+</ul></li>
+<li><a href="#data-analysis">Data analysis</a><ul>
+<li><a href="#qualitative-data">Qualitative data</a></li>
+<li><a href="#quantitative-data">Quantitative data</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#estimated-timeline">Estimated timeline</a><ul>
+<li><a href="#experiments-and-test-runner">Experiments and test runner</a></li>
+<li><a href="#report-of-findings">Report of findings</a></li>
+<li><a href="#web-interface">Web interface</a></li>
+</ul></li>
+<li><a href="#annotated-bibliography">Annotated Bibliography</a></li>
+</ul>
+</nav>
+<section>
+<h1 id="introduction">Introduction</h1>
+<p>Our physical and digital environments are becoming more &amp; more overcrowded with advertising; increasingly, the intended audience is acclimated to the noise of current forms of advertising media. The question for future advertising, is how to create more captivating interactions that stand-out from the competition while delivering deeper relationships between user &amp; brand? In the near future, the overlapping concepts of Proximity Marketing and Pervasive Advertising are likely to converge in ways that create context aware interactions, triggered by the user’s location which are able to provide richer engagement with the user; by leveraging data that is not available to traditional forms of advertising, like personal data or environmental data the new forms of interactive physical advertising will be able to connect with their audience to a degree greater than ever before. Up until now, only online advertising has been able to take advantage of contextual data and user data to deliver more relevant advertising to the user; the advent of the Internet of Things, which promises to lead to ubiquitous computing, creates a paradigm shift where all sort of objects and locations will be online and connected to data sources. With this new found power, the interaction between the physical space and people needs to be well executed lest it invoke negative reactions from consumers, that is to say users may not feel comfortable with these new experiences should they appear to infringe on privacy. What will be needed is a well balanced approach to instigating these new interactive experiences and requesting consensual use of personal data.</p>
+<h1 id="aims-and-objectives">Aims and Objectives</h1>
+<h2 id="aims">Aims</h2>
+<p>The purpose of this thesis is to explore various user experiences simulating a location based interaction with an wirelessly connected physical device, acting as the node of the proximity marketing, pervasive advertising experience. The remaining medium of interaction will be a smartphone. The different user experiences, will essentially be run as experiments to be compared and contrasted, all diverging from one common control experiment and using combinations of different elements of social, reward and interactive technologies to gauge which experience have the best net positive results. Essentially, investigating the combined use of disparate cutting-edge technologies of IoT devices, AR, Blockchain, alongside Social Media within the scope of proximity marketing, to identify the best outcomes.</p>
+<p>Ultimately this project aims to explore ways to make more compelling and positive experiences for end-users when engaging with novel forms of internet connected, location based, physically invoked advertising or marketing; determining which user experience experiments are most successful, will provide business insight that can be used in the future when creating real-world experiences. This in turn should create richer, deeper and longer lasting relationships between consumers and brands. As well as providing a report on user preferences for proximity marketing, a secondary goal would be to deliver a means of setting up, deploying and delivering these advertising interactions, through a web interface.</p>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Design a series of user experience experiments
+<ul>
+<li>all instigated by an IoT beacon
+<ul>
+<li>communicating with smartphone</li>
+</ul></li>
+<li>continued experience on smarphone</li>
+<li>the experiments will involve one or more of the following: AR, Blockchain, Social Media.</li>
+<li>create a proto-persona of the intended user</li>
+<li>Estimated time frame: 3 days</li>
+</ul></li>
+<li>Develop the user experience experiments
+<ul>
+<li>implementation well take advantage of modern web technologies, Android smartphone features and Bluetooth</li>
+<li>1 control experiment and 7 combinations of aforementioned technology</li>
+<li>Estimated time frame: 14 days</li>
+</ul></li>
+<li>Create an experiment task runner
+<ul>
+<li>facilitating the running of experiments</li>
+<li>enabling easy switching between experiments</li>
+<li>Estimated time frame: 7 days</li>
+</ul></li>
+<li>Experiments will be run with participants of user testing sessions
+<ul>
+<li>2 phases, the first being comprehensive, the second using only the 3 most successful experiements</li>
+<li>Observations will be gathered</li>
+<li>Qualitative and quantitative data will be collected from participants</li>
+<li>Sample size goals: 20 users (phase 1) and 10 users (phase 2)</li>
+<li>Estimated time frame: 7 days (phase 1) &amp; 4 days (phase 2)</li>
+</ul></li>
+<li>Analysis of data gathered will be undertaken
+<ul>
+<li>Establishing which experiments are most popular
+<ul>
+<li>Determining with which to continue user testing</li>
+</ul></li>
+<li>Providing insight into possible improvements</li>
+<li>Creating a report of findings</li>
+<li>Assert qualified arguments for best user experience</li>
+<li>Estimated time frame 3 days (phase 1) and 2 days (phase 2)</li>
+</ul></li>
+<li>Expand on test runner to turn it into a user friendly web interface
+<ul>
+<li>This is a secondary, stretch goal</li>
+<li>Commodifying the existing source code</li>
+<li>Creating a prototype of a potential product or service.</li>
+<li>A form of CMS</li>
+<li>Estimated time frame: 14-21 days (any time remaining)</li>
+</ul></li>
+</ul>
+</section>
+<section>
+<p>#Background Context</p>
+<p>The facet of daily life this project aims to examine and expand upon is that of the interface between marketeer and consumer. With the rise of the web, e-commerce, social-media and online advertising the way users would interact with the products and services was re-imagined <span class="citation" data-cites="RefWorks:doc:5ab2cab2e4b0770b05a27381">(Mangold and Faulds, 2009, p357–365)</span>. As Mangold and Faulds explore in their paper, there is now a more public relationship that has become more bi-directional than weighted towards the brand just broadcasting.</p>
+<p>The convergence of technologies has often had the ability to transform the way we live and like the impact of the smartphone, the Internet of Things is set to trigger a paradigm shift that will transform they way we interact with the world around us; this future digital connectedness is set to re-invent advertising <span class="citation" data-cites="RefWorks:doc:5aaeea0fe4b03d53f0cecda3">(Krumm, 2011, p66–73)</span>. Like the 2011 Pervasive Computing article by Krumm suggests, advertising could be the ‘killer app’ for ubiquitous computing this century, helping induce the roll-out of infrastructure.</p>
+<p>For over a decade the potential for a digitally connected environment has been considered a reality with the use of low cost radio technology <span class="citation" data-cites="RefWorks:doc:5aaeef26e4b04d63969fbe08">(Riekki et al., 2006, p40–46)</span>. However, it is only in recent years that it has become truly viable thanks to improvements in technology, such as telecommunications infrastructure and low-energy computing power like BLE <span class="citation" data-cites="RefWorks:doc:5aaafe6ee4b0392658e3edda">(Kallas, 2016)</span>.</p>
+<p>The experience of engagement between consumer and provider has become more and more important as our post-industrial society has developed, the product or service itself is not the only differentiator, now the relationship between the two parties is also prized as a means of ensuring repeat business from customers <span class="citation" data-cites="RefWorks:doc:5a7b2167e4b020cb798b152f">(II and Gilmore, 1998)</span>. As ‘Welcome to the Experience Economy’ points out, the experience a brand provides the end consumer is increasingly the focus of the relationship.</p>
+<p>Lastly, brand loyalty is a somewhat intangible target that businesses aim for to secure future success and new technology will attempt to improve for businesses <span class="citation" data-cites="RefWorks:doc:5a71e408e4b0d609eec82cef">(Kowalewski et al., 2017)</span><span class="citation" data-cites="RefWorks:doc:5a71dc44e4b03ce0ba20a6d5">( Making blockchain real for customer loyalty programs | deloitte us, no date)</span>, allowing them to better track loyalty and its impact on their business. Further to this, solutions that utilise a mixture of technology will be able to create a more engaging experience for the customer <span class="citation" data-cites="RefWorks:doc:5a73ed7ee4b0645cd2d425e1">(Scholz and Smith, 2016, p149–161)</span> and even create experiences that reward the user for their participation <span class="citation" data-cites="RefWorks:doc:5a73d86ee4b05d2b53fe0bf9">(Ramos, 2016)</span>.</p>
+</section>
+<section>
+<h1 id="methodology">Methodology</h1>
+<h2 id="literature-survey">Literature survey</h2>
+<p>Supporting secondary data will be acquired through university library resources and search features as well as Google Scholar; external providers of research papers such as Springer, IEEE and ACM will be used to gather relevant papers. Other relevant material will be collected if it extremely pertinent and insufficient academic content exists; examples sources would be online publications, blogs, company websites and corporate whitepapers and case studies. Where possible long form literature such as books will be sourced but given the bleeding-edge nature of the project most artefacts will be journal articles and research papers or online sources. All secondary research will be collated and categorised with a reference manager (RefWorks) in order to help organise the body of research and search through the contents. These secondary sources will be used to inform and frame the user testing, analysis and findings.</p>
+<h2 id="technical-research">Technical research</h2>
+<p>Given the scope of the project, it is not possible to deliver the project in the given time frame without taking advantage of third party libraries; the intent is to investigate the relevant open-source libraries that are suitable to assist in realising the implementation. This research will be documented, with justifications provided for the libraries and any other software chosen for inclusion in the project.</p>
+<h2 id="implementation">Implementation</h2>
+<h3 id="design">Design</h3>
+<p>The design phase will be conducted in Lean UX manner, to deliver minimum viable products for each experiment; there will be a proto-persona to work with when creating basic wire-frames and wire-flows describing each user journey. The wire-frames and wire-flows will be minimal, rather than design visuals and will be used only to provide guidelines for the prototypes.</p>
+<h3 id="development">Development</h3>
+<p>The development will be composed of many parts: Initially, the main concern will be ability to configure an IoT beacon to advertise a website so that an Android smartphone is notified and directed to that particular URL; the next phase will be to create static web content (using HTML, CSS and JavaScript) to fulfil the remit of each experiment; after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment. For the sake of quick prototyping, where possible the code base will primarily be JavaScript to be run on NodeJS, acting as an HTTP server or command line interface. Other languages will be used where necessary. Supporting software such as GitHub for versioning and Trello for project management will be used to track progress.</p>
+<h3 id="experiment-list">Experiment list</h3>
+<p>Below is a table explicitly defining the the make-up of 8 experiment as combinations of the proposed set of technologies to be explored. The first experiment is to be considered the control as it merely prompts the user by way of a Bluetooth (or WiFi) beacon to visit a basic web page on their smartphone. All the other experiments build upon this interaction and experience by making the web page more interesting by adjusting the content to simulate interactions that take advantage of the three other technologies.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Experiment</th>
+<th>Alias ID</th>
+<th style="text-align: center;">IoT Beacon</th>
+<th style="text-align: center;">Interactive AR</th>
+<th style="text-align: center;">Blockchain Reward</th>
+<th style="text-align: center;">Social Media</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>iotb-x-x-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>iotb-iar-x-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>iotb-br-x-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>iotb-sm-x-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✔️</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>iotb-iar-br-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>iotb-iar-sm-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✔️</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td>iotb-br-sm-x</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td>iotb-iar-br-sm</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+<td style="text-align: center;">✔️</td>
+</tr>
+</tbody>
+</table>
+<h4 id="extra-development">Extra Development</h4>
+<p>After the user testing research has been conducted the aim will be to create a user friendly web interface, effectively a CMS tailored to the task of linking beacons with web-based content. This effort is a secondary goal, acting as a proof-of-concept for offering commercial software for retailers with to easily distribute this form of location based interactive content. It should re-use parts for the test runner but allow for more flexibility and ease of use thanks to a database driven GUI.</p>
+<h2 id="data-collection-and-sampling">Data collection and sampling</h2>
+<p>During the practical research phase, a fictional scenario will be constructed as the context for the physically initiated digital interaction; user testing participants will be given some basic idea of the premise of the situation and what to do to begin the the user journey; no other guidance will be provided for participants so that they can be observed as impartially as possible when interacting with each user journey. Observations will be noted as the participants undertake each experiment and once a participant has finished all tests they will be asked to complete a questionnaire to gather qualitative and quantitative data about the entire experience. The questionnaires will be built in Google Forms, using the University’s G Suite licence and as such the data will be collected from this source. Only the most basic data about the user will be collected, namely their email address, age, and gender.</p>
+<h3 id="ethics-and-consent">Ethics and consent</h3>
+<p>The users will be picked as to be those considered of sound body and mind and adults over the age of 18; these participants will be required to complete a consent form informing them of the purpose of the research, allowing them to opt-out, request further information and agree for the data they provide to be used as part of the body of research. User data will be anonymised in order to safeguard the privacy of the participants. The consent participation form along with the relevant information will be provided to potential participants as the initial section of the Google Forms questionnaire presented to the participants for them to complete before proceeding with the experiments.</p>
+<h3 id="validity-of-research">Validity of research</h3>
+<p>In order to ensure that the data gathered isn’t skewed based on learnt behaviour from one experiment to the next, the order in which the experiments are run will be randomised, with the exception of the control, baseline experiment which will always go first and will serve to set expectations. In this way, the research gathering should not create a bias for any particular experiment.</p>
+<h3 id="documentation">Documentation</h3>
+<p>Photo evidence of the participants taking part in user testing experiments will be recorded but will not form a core part of the data gathered except to demonstrate the devised scenario in its realised form.</p>
+<h3 id="incentivisation">Incentivisation</h3>
+<p>participants will be given a gift voucher, redeemable with an online retailer (probably Amazon) of a small sum of either £5 or £10 as thanks for their time, which is expected to be between 30 and 60 minutes per participant.</p>
+<h2 id="data-analysis">Data analysis</h2>
+<p>Data gathered will be of both qualitative and quantitative in nature and as such they will be treated in different ways to gather insight and more concrete values. With that said, any data science processing and evaluation will be conducted using the language R, in R Studio.</p>
+<h3 id="qualitative-data">Qualitative data</h3>
+<p>That qualitative data will be in the form of post-experiment, open ended questions that elicit long form answers from the participants. These answers will need to be looked at in person to gather the full meaning of the respondents opinions, and will be able to allow them to not only express opinions but also provide information that could implicitly or explicitly suggest flaws and ways for improvement.</p>
+<p>Some data science techniques could be used if it is considered of value: A simple analysis of the qualitative data would be to create a filtered list of popular words, to then derive a word cloud visualisation. Further to this, sentiment analysis could be used to get a more deterministic evaluation of the participants overall opinion based on their qualitative responses. The use of data science methods on the qualitative data set will only be considered if the sample size merits it but as the target sample size is only 20 people, it may not prove necessary.</p>
+<h3 id="quantitative-data">Quantitative data</h3>
+<p>That quantitative data will be used to measure the opinions of participants along concrete linear scales, allowing the respondents to grades their experiences along a vector classifying positive and negative points of view for various facets relating to the experience. The facets to be measured will be along the lines of: Enjoyment, Annoyance, Sense of Engagement, Interest, Persuasiveness, and Affinity with Brand. The same questions will be asked of every experiment, to best judge them equally.</p>
+<p>The resulting dataset will be processed through R to anonymously segment the users by age and gender to determine which groups are most receptive to the experiences. The experiments themselves will be compared to see which are most popular overall as well is in particular to the more positive demographics.</p>
+<h1 id="estimated-timeline">Estimated timeline</h1>
+<figure>
+<img src="../assets/img/gantt-project-timeline.png" title="A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work." alt="A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work." /><figcaption>A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work.</figcaption>
+</figure>
+</section>
+<section>
+<p>#Final Outcome</p>
+<p>The intended final outcome is in three-parts: firstly, to conduct the research a framework of tools will need to be written to enable the tests to be run several times over; the second part is the report of the findings, which should point to the best blend of technology. interaction design &amp; user experience for positive user feedback; the last deliverable would be a proof-of-concept web platform as a means of deploying this new form of advertising.</p>
+<h2 id="experiments-and-test-runner">Experiments and test runner</h2>
+<p>This will be a collection of static HTML, CSS, JavaScript that will be accompanied by a simple application that will allow for the sequential hosting of the experiments on a local HTTP server.</p>
+<h2 id="report-of-findings">Report of findings</h2>
+<p>This deliverable is essentially the main body of vocational research and the report following analysis of the results obtained. Essentially this will be part of the main content of the thesis document as well as supporting evidence in an appendix section. This appendix is likely to include an example of the questionnaire and a copy of the anonymised data from respondents’ answers.</p>
+<h2 id="web-interface">Web interface</h2>
+<p>The completeness of the web interface will be dependant on time but ideally it will present the user with a Web App GUI for a content management system that will host configurations for physical advertising, in a manner that allows for the easy deployment of instructional data to the IoT Beacons as well as the deployment of web-based advertising content to be hosted (either locally or online). This will demonstrate the potential for turning this body of research into a commercial product.</p>
+</section>
+<section>
+<h1 id="annotated-bibliography">Annotated Bibliography</h1>
+<div id="refs">
+<div id="ref-RefWorks:doc:5a7b2167e4b020cb798b152f">
+<p>II, B.J.P. and Gilmore, J.H. (1998). <em>Welcome to the experience economy</em>.<br />
+<br />
+. Available from <a href="https://hbr.org/1998/07/welcome-to-the-experience-economy" class="uri">https://hbr.org/1998/07/welcome-to-the-experience-economy</a><br />
+<em> <strong>Annotation:</strong> This article in the Harvard Business Review from the late 1990s is a well regarded document cited as the origin of the term ’Experience Economy’ and all that entailed. To sum up, the authors Pine and Gilmore extrapolated that businesses mature over time from selling goods, to services and then experiences; even the businesses that still sell goods or services, tend to offer services or experiences - perhaps for free - as part of their offering to consumers. This is because as any given market matures and becomes more competitive, the consumer becomes more sophisticated in their expectations of what a company should offer and what kind of relationship should exist between provider and consumer. It’s this shift to experience being such an important element of the retail dynamic that still makes this angle relevant, especially for touch points that have untapped potential like point-of-sale and physical advertising.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5aaafe6ee4b0392658e3edda">
+<p>Kallas, R. (2016). <em>Proximity marketing - what, how, why?</em><br />
+<br />
+. Available from <a href="https://www.unacast.com/post/proximity-marketing-what-how-why" class="uri">https://www.unacast.com/post/proximity-marketing-what-how-why</a><br />
+<em> <strong>Annotation:</strong> Unacast are provider of location data based services with strong credentials and as such this blog post on proximity mining acts as a great primer on the topic. It’s also useful in highlighting that sometimes technology comes in waves, and market adoption materialise in the first instance but peripheral developments afterwards, can allow for more uptake on successive periods of interest; in particular a technological ecosystem that could mean the world is ready for proximity marketing.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5a71e408e4b0d609eec82cef">
+<p>Kowalewski, D.,McLaughlin, J. and Hill, A.J. (2017). <em>Blockchain will transform customer loyalty programs</em>.<br />
+<br />
+. Available from <a href="https://hbr.org/2017/03/blockchain-will-transform-customer-loyalty-programs" class="uri">https://hbr.org/2017/03/blockchain-will-transform-customer-loyalty-programs</a><br />
+<em> <strong>Annotation:</strong> This Harvard Business review article is a great introduction to the potential for blockchain technology to be used in a disruptive way to revolutionise loyalty programs. It’s not entirely positive and sensibly covers risk involved. Ultimately the take-home message is that there’s a strong business case for blockchain based loyalty tokens to replace current means used by loyalty programmes or discounting campaigns, if only to better track loyalty token redemption.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5aaeea0fe4b03d53f0cecda3">
+<p>Krumm, J. (2011). Ubiquitous advertising: The killer application for the 21st century. <em>IEEE Pervasive Computing</em>, 10 (1), 66–73.<br />
+<br />
+. Available from <a href="http://ieeexplore.ieee.org/document/5396316" class="uri">http://ieeexplore.ieee.org/document/5396316</a><br />
+<em> <strong>Annotation:</strong> This article is a a comprehensive look at the idea that one for the most significant uses for ubiquitous computing in the future will inevitably be to fundamentally impact the nature of advertising. It covers privacy concerns which are a major issue but also focuses on the smart use of technology to make advertising more relevant to the individual. Another noteworthy point raised is that there are already cases whereby exposure to advertising can be exchanged for something that directly benefits the user. This point in particular, I relate to the notion that the advertising experience can reward the user with some form of redeemable token.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5a71dc44e4b03ce0ba20a6d5">
+<p>Making blockchain real for customer loyalty programs | deloitte us (no date).<br />
+<br />
+. Available from <a href="https://www2.deloitte.com/us/en/pages/financial-services/articles/making-blockchain-real-customer-loyalty-rewards-programs.html" class="uri">https://www2.deloitte.com/us/en/pages/financial-services/articles/making-blockchain-real-customer-loyalty-rewards-programs.html</a><br />
+<em> <strong>Annotation:</strong> Insight into the potential for blockchain for loyalty programs from one of the worlds leading accountancy firms; this article makes a strong business case for the use of blockchain but also focuses on the customer and reasons why the technology could create positive feedback thanks to speed, ease of use, and security of the blockchain. Other key points are: customers increasingly value rewards as part of their relationships with products and services; there’s potentially for a token ecosystem to arise that could act as a helpful clearing system (marketplace) for unwanted tokens that doesn’t yet exist. The accompanying pdf report goes into further detail about the benefits both to business and consumers. The qualities described are good examples of how blockchain could be a really good fit for modern interaction with digital advertising.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5ab2cab2e4b0770b05a27381">
+<p>Mangold, W.G. and Faulds, D.J. (2009). <em>Social media: The new hybrid element of the promotion mix</em>. <em>Business Horizons</em>. 357–365<br />
+<br />
+. Available from <a href="https://www.sciencedirect.com/science/article/pii/S0007681309000329" class="uri">https://www.sciencedirect.com/science/article/pii/S0007681309000329</a><br />
+<em> <strong>Annotation:</strong> This paper exemplifies how social media has real value for brands promoting their products or services thanks to its ability to mix the customer word of mouth, peer to peer communication, with the traditional ’broadcast’ mode of brand promotion. The argument is that this form of blended communication is able to increase consumer engagement. The paper goes on to outline techniques and strategies to maximise on the prospective increase in engagement. It is this element of the paper that is so pertinent to this thesis proposal, which is similarly, looking to find the most compelling user experience within the defined scope.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5a73d86ee4b05d2b53fe0bf9">
+<p>Ramos, B. (2016). <em>Innovation in loyalty programs: Augmented reality mobile application for discount offers</em>.<br />
+<br />
+. Available from <a href="https://www.dbbest.com/blog/augmented-reality-mobile-application-discount-offers/" class="uri">https://www.dbbest.com/blog/augmented-reality-mobile-application-discount-offers/</a><br />
+<em> <strong>Annotation:</strong> Despite only being a short blog post, this brief case study by DB Best Technologies of their Reward Hunter app, is a concrete example of prior art where it comes to investigating a combination of Augmented Reality and rewarding the user with some form of loyalty token tied to a brand. The nature of the app, which is in part a game, is a very direct form of gamifying the experience which also makes use of location data as part of the AR experience.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5aaeef26e4b04d63969fbe08">
+<p>Riekki, J.,Salminen, T. and Alakarppa, I. (2006). Requesting pervasive services by touching rfid tags. <em>IEEE Pervasive Computing</em>, 5 (1), 40–46.<br />
+<br />
+. Available from <a href="http://ieeexplore.ieee.org/document/1593570" class="uri">http://ieeexplore.ieee.org/document/1593570</a><br />
+<em> <strong>Annotation:</strong> This article from a 2006 issue of Pervasive Computing provides an example of how a phone can be the vehicle of an interaction but the instigator of the interaction is an external physical element using some form of radio technology. Moreover, the ideas described in the article are of similar intent to this thesis proposal but demonstrate that after over a decade of technological progress, the means of implementation will differ and it is worth seeing if that will make any significant difference to the outcome. This article describes user experience testing as part of this study, making it a good source of insight into an appropriate methodology.</em></p>
+</div>
+<div id="ref-RefWorks:doc:5a73ed7ee4b0645cd2d425e1">
+<p>Scholz, J. and Smith, A.N. (2016). <em>Augmented reality: Designing immersive experiences that maximize consumer engagement</em>. <em>Business Horizons</em>. 149–161<br />
+<br />
+. Available from <a href="http://www.sciencedirect.com/science/article/pii/S0007681315001421" class="uri">http://www.sciencedirect.com/science/article/pii/S0007681315001421</a><br />
+<em> <strong>Annotation:</strong> This paper by Scholz and Smith is a thorough examination of the state of AR Marketing as of 2016. Given that this was published only 2 years ago, the insight in this paper is still fresh and will prove helpful when designing the experiments that involve AR as part of the experience, especially since it has advice for improving the AR experience with regard to ’user-brand engagement’. Further to this, the paper has this notion of ’entanglement’ and the various qualities that work together to create this phenomenon; this is something that could plausibly help inform the design of the user research questionnaires of this thesis.</em></p>
+</div>
+</div>
+</section>
+</body>
+</html>
