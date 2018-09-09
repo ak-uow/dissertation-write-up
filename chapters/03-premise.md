@@ -1,6 +1,6 @@
 ﻿<section>
 
-#Background Context
+#Literature Review
 
 The facet of daily life this project aims to examine and expand upon is that of the interface between marketeer and consumer. With the rise of the web, e-commerce, social-media and online advertising the way users would interact with the products and services was re-imagined [@RefWorks:doc:5ab2cab2e4b0770b05a27381]. As Mangold and Faulds explore in their paper, there is now a more public relationship that has become more bi-directional than weighted towards the brand just broadcasting.
 
