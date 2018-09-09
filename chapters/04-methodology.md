@@ -82,6 +82,10 @@ That is to say that while the choice of vending machine was intended to create a
 the assumed location of the vending machine was left to the individual, so while some might have imagined a more social surrounding like a canteen, others could and in fact did, imagine situations where the vending machine was in a more high footfall location. 
 The personally envisaged place in which the advertisement is triggered undoubtedly influenced the individuals' perceptions of the experience, especially with regards to how much time they might have to spare or how transient that experience might normally be.
 
+Another peculiarity of the UX designs that might have had some unforeseen consequences, was to begin and end every advert variant with the same opening and closing screens. 
+Each experiment launched from the IoT device landed on a view that messaged to the user "Thank You" and they ended with a view stating "Amazing", with the intent that these elements would help signify the beginning and end of the individual advertising experiences.
+This may have been an unecessary distraction for some participants, not least because over the course of the experiments, this repetition seemed to have the side-effect of mesmerising some participants, causing them to 'zone-out'.
+
 !! insert annotated wireframes
 
 ### Visual Designs
@@ -111,6 +115,11 @@ So, as the qualitative feedback will attest, developing a more defined visual ea
 it's hard to say whether changes would be made to this aspect of the experiments were the experiments to be recreated, given the requirement of some form of attachment to the commodity being tested as part of the study.
 
 In terms of actual artwork that was created as part of building 'Fave', the fictional soft-drink brand, there was the creation of a 'Fave' branded vending machine, a 3D mesh of a 'Fave' bottle, and a custom bottle label.
+
+##### Fave Bottle
+
+The Fave bottle was the first visual asset to be created as it was integral to the more conventional views consituting the various adverts as well as being a major part of the proof-of-concept Augmented Reality game experience. 
+Further to this, to make a convincing brand, the bottle needed to have a label that looked sufficiently like a genuine commercial product; a flat render of the 3D bottle with wrapped label was used as part of the 
 
 ### Development
 
