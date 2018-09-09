@@ -12,19 +12,34 @@ Naturally, interpretation of the results is the last phase which has been a matt
 
 ## Research
 
+Preliminary research was not only a way to provide a framework of context for the project but it was also essential to making appropriate technical design decisions.
+
 ### Literature survey
 
-Supporting secondary data will be acquired through university library resources and search features as well as Google Scholar; external providers of research papers such as Springer, IEEE and ACM will be used to gather relevant papers. Other relevant material will be collected if it extremely pertinent and insufficient academic content exists; examples sources would be online publications, blogs, company websites and corporate whitepapers and case studies. Where possible long form literature such as books will be sourced but given the bleeding-edge nature of the project most artefacts will be journal articles and research papers or online sources. All secondary research will be collated and categorised with a reference manager (RefWorks) in order to help organise the body of research and search through the contents.  These secondary sources will be used to inform and frame the user testing, analysis and findings.
+Supporting secondary data was acquired through university library resources and search features as well as Google Scholar; external providers of research papers such as Springer, IEEE and ACM was used to gather relevant papers. 
+Other relevant material was collected when it was extremely pertinent to the project and insufficient academic content existed; examples of these kinds of sources are online publications, blogs, company websites and corporate whitepapers and case studies. 
+Where possible long form literature such as books will be sourced but given the bleeding-edge nature of the project most artefacts will be journal articles and research papers or online sources. 
+All secondary research was be collated and categorised with a reference manager (RefWorks) in order to help organise the body of research and search through the contents. 
+These secondary sources were used to inform and frame the user testing, analysis and findings.
 
 ### Technical research
 
-Given the scope of the project, it is not possible to deliver the project in the given time frame without taking advantage of third party libraries; the intent is to investigate the relevant open-source libraries that are suitable to assist in realising the implementation. This research will be documented, with justifications provided for the libraries and any other software chosen for inclusion in the project.
+Given the scope of the project, it was not possible to deliver the project in the given time frame without taking advantage of third party libraries; the intent is to investigate the relevant open-source libraries that are suitable to assist in realising the implementation. 
+This research is documented below, with justifications provided for the libraries and any other software chosen for inclusion in the project. 
+Hardware research is also covered.
 
 ## Implementation
 
-### Design
+- Wireframes
+- Visual Designs
+- Prototype Server
+- Test Runner
+
+### UX Design
 
 The design phase will be conducted in Lean UX manner, to deliver minimum viable products for each experiment; there will be a proto-persona to work with when creating basic wire-frames and wire-flows describing each user journey. The wire-frames and wire-flows will be minimal, rather than design visuals and will be used only to provide guidelines for the prototypes.
+
+### Visual Designs
 
 ### Development
 
@@ -32,7 +47,7 @@ The development will be composed of many parts: Initially, the main concern will
 For the sake of quick prototyping, where possible the code base will primarily be JavaScript to be run on NodeJS, acting as an HTTP server or command line interface. Other languages will be used where necessary.
 Supporting software such as GitHub for versioning and Trello for project management will be used to track progress.
 
-### Experiment list
+#### Experiment list
 
 Below is a table explicitly defining the the make-up of 8 experiment as combinations of the proposed set of technologies to be explored. The first experiment is to be considered the control as it merely prompts the user by way of a Bluetooth (or WiFi) beacon to visit a basic web page on their smartphone. All the other experiments build upon this interaction and experience by making the web page more interesting by adjusting the content to simulate interactions that take advantage of the three other technologies.
 
@@ -47,11 +62,12 @@ Below is a table explicitly defining the the make-up of 8 experiment as combinat
 |          7 | iotb-br-sm-x   |      ✔️     |                |         ✔️         |       ✔️      |
 |          8 | iotb-iar-br-sm |      ✔️     |        ✔️       |         ✔️         |       ✔️      |
 
-#### Extra Development
 
-After the user testing research has been conducted the aim will be to create a user friendly web interface, effectively a CMS tailored to the task of linking beacons with web-based content. This effort is a secondary goal, acting as a proof-of-concept for offering commercial software for retailers with to easily distribute this form of location based interactive content. It should re-use parts for the test runner but allow for more flexibility and ease of use thanks to a database driven GUI.
+#### Prototype Server
 
-## Data collection and sampling
+#### Commband Line Tess Runner
+
+## User Experience Research
 
 During the practical research phase, a fictional scenario will be constructed as the context for the physically initiated digital interaction; user testing participants will be given some basic idea of the premise of the situation and what to do to begin the the user journey; no other guidance will be provided for participants so that they can be observed as impartially as possible when interacting with each user journey. Observations will be noted as the participants undertake each experiment and once a participant has finished all tests they will be asked to complete a questionnaire to gather qualitative and quantitative data about the entire experience. The questionnaires will be built in Google Forms, using the University's G Suite licence and as such the data will be collected from this source. Only the most basic data about the user will be collected, namely their email address, age, and gender.
 
@@ -71,24 +87,28 @@ Photo evidence of the participants taking part in user testing experiments will 
 
 participants will be given a gift voucher, redeemable with an online retailer (probably Amazon) of a small sum of either £5 or £10 as thanks for their time, which is expected to be between 30 and 60 minutes per participant.
 
-## Data analysis
+### Data analysis
 
 Data gathered will be of both qualitative and quantitative in nature and as such they will be treated in different ways to gather insight and more concrete values. With that said, any data science processing and evaluation will be conducted using the language R, in R Studio.
 
-### Qualitative data
+#### Data Pre-processing
+
+!! Discuss the effort involved in resorting the data
+
+#### Qualitative data
 
 That qualitative data will be in the form of post-experiment, open ended questions that elicit long form answers from the participants. These answers will need to be looked at in person to gather the full meaning of the respondents opinions, and will be able to allow them to not only express opinions but also provide information that could implicitly or explicitly suggest flaws and ways for improvement.
 
 Some data science techniques could be used if it is considered of value: A simple analysis of the qualitative data would be to create a filtered list of popular words, to then derive a word cloud visualisation. Further to this, sentiment analysis could be used to get a more deterministic evaluation of the participants overall opinion based on their qualitative responses. The use of data science methods on the qualitative data set will only be considered if the sample size merits it but as the target sample size is only 20 people, it may not prove necessary.
 
-### Quantitative data
+#### Quantitative data
 
 That quantitative data will be used to measure the opinions of participants along concrete linear scales, allowing the respondents to grades their experiences along a vector classifying positive and negative points of view for various facets relating to the experience. The facets to be measured will be along the lines of: Enjoyment, Annoyance, Sense of Engagement, Interest, Persuasiveness, and Affinity with Brand. The same questions will be asked of every experiment, to best judge them equally.
 
 The resulting dataset will be processed through R to anonymously segment the users by age and gender to determine which groups are most receptive to the experiences. The experiments themselves will be compared to see which are most popular overall as well is in particular to the more positive demographics.
 
-# Estimated timeline
+## Interpretation of Results
 
-![A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work.](../assets/img/gantt-project-timeline.png "A breakdown of tasks and their time-frames. Weekends have been intentionally excluded from periods of work.")
+!! Discuss the discussion here
 
 </section>
