@@ -116,10 +116,22 @@ it's hard to say whether changes would be made to this aspect of the experiments
 
 In terms of actual artwork that was created as part of building 'Fave', the fictional soft-drink brand, there was the creation of a 'Fave' branded vending machine, a 3D mesh of a 'Fave' bottle, and a custom bottle label.
 
-##### Fave Bottle
+##### Fave Bottle and Label
 
-The Fave bottle was the first visual asset to be created as it was integral to the more conventional views consituting the various adverts as well as being a major part of the proof-of-concept Augmented Reality game experience. 
-Further to this, to make a convincing brand, the bottle needed to have a label that looked sufficiently like a genuine commercial product; a flat render of the 3D bottle with wrapped label was used as part of the 
+The 'Fave' bottle was the first visual asset to be created as it was integral to the more conventional views consituting the various adverts as well as being a major part of the proof-of-concept Augmented Reality game experience. 
+Further to this, to make a convincing brand, the bottle needed to have a label that looked sufficiently like a genuine commercial product; 
+a flat render of the 3D bottle with wrapped label was used as part of the two-dimesnional views, while a 3D mesh was created for use in the Augmented Reality part coupled with the re-use of the lavel as a texture.
+The creation of the label was almost entirely done in Adobe Photoshop, using guidelines from the Figma UX designs.
+The creation of the bottle was a more elaborate effort as it was initially easier to create the mesh using 3DS Max but the bottle required converting into the correct file format using Blender. 
+
+##### Fave Vending Machine
+
+The 'Fave' branded vending machine, was created to help participants momentarily live within the devised scenario as though it were real; 
+the caveat being that what was presented to the user was actually a one metre wide, two metre tall banner with the front facade of a vending machine.
+Not only was it important that the image on the banner conveyed the brand but another focus on the artwork was to suggest through the design that this vending machine would accept contactless payments.
+The notion of the user touching their phone to the vending machine in order to pay was a critical part of the entry into the rest of the experiences and with that in mind, this point of contact was designed to stand out visually against the rest of the design.
+One last element that made up the final look of the vending machine was an AR (Augmented Reality) marker, as a late addition due to workflow requirements and was attached to the banner with adhesive tape.
+This marker asset was designed to use the 'Fave' branding, which may not have helped with the intuitiveness of its function among some users and in hindsight, exploring other options might improve experiment experiences the test subjects.
 
 ### Development
 
