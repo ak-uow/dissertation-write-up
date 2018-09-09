@@ -2,11 +2,21 @@
 
 # Methodology
 
-## Literature survey
+The methodology for this project can be broken down into X major tenets of this kind of study. 
+These are: Research; Preparatory Implementation; User Experience Research; Data Analysis; and finally Interpretation of Results.
+The initial phase was one of research into prior work with regard to academic study but also existing technology (both software and hardware) pertinent to the project.
+Once the first phase was complete, research did not entirely stop but continued to inform the implementation stage which was made of many parts, given the complex nature of a multi-faceted project of this nature.
+Upon approaching completion of creating all the necessary software, visual content and configurations in order to conduct the research, it was time to invite potential test subjects to take part in the study.
+After a minumum sample size has been reached it was then possible to process the data in order to be able to later discern meaningful findings from the experiments.
+Naturally, interpretation of the results is the last phase which has been a matter of taking a second look at the quantitive data in conjunction with the qualitative feedback in order to posit not only where the most successful experiments but also to discuss room for improvement.
+
+## Research
+
+### Literature survey
 
 Supporting secondary data will be acquired through university library resources and search features as well as Google Scholar; external providers of research papers such as Springer, IEEE and ACM will be used to gather relevant papers. Other relevant material will be collected if it extremely pertinent and insufficient academic content exists; examples sources would be online publications, blogs, company websites and corporate whitepapers and case studies. Where possible long form literature such as books will be sourced but given the bleeding-edge nature of the project most artefacts will be journal articles and research papers or online sources. All secondary research will be collated and categorised with a reference manager (RefWorks) in order to help organise the body of research and search through the contents.  These secondary sources will be used to inform and frame the user testing, analysis and findings.
 
-## Technical research
+### Technical research
 
 Given the scope of the project, it is not possible to deliver the project in the given time frame without taking advantage of third party libraries; the intent is to investigate the relevant open-source libraries that are suitable to assist in realising the implementation. This research will be documented, with justifications provided for the libraries and any other software chosen for inclusion in the project.
 

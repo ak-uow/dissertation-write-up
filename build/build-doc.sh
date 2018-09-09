@@ -16,8 +16,8 @@ list_of_files=$(ls ../chapters/*.md)
 
 bib_file=../chapters/proposal-refs.bib
 
-echo pandoc  --data-dir=$data_dir --toc --top-level-division=chapter ../chapters/meta.yaml $list_of_files --filter pandoc-eqnos --filter pandoc-fignos --filter pandoc-tablenos --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
-pandoc  --data-dir=$data_dir --toc --top-level-division=chapter ../chapters/meta.yaml $list_of_files --filter pandoc-eqnos --filter pandoc-fignos --filter pandoc-tablenos --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
+echo pandoc  --data-dir=$data_dir --toc --top-level-division=chapter ../chapters/meta.yaml $list_of_files --filter pandoc-eqnos --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-latex-unlisted --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
+pandoc  --data-dir=$data_dir --toc --top-level-division=chapter ../chapters/meta.yaml $list_of_files --filter pandoc-eqnos --filter pandoc-fignos --filter pandoc-tablenos --filter pandoc-latex-unlisted --bibliography=$bib_file -s -o ../out/$out_file.html -w html5
 
 if [ $? -eq 0 ]; then
     echo
