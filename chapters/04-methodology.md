@@ -3,9 +3,10 @@
 # Methodology
 
 The methodology for this project can be broken down into X major tenets of this kind of study. 
-These are: Research; Preparatory Implementation; User Experience Research; Data Analysis; and finally Interpretation of Results.
+These are: Research; User Experience Study Design; Preparatory Implementation; User Experience Research; Data Analysis; and finally Interpretation of Results.
 The initial phase was one of research into prior work with regard to academic study but also existing technology (both software and hardware) pertinent to the project.
 Once the first phase was complete, research did not entirely stop but continued to inform the implementation stage which was made of many parts, given the complex nature of a multi-faceted project of this nature.
+In conjunction with the technical research there was a requirement to consider the overall design of the experiment and how the user research was to be conducted.
 Upon approaching completion of creating all the necessary software, visual content and configurations in order to conduct the research, it was time to invite potential test subjects to take part in the study.
 After a minimum sample size has been reached it was then possible to process the data in order to be able to later discern meaningful findings from the experiments.
 Naturally, interpretation of the results is the last phase which has been a matter of taking a second look at the quantitative data in conjunction with the qualitative feedback in order to posit not only where the most successful experiments but also to discuss room for improvement.
@@ -29,6 +30,44 @@ This research is documented below, with justifications provided for the librarie
 Hardware research is also covered.
 
 !! TODO: Add more info here about technologies used...
+
+## Design of the Study
+
+The study was designed to fulfil the criteria of comparing and contrasting various location sensitive mobile advertisements that had a bedrock of an Internet of Things device prompting the launch of web content on a smartphone with one control experiment used various combinations of Augmented Reality (AR), Social Media, and Digital Rewards.
+It was also necessary to consider at this early stage what the baseline experience would be, and given that email capture is a common experience among users exposed to advertising and marketing material, this seemed an appropriate yet simple interaction to use as the control.
+To satisfy the idea of having explored enough permutations, it was important to consider what was the minimum number of experiments could be created in order to have at least one experiment to cover any given combination of the previously listed technologies.
+This is important to point out because when the order of advertisement composition is given more emphasis the potential number of combinations increases dramatically; 
+given the time constraints, where more than one technology was combined on top of the the control experiment, only one ordering was selected, using an approximate heuristic: 
+the Social Media element would come last when combined with anything else;
+the Augmented Reality game experience would come first;
+when the Digital Reward was present along side Augmented Reality, the view before entering the game would mention the chance of gaining Digital Reward after completion of the game.
+It would be naive to suggest that other ways to combining these elements would not have the potential to produce other results and this is an area where the study could be scaled to be more thorough, time permitting.
+
+### Experiment list
+
+Below is a table defining the composition of the eight experiments created in order to expo the combination of aforementioned technologies. 
+The first experiment was the control baseline experiment and the number attributed to the various combinations was used internally throughout the study and will therefore be used when describing the feedback and results.
+
+| Experiment | Alias ID       | IoT Beacon | Interactive AR | Blockchain Reward | Social Media |
+|-----------:|----------------|:----------:|:--------------:|:-----------------:|:------------:|
+|          1 | iotb-x-x-x     |      ✔️     |                |                   |              |
+|          2 | iotb-iar-x-x   |      ✔️     |        ✔️       |                   |              |
+|          3 | iotb-br-x-x    |      ✔️     |                |         ✔️         |              |
+|          4 | iotb-sm-x-x    |      ✔️     |                |                   |       ✔️      |
+|          5 | iotb-iar-br-x  |      ✔️     |        ✔️       |         ✔️         |              |
+|          6 | iotb-iar-sm-x  |      ✔️     |        ✔️       |                   |       ✔️      |
+|          7 | iotb-br-sm-x   |      ✔️     |                |         ✔️         |       ✔️      |
+|          8 | iotb-iar-br-sm |      ✔️     |        ✔️       |         ✔️         |       ✔️      |
+
+### Designing Out Bias
+
+Thanks to the instruction of a mentor, thought was given to a potential issue with the feedback which could then be mitigated.
+The risk was that should every participant undertake the experiments in the same order, then that repetition would introduce a bias into the results that would otherwise not be present.
+The rationale behind this was that the users would inevitably become more familiar with the experiences as a whole as they continued from one advert variant to another; 
+in addition to this, there was a likelihood that the users might start to tire towards the end of their overall session. 
+These two factors could have potentially cause the overall results to unfairly favour the experiments in the middle of the group.
+The solution to reducing the risk of bias was to ensure that the order in which the participants interacted with the experiment was randomised, though the decision was made to keep the control experiment at the beginning as its relative simplicity made it most suitable to introduce the users to the concept.
+At this point no implementation details had been considered in depth but it was prudent to devise this strategy.
 
 ## Implementation
 
@@ -135,24 +174,11 @@ This marker asset was designed to use the 'Fave' branding, which may not have he
 
 ### Development
 
-The development will be composed of many parts: Initially, the main concern will be ability to configure an IoT beacon to advertise a website so that an Android smartphone is notified and directed to that particular URL; the next phase will be to create static web content (using HTML, CSS and JavaScript) to fulfil the remit of each experiment; after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment.
+Development of the project experiments involved two elements that directly interacted with together by way of the test users, and another piece of software was written in order to conduct the experiments.
+
+will be composed of many parts: Initially, the main concern will be ability to configure an IoT beacon to advertise a website so that an Android smartphone is notified and directed to that particular URL; the next phase will be to create static web content (using HTML, CSS and JavaScript) to fulfil the remit of each experiment; after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment.
 For the sake of quick prototyping, where possible the code base will primarily be JavaScript to be run on NodeJS, acting as an HTTP server or command line interface. Other languages will be used where necessary.
 Supporting software such as GitHub for versioning and Trello for project management will be used to track progress.
-
-#### Experiment list
-
-Below is a table explicitly defining the the make-up of 8 experiment as combinations of the proposed set of technologies to be explored. The first experiment is to be considered the control as it merely prompts the user by way of a Bluetooth (or Wi-Fi) beacon to visit a basic web page on their smartphone. All the other experiments build upon this interaction and experience by making the web page more interesting by adjusting the content to simulate interactions that take advantage of the three other technologies.
-
-| Experiment | Alias ID       | IoT Beacon | Interactive AR | Blockchain Reward | Social Media |
-|-----------:|----------------|:----------:|:--------------:|:-----------------:|:------------:|
-|          1 | iotb-x-x-x     |      ✔️     |                |                   |              |
-|          2 | iotb-iar-x-x   |      ✔️     |        ✔️       |                   |              |
-|          3 | iotb-br-x-x    |      ✔️     |                |         ✔️         |              |
-|          4 | iotb-sm-x-x    |      ✔️     |                |                   |       ✔️      |
-|          5 | iotb-iar-br-x  |      ✔️     |        ✔️       |         ✔️         |              |
-|          6 | iotb-iar-sm-x  |      ✔️     |        ✔️       |                   |       ✔️      |
-|          7 | iotb-br-sm-x   |      ✔️     |                |         ✔️         |       ✔️      |
-|          8 | iotb-iar-br-sm |      ✔️     |        ✔️       |         ✔️         |       ✔️      |
 
 
 #### Prototype Server
