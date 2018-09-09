@@ -175,15 +175,34 @@ This marker asset was designed to use the 'Fave' branding, which may not have he
 ### Development
 
 Development of the project experiments involved two elements that directly interacted with together by way of the test users, and another piece of software was written in order to conduct the experiments.
+For the sake of familiarity and its strength as a language for quick prototyping, every single bit of software written for this project used JavaScript; 
+strictly speaking whenever the NodeJS runtime was being used, then the codebase took advantage of a popular superset of JavaScript called TypeScript (open source and invented at Microsoft by Anders Hejlsberg, one of the creators of C#). 
+Using TypeScript was a design decision because of pre-existing familiarity with the Technology and the benefit of type safety that it adds to JavaScript; 
+ultimately, the TypeScript code is resolved to JavaScript by the 'transpiler'. 
+All code was backed up to GitHub throughout the development process to safeguard against data loss. 
+WebStorm was the IDE of choice when working with NodeJS while a special Espruino IDE was also required, when working with the IoT beacon.
+
+#### IoT Beacon Setup
+
+Hot beacons were bought for the sole purpose of transmitting an Eddystone URL to the smartphone.
+Using Eddystone URL technology had a key benefit for prototyping over other forms of Bluetooth Low Engender (BLE) protocols, specifically this is that other options require some for of beacon registration with a centralised service like the one operated by Google;
+conversely, the Eddystone URL format allow the developer to broadcast a static URL directly from the device rather than being indirectly resolved through the third-party service.
+For the sake of redundancy, in case there was a failure with an IoT beacon that couldn't be quickly fixed, multiple devices were purchased.
+Two of the beacons were of a typical specification and setup involving a password and the use of a smartphone app to edit the beacon configuration, including the URL it broadcasts.
+A third device was purchase that can be considered a more generalised IoT and sensor device that happens to include BLE hardware; 
+it was this device, called a PuckJS that is built to run JavaScript from firmware which gets pushed to the microcontroller from the Espruino IDE.
+In this case, the URL was hard-coded as part of the small program written to initialised the BLE features of the device.
+With both types of beacon, the Eddystone URL protocol requires a string length no longer than character aside from the URL scheme, meaning that a URL shortening service was required, for the sake of redirecting to the long-form URL address for the adverts.
+For the sake of concentrating on the user research study, a third party URL shortening service was used, hosted by Google but in theory an independent entity could host their own shortening service.
+Further research into the nature of the broadcasting signal would be of interest were this project extended, as will be described under the section documenting the actual user research.
+
+#### Experiment Server
 
 will be composed of many parts: Initially, the main concern will be ability to configure an IoT beacon to advertise a website so that an Android smartphone is notified and directed to that particular URL; the next phase will be to create static web content (using HTML, CSS and JavaScript) to fulfil the remit of each experiment; after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment.
-For the sake of quick prototyping, where possible the code base will primarily be JavaScript to be run on NodeJS, acting as an HTTP server or command line interface. Other languages will be used where necessary.
-Supporting software such as GitHub for versioning and Trello for project management will be used to track progress.
-
-
-#### Prototype Server
 
 #### Command Line Test Runner
+
+!! talk about the CLI
 
 ## User Experience Research
 
