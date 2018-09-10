@@ -194,7 +194,8 @@ it was this device, called a PuckJS that is built to run JavaScript from firmwar
 In this case, the URL was hard-coded as part of the small program written to initialised the BLE features of the device.
 With both types of beacon, the Eddystone URL protocol requires a string length no longer than character aside from the URL scheme, meaning that a URL shortening service was required, for the sake of redirecting to the long-form URL address for the adverts.
 For the sake of concentrating on the user research study, a third party URL shortening service was used, hosted by Google but in theory an independent entity could host their own shortening service.
-Further research into the nature of the broadcasting signal would be of interest were this project extended, as will be described under the section documenting the actual user research.
+Further research into the nature of the broadcasting signal would be of interest were this project extended, as will be described under the section documenting the actual user research. 
+One final point to mention is that the shortened URL given to the beacons to broadcast were set up to resolve to a static redirect endpoint that was built into the Experiment Server, the reason for which will also become clearer as the methodology explained further.
 
 #### Experiment Server
 
@@ -220,14 +221,14 @@ Like some of the other choices made to deliver these experiments, this would pro
 
 The AR game was more a proof-of-concept, to illustrate the potential for this experience to be presented over the web to a mobile device and demonstrate the prospective impact this technology could have on interactive advertising.
 Given the main goal didn't focus on gameplay or performance, this led to some experiential issues that would ideally be resolved were the experiment to be rebuilt for an improved iteration.
-To that end, the whole Augmented Reality element would probably be revisited without the use of AFrame (a technology developed by Mozilla to enable easy construction of 3D scenes) because in conjunction with spatial recognition via the web-cam, this could become a clunky experience at times;
+To that end, the whole Augmented Reality element would probably be revisited without the use of A-Frame (a technology developed by Mozilla to enable easy construction of 3D scenes) because in conjunction with spatial recognition via the web-cam, this could become a clunky experience at times;
 it's also relevant that the mobile device used was a 2014 model Samsung, so it's likely a new phone used for testing would have improved the latency in processing the scene.
 The kernel of the AR game idea was that the user would be able to play a tune on three bottles of 'Fave' soft-drink with staggered levels of drink within the bottles, to indicate different notes created by the different bottles.
 The AR game would to play the user a three note melody (while enlarging the bottle that was currently being 'played') and the user was meant to repeat the pattern.
 The presentation of the bottles would be triggered by the program identifying the previously mentioned AR marker through the camera, such that the bottles would float in front of the vending machine.
 The stretch goal of the game element was to enable the microphone as well it create some form of directional blowing over the bottles to imitate actually blowing over the tops of bottles; 
 this was de-scoped quite soon given a significant technical issue that was to arise.
-The use of third-party libraries (as well as AFrame, a library called ARJS was used to support the Augmented Reality features) made it difficult to fix an issue to do with the 3D spatial mappings between the web-cam and the 3D objects;
+The use of third-party libraries (as well as A-Frame, a library called ARJS was used to support the Augmented Reality features) made it difficult to fix an issue to do with the 3D spatial mappings between the web-cam and the 3D objects;
 while the bottles would render without issue, there was an issue with targeting bottles with click events, though this was not an issue when test on a PC, only mobile devices.
 The AR element was consequently made simpler to ensure some form of interactivity as a challenge but mitigating for the inability for individual bottles to be targeted;
 with that in mind the solution was that any click on the screen after the tune had completed would replay the tune.
@@ -235,8 +236,18 @@ With more time, this part of the experience could certainly be improved but the 
 
 #### Command Line Test Runner
 
-!! talk about the CLI
-after this a test runner will need to be created, which will provide a method of hosting the web content for each experiment, with various features like, allowing sequential running of experiments, randomisation of order and resetting the test environment.
+One last piece of bespoke software that needs to be discussed is the Command Line Test Runner. 
+This was also written in TypeScript in order to be run from NodeJS. 
+The purpose of this application was to facilitate the running of the experiments with the individual participants. 
+This application relied on a console like Command Line Interface (CLI) that would do a variety of things to fulfil the design of the study;
+the console style functionality took advantage of a NodeJS library called Vorpal, in order to allow an easy way to create a persistent CLI instead of just a script that would run once before exiting the JavaScript runtime.
+One key function this application is able to do is create a pseudo random sequence of numbers based on an email address provided by a participant of the study; 
+using a third-party NodeJS library called Chance, the Test Runner is able to leverage the Mersenne Twister algorithm to create a repeatable but seemingly random set of values;
+this functionality was critical in satisfying the randomisation of the order in which the users would experience the advertising experiments. 
+The participants' email address and number sequence was able to be saved off as a JSON file for the purpose of not only anonymising the feedback dataset but also to re-order the individual user feedback so the feedback could be correctly compared between the participants.
+In addition to generating the pseudo-random numbers and saving that data for processing, the CLI was able to interact with the Experiment Server by making the requisite HTTP requests to the server in order to switch which experiment would then be used by the static redirect URL;
+it was able to do this so it was relatively painless to cycle through the experiments with a customised sequence for every new user. 
+All of the functionality built into this application made the running of the experiments much easier than would have possible otherwise, even to the extent that with two devices running the CLI it was actually possible have two participants engaging with the study at the same time, alternating between which of their sequences were active.
 
 ## User Experience Research
 
