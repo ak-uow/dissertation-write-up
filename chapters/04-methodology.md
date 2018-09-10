@@ -318,7 +318,24 @@ As an example of the extra depth this data can deliver, the video evidence will 
 
 ##### User Feedback
 
-Only the most basic data about the user will be collected, namely their email address, age, and gender.
+For the purpose of efficiently gathering data, this study has relied most heavily on participants answering questions in response to the experience using the University G Suite hosted feedback form.
+Not only did this format lend itself to rudimentary data gathering of basic demographic data and a little data concerning existing familiarity the technology present in the experiment, it also provided great utility for gathering data and processing it given the need to randomise the experiment orders.
+The fact is that working with a text based digital format made the task of mapping user feedback to the corresponding experiments much easier than had the task involved transposing additional data from another medium and then having to merge that data into a common dataset of results.
+This was a conscious design decision based on the requirement to shuffle the experiment order and it was decided to be a reasonable compromise;
+one crucial reason why this approach was considered acceptable was that users were still able to provided qualitative feedback, albeit having to write it themselves.
+
+The structure of the feedback form was such that after a participant had consented to the study, they were required to enter data regarding their email address, age, and gender.
+Following on from that basic demographic data gathering was a question used to gather binary data regarding familiarity with: 
+email on smartphones; 
+mobile gaming; 
+mobile payments;
+and AR experiences. 
+
+A print version of the feedback form is available to examine as part of the appendices section but to summarise the design of the feedback form, the majority of the body is a repetition of the same set of questions 8 times; 
+this generalised approach to gathering feedback relating to each experiment made it easy to compare the experiments. 
+This questionnaire structure also removed the technical challenge of asking questions only relevant to a particular experiment experience without having to shuffle the online form; 
+it's actually not certain that this would have been a feasible option and the option of not using the University G Suite to capture data would have created another set of restrictions. 
+Given these conditions, the way the user feedback was gathered can be considered more than acceptable, given the circumstances.
 
 ## Data analysis
 
