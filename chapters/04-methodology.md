@@ -58,6 +58,7 @@ The first experiment was the control baseline experiment and the number attribut
 |          6 | iotb-iar-sm-x  |      ✔️     |        ✔️       |                   |       ✔️      |
 |          7 | iotb-br-sm-x   |      ✔️     |                |         ✔️         |       ✔️      |
 |          8 | iotb-iar-br-sm |      ✔️     |        ✔️       |         ✔️         |       ✔️      |
+Table: List of experiments and their compostive elements. {#tbl:tb-exp-list}
 
 ### Designing Out Bias
 
