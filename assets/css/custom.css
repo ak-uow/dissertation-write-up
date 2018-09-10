@@ -208,12 +208,20 @@ blockquote {
     border: none;
 }
 
-.inline {
+.inline,
+.inline.table table {
     display: inline;
 }
 
 .inline-b {
     display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+.flex.center {
+    justify-content: center;
 }
 
 .non-code pre {
@@ -243,6 +251,10 @@ img.half-page-height,
 img.third-page-height {
     display: block;
     margin: auto;
+}
+
+.inline.table table {
+    margin: 0 1em;
 }
 
 /*#TOC ul {

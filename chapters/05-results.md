@@ -26,6 +26,8 @@ What follows is some minimal demographic information about the 23 particpants th
 
 There participants were mostly male be a ratio of about 3:2, the younger age groups were better represented, however the gender disparity was greater among those younger age groups with a stronger male representation for those under 35 (about 5:2). This was down to the participants that were able to take part.
 
+<div class="inline table flex center">
+
 Gender|Count
 :-----:|:-----:
 Female|9
@@ -42,6 +44,8 @@ Age group|Count
 45-49|1
 50+|4
 Table: Age Demographics {#tbl:tb-demo-age}
+
+</div>
 
 ![Age Demographics](../assets/img/data/graph-demographics-2.png "Age Demographics"){#fig:fig-demo-age}
 
