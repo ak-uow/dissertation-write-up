@@ -84,12 +84,24 @@ This kind of weight adjustment is common practice in order to allow the results 
 
 ## Initial Findings
 
-What follows is some basic evalution of the experiments based on some simple question regarding the component parts of the experiments and the particpants favourite experiement experience.
+What follows is some basic evaluation of the experiments based on some simple question regarding the component parts of the experiments and the participants favourite experiment experience.
 These results provide more context from which later examination of the data can be compared.
+
+### Component Perception
+
+Two components that are included in all the experiments, in fact being the bedrock of all interactions are the use of a smartphone for the bulk of the interaction and the IoT BLE beacon prompting the phone.
+The following box plot graphs indicate how these fundamental element were received by the testers.
+
+![Perception of Experiment Mobile Interactions](../assets/img/data/graph-perception-exp-iot-1.png "Perception of Experiment Mobile Interactions"){#fig:fig-perc-mob}
+
+![Perception of Experiment IoT](../assets/img/data/graph-perception-exp-smartphone-1.png "Perception of Experiment IoT"){#fig:fig-perc-iot}
+
+Broadly speaking most participant across every demographic, with the exception of a few outliers, were comfortable with the idea of using a smartphone as part of these interactions.
+The IoT element has more polarising results with more overall positivity from the entire subset of females when compared to males, which not only had greater variation but a significant number of scores below the top half of the sentiment scale.
 
 ### Preferred Experiment
 
-The question about which experiment was the user's preferred experience gave the participants a choice just to pick one experiement out of the eight variations.
+The question about which experiment was the user's preferred experience gave the participants a choice just to pick one experiment out of the eight variations.
 This makes it an appropriate example to demonstrate how the result may differ if they were to take into account the relative population of the demographic subsets.
 
 <div class="table flex center">
@@ -131,5 +143,53 @@ Table: Preferred Experiment {#tbl:tb-pref-exp-w}
  Looking at these relatively crude results, those experiments - excluding the baseline - that also scored better rewarded the user.
  Experiments #4 and #6 also happen to incorporate the Social Media element without the Digital Reward.
  Figure {@fig:fig-pref-exp-w} demonstrates how weighting users feedback can change the findings, in this case with #1 being more highly regarded.
+
+#### Preferred Experiments by Age Group
+
+This next graph is an example of the granularity with which the data can be studied but also the potential flaws in doing so.
+In this case the relatively small sample size manages to demonstrate how it's not necessarily possible to gain truly meaningful data if the results are examined too finely.
+
+![Preferred Experiment Across Age Groups](../assets/img/data/graph-preferred-exp-ages-1.png "Preferred Experiment Across Age Groups"){#fig:fig-pref-exp-ages}
+
+While the data suggests results that can point to preferences within all age groups, when two age demographics only contain one participant (18-24, 45-49) as well as the 40-44 age group only having two and the 35-39 group only having three, then if the findings are looked at in this level of detail, it's not wise to attribute too much confidence to the results.
+The larger the sample size for a given sub-group, the more confidence can be given to findings even if the analysis is covering a broader group of people.
+
+#### Preferred Experiments Across Age and Gender With Weighted Values
+
+Given the previous example, what follows is an example of how the data was transformed with the intent of making the data more likely to present results that can be more confidently considered as representative of the general public.
+
+<div class="table flex center">
+
+Preferred experiment|Your age range|Your gender|Weight|Weight percent
+:-----:|:-----:|:-----:|:-----:|:-----:
+#3|18-29|Female|0.6102901|0.5000000
+#5|18-29|Female|0.6102901|0.5000000
+#1|30-34|Female|0.5834226|0.5000000
+#3|30-34|Female|0.5834226|0.5000000
+#7|35-44|Female|1.3224872|0.5257713
+#8|35-44|Female|1.1928405|0.4742287
+#2|45+|Female|1.3906661|0.3333333
+#3|45+|Female|2.7813323|0.6666667
+#1|18-29|Male|0.4038044|0.1659284
+#3|18-29|Male|0.8076089|0.3318569
+#5|18-29|Male|1.2221926|0.5022147
+#3|30-34|Male|0.6977944|0.6000000
+#5|30-34|Male|0.2325981|0.2000000
+#7|30-34|Male|0.2325981|0.2000000
+#3|35-44|Male|0.5879894|0.2384573
+#5|35-44|Male|1.8778167|0.7615427
+#1|45+|Male|4.0360299|0.7570416
+#3|45+|Male|1.2952884|0.2429584
+Table: Most Preferred Experiments Adjusted for Population Weighting and Aggregated Age Groups {#tbl:tb-pref-exp-age-gender-weighted-pc}
+
+</div>
+
+![Most Preferred Experiments Adjusted for Population Weighting and Aggregated Age Groups](../assets/img/data/graph-preferred-exp-new-ages-weighted-gender-1.png "Most Preferred Experiments Adjusted for Population Weighting and Aggregated Age Groups"){#fig:fig-pref-exp-age-gender-weighted-pc}
+
+Now that there are larger age demographic subsets it's more possible to get competing values for the preferred experiment.
+With the increased likelihood of competing results comes greater confidence that if a given value is noticeably greater than another, then it represents something meaningful pertaining to public perception.
+In this case in particular, it is now more reliable to suggest that experiment #3 is the most popular experience for the 30-34 and 45+ groups while #5 is most popular with the youngest age group.
+Nevertheless, this evaluation isn't definitive and shouldn't be taken as fact in any way as it is only one way the data has been examined; in particular, this evaluation relies on fewer data points to come to these suggestions.
+Ostensibly, the more data points used when trying to derive meaning, the greater the potential for accuracy, so long as the observations used are relevant to the question looking to be answered.
 
 </section>
