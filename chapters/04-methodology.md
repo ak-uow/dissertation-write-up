@@ -251,39 +251,72 @@ All of the functionality built into this application made the running of the exp
 
 ## User Experience Research
 
+The methodology for the User Experience Research can be seen as two parts:
+- Preparatory Work
+- Conducting the User Research
+
+### Preparatory work
+
+The preparatory work as described in the following passages explains greater detail how: potential participants for the study were engaged with; 
+how those potential candidates for taking part in the study were converted into actual participants of the research; what measure were taken to gain consent from participants to ensure their feedback was usable as part of the analysis.
+
+#### Gathering Interested Parties
+
+Once the experiments were collectively nearing a state of readiness for users to test, a more active effort was made to reach out to the local community.
+The office space from which the study was being conducting was located in a business park in Peckham, South East London and that in itself provided a pool of potential experiment testers;
+the majority of people in the business park run their own independent business so it would have been naive to assume that most people would be able to take part, though in the end about a quarter of the study was made up of people from this group.
+One other ways the users were sourced were various Facebook community groups, specifically covering the Surrey Quays, New Cross, Peckham and Deptford areas. 
+As well as those options another resource was the neighbourhood community social network called Nextdoor. 
+
+#### Ethics and Consent
+
+When looking to find interested member of the public online or in person, as well as continuing with further correspondence the users were assessed to be:
+adults; of sound enough mind and not to be considered vulnerable in any way.
+Potential participants were given sufficient information before attending the study to have some understanding of what might be involved and once the were ready to go forward, the experiments were discussed in comprehensive detail before the potential participants were asked for their consent to proceed with them as testers of the experiences.
+The consent form went into written detail about the experiments which had be verbally described, as well as provided opt-in options for their likenesses to be capture in photos or video. At the end of the experiment there was a further consent form so that each participant could reflect on what they had been asked to do and choose whether or not their feedback should be used as part of the study.
+Additionally, the participants had the option to request the data analysis derived from the collective (and anonymised) feedback.
+One last point of note is that the consent forms we integrated into the Google Forms (hosted on behalf of the University) feedback questionnaire that was used to gather the users responses to the experiments; this has the benefit of supplying all relevant persons one document for evaluation or to fill in.
+
+#### Incentivisation
+
+Part of gathering interest from members of the public to take part in the study was to offer a small to moderate recompense for their time and effort. 
+As such, every participant was provided with a £20 Amazon voucher - via email - for their contribution. 
+Some participants were not interested in the voucher and simply intrigued in what the experiments might be like but the decision was made that unless a user were to insist on not receiving a voucher, all would be treated equally. 
+Once that was explained to the experiment testers, no-one refused the voucher.
+
+
+### Conducting the User Research
 During the practical research phase, a fictional scenario will be constructed as the context for the physically initiated digital interaction; user testing participants will be given some basic idea of the premise of the situation and what to do to begin the the user journey; no other guidance will be provided for participants so that they can be observed as impartially as possible when interacting with each user journey. Observations will be noted as the participants undertake each experiment and once a participant has finished all tests they will be asked to complete a questionnaire to gather qualitative and quantitative data about the entire experience. The questionnaires will be built in Google Forms, using the University's G Suite licence and as such the data will be collected from this source. Only the most basic data about the user will be collected, namely their email address, age, and gender.
+which is expected to be between 30 and 60 minutes per participant.
 
-### Ethics and consent
-
-The users will be picked as to be those considered of sound body and mind and adults over the age of 18; these participants will be required to complete a consent form informing them of the purpose of the research, allowing them to opt-out, request further information and agree for the data they provide to be used as part of the body of research. User data will be anonymised in order to safeguard the privacy of the participants. The consent participation form along with the relevant information will be provided to potential participants as the initial section of the Google Forms questionnaire presented to the participants for them to complete before proceeding with the experiments.
-
-### Validity of research
+#### Validity of Research
 
 In order to ensure that the data gathered isn't skewed based on learnt behaviour from one experiment to the next, the order in which the experiments are run will be randomised, with the exception of the control, baseline experiment which will always go first and will serve to set expectations. In this way, the research gathering should not create a bias for any particular experiment.
 
-### Documentation
+#### Documentation of the research
+
+#### Photo and Video evidence
 
 Photo evidence of the participants taking part in user testing experiments will be recorded but will not form a core part of the data gathered except to demonstrate the devised scenario in its realised form.
 
-### Incentivisation
+#### User Feedback
 
-participants will be given a gift voucher, redeemable with an online retailer (probably Amazon) of a small sum of either £5 or £10 as thanks for their time, which is expected to be between 30 and 60 minutes per participant.
 
-### Data analysis
+## Data analysis
 
 Data gathered will be of both qualitative and quantitative in nature and as such they will be treated in different ways to gather insight and more concrete values. With that said, any data science processing and evaluation will be conducted using the language R, in R Studio.
 
-#### Data Pre-processing
+### Data Pre-processing
 
 !! Discuss the effort involved in resorting the data
 
-#### Qualitative data
+### Qualitative data
 
 That qualitative data will be in the form of post-experiment, open ended questions that elicit long form answers from the participants. These answers will need to be looked at in person to gather the full meaning of the respondents opinions, and will be able to allow them to not only express opinions but also provide information that could implicitly or explicitly suggest flaws and ways for improvement.
 
 Some data science techniques could be used if it is considered of value: A simple analysis of the qualitative data would be to create a filtered list of popular words, to then derive a word cloud visualisation. Further to this, sentiment analysis could be used to get a more deterministic evaluation of the participants overall opinion based on their qualitative responses. The use of data science methods on the qualitative data set will only be considered if the sample size merits it but as the target sample size is only 20 people, it may not prove necessary.
 
-#### Quantitative data
+### Quantitative data
 
 That quantitative data will be used to measure the opinions of participants along concrete linear scales, allowing the respondents to grades their experiences along a vector classifying positive and negative points of view for various facets relating to the experience. The facets to be measured will be along the lines of: Enjoyment, Annoyance, Sense of Engagement, Interest, Persuasiveness, and Affinity with Brand. The same questions will be asked of every experiment, to best judge them equally.
 
