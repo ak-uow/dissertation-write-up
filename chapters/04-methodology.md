@@ -58,7 +58,7 @@ The first experiment was the control baseline experiment and the number attribut
 |          6 | iotb-iar-sm-x  |      ✔️     |        ✔️       |                   |       ✔️      |
 |          7 | iotb-br-sm-x   |      ✔️     |                |         ✔️         |       ✔️      |
 |          8 | iotb-iar-br-sm |      ✔️     |        ✔️       |         ✔️         |       ✔️      |
-Table: List of experiments and their compostive elements. {#tbl:tb-exp-list}
+Table: List of experiments and their composite elements. {#tbl:tb-exp-list}
 
 ### Designing Out Bias
 
@@ -369,7 +369,7 @@ As with other code written, the preference was to write a script in TypeScript t
 this script took advantage of an existing third=party NodeJS library called 'xlsx' that allowed for the data to be easily parsed into a JSON format which was then easily manipulated, resorting the data before saving out an updated Excel format.
 All in all, this turned out to be a longer task than was anticipated as more and more non-trivial requirements came to light as the data was traversed and transposed.
 Despite the unforeseen complexity in creating a script to pre-process the dataset, a manual approach would have been more susceptible to human error, whereas the script could be tested and validated iteratively until there was absolute confidence that the output was correct.
-
+This script was also used to replace the participant email addresses with an ID to anonymise the data.
 
 ### Qualitative data
 
