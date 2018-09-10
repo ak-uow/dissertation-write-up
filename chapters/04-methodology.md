@@ -7,7 +7,7 @@ These are: Research; User Experience Study Design; Preparatory Implementation; U
 The initial phase was one of research into prior work with regard to academic study but also existing technology (both software and hardware) pertinent to the project.
 Once the first phase was complete, research did not entirely stop but continued to inform the implementation stage which was made of many parts, given the complex nature of a multi-faceted project of this nature.
 In conjunction with the technical research there was a requirement to consider the overall design of the experiment and how the user research was to be conducted.
-Upon approaching completion of creating all the necessary software, visual content and configurations in order to conduct the research, it was time to invite potential test subjects to take part in the study.
+Upon approaching completion of creating all the necessary software, visual content and configurations in order to conduct the research, it was time to invite potential testers to take part in the study.
 After a minimum sample size has been reached it was then possible to process the data in order to be able to later discern meaningful findings from the experiments.
 Naturally, interpretation of the results is the last phase which has been a matter of taking a second look at the quantitative data in conjunction with the qualitative feedback in order to posit not only where the most successful experiments but also to discuss room for improvement.
 
@@ -170,7 +170,7 @@ the caveat being that what was presented to the user was actually a one metre wi
 Not only was it important that the image on the banner conveyed the brand but another focus on the artwork was to suggest through the design that this vending machine would accept contactless payments.
 The notion of the user touching their phone to the vending machine in order to pay was a critical part of the entry into the rest of the experiences and with that in mind, this point of contact was designed to stand out visually against the rest of the design.
 One last element that made up the final look of the vending machine was an AR (Augmented Reality) marker, as a late addition due to workflow requirements and was attached to the banner with adhesive tape.
-This marker asset was designed to use the 'Fave' branding, which may not have helped with the intuitiveness of its function among some users and in hindsight, exploring other options might improve experiment experiences the test subjects.
+This marker asset was designed to use the 'Fave' branding, which may not have helped with the intuitiveness of its function among some users and in hindsight, exploring other options might improve experiment experiences for the testers.
 
 ### Development
 
@@ -309,7 +309,7 @@ Some ancillary observations were silently noted to see if there were any issues 
 As previously mentioned, where possible when two participants were wishing to undertake the experiments at the same time, then this was accommodated; 
 typically one user would take between thirty and sixty minutes to complete an entire test session, while conducting parallel sessions took between fifty and seventy minutes so it was sometimes more suitable, especially if the participants had come along as a pair.
 
-##### Photo and Video evidence
+##### Photo and Video Evidence
 
 Even though most participants were prepared to have their photo taken and be recorded on video, the data gathered in this manner has been relatively sparse.
 The main reason for this was that the time taken with each user would have increased by at least thirty percent by a rough estimation and the amount of data to process would have been too much to handle given the scope and time-frame of the project.
@@ -337,28 +337,66 @@ This questionnaire structure also removed the technical challenge of asking ques
 it's actually not certain that this would have been a feasible option and the option of not using the University G Suite to capture data would have created another set of restrictions. 
 Given these conditions, the way the user feedback was gathered can be considered more than acceptable, given the circumstances.
 
-## Data analysis
+The sections provided for each experiment provided the opportunity for qualitative feedback as well as qualitative feedback based on some characteristics that could be applied to all experiments:
+- Enjoyment
+- Annoyance
+- Ease of use
+- Brand connection
+- Engagement
+- Persuasiveness
+- Interest
 
-Data gathered will be of both qualitative and quantitative in nature and as such they will be treated in different ways to gather insight and more concrete values. With that said, any data science processing and evaluation will be conducted using the language R, in R Studio.
+Each of the characteristics mentioned above (described as 'facets' during the analysis) were presented to the user per experiment, with mandatory scalar questions and optional long-form feedback text fields.
+Using this approach it was possible to capture essential sentiment data but also allowed more willing participants to provide more detailed feedback.
+
+After all the feedback sections aimed at individual experiments, there was a summary section, mainly focused on gathering: 
+overall popularity scores; 
+finding out general feedback regarding the elements composing the experiments; 
+and more general feedback regarding the experiments study itself.
+
+## Data Analysis
+
+This subsection describes the processes involved after the conducting the practical element of the user research. 
+This is includes the pre-processing of the data making it ready to work with as well as how the qualitative and quantitative data has been treated.
+Aside from the pre-processing stage, all data analysis involved to use of the language R, via and IDE called R Studio, in order to work on the results.
 
 ### Data Pre-processing
 
-!! Discuss the effort involved in resorting the data
+The data from the online user feedback was easily downloaded from the G Suite service and saved as an Excel file. 
+However, at this stage the data was not ready for analysis because the user feedback for each user was ordered according to the individual's designated sequence as previously described.
+In order to resolve this issue, it was necessary to create a create a script to reorder the feedback so that the tabular data had the correct data in each column accounting for the requirement to resort the feedback sequence.
+Any attempt at undertaking this task manually was ruled out early on when the complexity of the effort involved became apparent.
+As with other code written, the preference was to write a script in TypeScript to be run as JavaScript through NodeJS; 
+this script took advantage of an existing third=party NodeJS library called 'xlsx' that allowed for the data to be easily parsed into a JSON format which was then easily manipulated, resorting the data before saving out an updated Excel format.
+All in all, this turned out to be a longer task than was anticipated as more and more non-trivial requirements came to light as the data was traversed and transposed.
+Despite the unforeseen complexity in creating a script to pre-process the dataset, a manual approach would have been more susceptible to human error, whereas the script could be tested and validated iteratively until there was absolute confidence that the output was correct.
+
 
 ### Qualitative data
 
-That qualitative data will be in the form of post-experiment, open ended questions that elicit long form answers from the participants. These answers will need to be looked at in person to gather the full meaning of the respondents opinions, and will be able to allow them to not only express opinions but also provide information that could implicitly or explicitly suggest flaws and ways for improvement.
-
-Some data science techniques could be used if it is considered of value: A simple analysis of the qualitative data would be to create a filtered list of popular words, to then derive a word cloud visualisation. Further to this, sentiment analysis could be used to get a more deterministic evaluation of the participants overall opinion based on their qualitative responses. The use of data science methods on the qualitative data set will only be considered if the sample size merits it but as the target sample size is only 20 people, it may not prove necessary.
+Some qualitative responses were noted down informally as the participants were interacting with the experiments, pausing between experiment to explicitly express an opinion, or at the end of their session with a brief discussion.
+That being said, the bulk of the qualitative data captured was as part of the user feedback form and this has been the easier to collate as it was easy to extract as part of the data analysis conducted using R Studio.
+These qualitative sections of the feedback form were designed open ended questions that could elicit long-form answers from the participants. 
+Fundamentally these particular response have formed the latter half of the data analysis document (presented as part of the appendices), without any modification, just some categorisation of the responses; 
+for example, all participant response for a given experiment are grouped together as opposed to grouping all feedback by respondent.
+Advanced sentiment analysis would have been interesting to attempt but this idea was de-scoped due to time constraints and the already sizeable amount of analysis that had been undertaken.
 
 ### Quantitative data
 
-That quantitative data will be used to measure the opinions of participants along concrete linear scales, allowing the respondents to grades their experiences along a vector classifying positive and negative points of view for various facets relating to the experience. The facets to be measured will be along the lines of: Enjoyment, Annoyance, Sense of Engagement, Interest, Persuasiveness, and Affinity with Brand. The same questions will be asked of every experiment, to best judge them equally.
-
-The resulting dataset will be processed through R to anonymously segment the users by age and gender to determine which groups are most receptive to the experiences. The experiments themselves will be compared to see which are most popular overall as well is in particular to the more positive demographics.
+That quantitative data was extensively mined and manipulated to explore the possibility of any meaningful patterns of perception using R, in R Studio. 
+Most of the analysis conducted was around the scalar feedback provided framed through the user's age and gender demographic data. 
+Data gathered around the participants relationship to their mobiles and AR was also capture for further analysis of the results outside of the analysis document.
+The analysis document was not meant to come to conclusive findings but instead provide ways of looking at the data that could be interpreted within this document as a means of coming to a more definitive summation as part of the Interpretation of Results chapter.
+The data was distilled so that it could be easily portray in various graphical form, the idea being that it might be possible to determine any strong preference for a given experiment, either universally across all participant or within sub-groups.
+As is discussed in the analysis document, UK population census data was used where it was appropriate to weight the various age and gender subsets to more properly reflect the population. 
+This was in response to evaluating the spread of participants and when seeing that it was not well aligned to the actual population count.
+Using the weighting was not always appropriate though as it could only be use where a participants response would normally count as a single unit (like a vote) rather than a relative rating.
 
 ## Interpretation of Results
 
-!! Discuss the discussion here
+As can be seen in the following chapter, the data analysis document has been distilled, with the findings considered to be most pertinent lifted and described in the Results chapter.
+Next, the Discussion chapter has been used to more conclusively discuss the outcome of the study. 
+It is at this point that the qualitative feedback has also been reflected upon to consider ways the study could have been improved as well as considering the positive feedback and negative concerns raised by the participants. 
+Ultimately, the intent has been to not only address the feasibility of a real-world version of one of more of these forms of advertisement but also look at where this research could be continued.
 
 </section>
