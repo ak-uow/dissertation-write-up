@@ -275,7 +275,7 @@ adults; of sound enough mind and not to be considered vulnerable in any way.
 Potential participants were given sufficient information before attending the study to have some understanding of what might be involved and once the were ready to go forward, the experiments were discussed in comprehensive detail before the potential participants were asked for their consent to proceed with them as testers of the experiences.
 The consent form went into written detail about the experiments which had be verbally described, as well as provided opt-in options for their likenesses to be capture in photos or video. At the end of the experiment there was a further consent form so that each participant could reflect on what they had been asked to do and choose whether or not their feedback should be used as part of the study.
 Additionally, the participants had the option to request the data analysis derived from the collective (and anonymised) feedback.
-One last point of note is that the consent forms we integrated into the Google Forms (hosted on behalf of the University) feedback questionnaire that was used to gather the users responses to the experiments; this has the benefit of supplying all relevant persons one document for evaluation or to fill in.
+One last point of note is that the consent forms were integrated into the Google Forms (hosted on the University G Suite offering) feedback questionnaire that was used to gather the users responses to the experiments; this has the benefit of supplying all relevant persons one document for evaluation or to fill in.
 
 #### Incentivisation
 
@@ -284,23 +284,41 @@ As such, every participant was provided with a £20 Amazon voucher - via email -
 Some participants were not interested in the voucher and simply intrigued in what the experiments might be like but the decision was made that unless a user were to insist on not receiving a voucher, all would be treated equally. 
 Once that was explained to the experiment testers, no-one refused the voucher.
 
-
 ### Conducting the User Research
-During the practical research phase, a fictional scenario will be constructed as the context for the physically initiated digital interaction; user testing participants will be given some basic idea of the premise of the situation and what to do to begin the the user journey; no other guidance will be provided for participants so that they can be observed as impartially as possible when interacting with each user journey. Observations will be noted as the participants undertake each experiment and once a participant has finished all tests they will be asked to complete a questionnaire to gather qualitative and quantitative data about the entire experience. The questionnaires will be built in Google Forms, using the University's G Suite licence and as such the data will be collected from this source. Only the most basic data about the user will be collected, namely their email address, age, and gender.
-which is expected to be between 30 and 60 minutes per participant.
+
+During the practical part of the user research study, a fictional scenario was described to each user whereby the premise of the interactions started off with the user wishing to purchase their favourite drink from a vending machine;
+as the situation was devised to involve mobile adverts triggered by a smartphone contactless payment, this was also explained.
+In accordance with the experiments involving a smartphone, the users were provided with a smartphone for the testing session; 
+importantly, the smartphone was one running Android OS, which was necessary to take advantage of BLE beacon recognition at the operating system level.
+The fact that the Android operating system can pick up transmissions from BLE devices was a feature necessary in order for the user to be able to view an on-screen notification which was essentially a link to the advertising material.
+Aside from this technical detail, the only other information was given to users with regard to the smartphone was how dismiss the lock-screen.
+No other guidance was provided to participants with regards to the experiment in order that they could be observed as impartially as possible when interacting with each user journey. 
 
 #### Validity of Research
 
-In order to ensure that the data gathered isn't skewed based on learnt behaviour from one experiment to the next, the order in which the experiments are run will be randomised, with the exception of the control, baseline experiment which will always go first and will serve to set expectations. In this way, the research gathering should not create a bias for any particular experiment.
+In order to ensure that the data gathered was not skewed based on any learnt behaviour across the experiments, the order in which the experiments were randomised thanks to the Command Line Test Runner.
+With this strategy, the results gathered seem to have successfully not been influenced by a bias based on a common, fixed experiment order.
 
-#### Documentation of the research
+Perhaps another measure that could have improved the quality of the data with regards to the validity of the research might have been to provide more background context for the fictional scenario.
 
-#### Photo and Video evidence
+#### Documentation of the Research
 
-Photo evidence of the participants taking part in user testing experiments will be recorded but will not form a core part of the data gathered except to demonstrate the devised scenario in its realised form.
+The majority of the data gathered from running the user experience test sessions was obtained through the user feedback form. 
+Some photo observations were taken alongside one video recording. 
+Some ancillary observations were silently noted to see if there were any issues with the experiment that would not be captured from the user feedback itself. 
+As previously mentioned, where possible when two participants were wishing to undertake the experiments at the same time, then this was accommodated; 
+typically one user would take between thirty and sixty minutes to complete an entire test session, while conducting parallel sessions took between fifty and seventy minutes so it was sometimes more suitable, especially if the participants had come along as a pair.
 
-#### User Feedback
+##### Photo and Video evidence
 
+Even though most participants were prepared to have their photo taken and be recorded on video, the data gathered in this manner has been relatively sparse.
+The main reason for this was that the time taken with each user would have increased by at least thirty percent by a rough estimation and the amount of data to process would have been too much to handle given the scope and time-frame of the project.
+Having said that, User Experience Research principles do tend to promote these complementary methods of data gathering and I would agree that when there is a team involved and/or the amount being tested isn't quite so large, this is the ideal testing scenario.
+As an example of the extra depth this data can deliver, the video evidence will be provided as supporting evident and demonstrates not only how it can be useful to record the user interacting with the interfaces but also how it cam be used to gather data in a more thoughtful interview manner where the participant is able to reflect on the experiences more.
+
+##### User Feedback
+
+Only the most basic data about the user will be collected, namely their email address, age, and gender.
 
 ## Data analysis
 
