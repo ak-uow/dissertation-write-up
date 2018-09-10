@@ -1,17 +1,47 @@
 <section>
 
-#Final Outcome
+# UX and Design Deliverables
 
-The intended final outcome is in three-parts: firstly, to conduct the research a framework of tools will need to be written to enable the tests to be run several times over; the second part is the report of the findings, which should point to the best blend of technology. interaction design & user experience for positive user feedback; the last deliverable would be a proof-of-concept web platform as a means of deploying this new form of advertising.
+## Persona and Wireframes
 
-## Experiments and test runner
-This will be a collection of static HTML, CSS, JavaScript that will be accompanied by a simple application that will allow for the sequential hosting of the experiments on a local HTTP server.
+!! annotate persona & wireframes here
 
-## Report of findings
-This deliverable is essentially the main body of vocational research and the report following analysis of the results obtained. Essentially this will be part of the main content of the thesis document as well as supporting evidence in an appendix section. This appendix is likely to include an example of the questionnaire and a copy of the anonymised data from respondents' answers.
+## Branding Assets
 
-## Web interface
-The completeness of the web interface will be dependant on time but ideally it will present the user with a Web App GUI for a content management system that will host configurations for physical advertising, in a manner that allows for the easy deployment of instructional data to the IoT Beacons as well as the deployment of web-based advertising content to be hosted (either locally or online). This will demonstrate the potential for turning this body of research into a commercial product.
+!! present visual designs here
+(Label, Bottle, Vending Machine, Banner)
+
+</section>
+<section>
+          
+# User Research Results
+
+This chapter provides a selection of data presentations, be that in tabular form, graphical representation or both. 
+The assessment of the qauntitive data spans over 50 sides of A4 and the aggregation of qualitative data is a similar length, so it's impractical to present all the data in this chapeter.
+The entire set of data evaluation can be found as part of the appendices.
+
+## Basic Particpant Data 
+
+What follows is some minimal demographic information about the 23 particpants that made up the group of experiment testers, as well as some information concerning their experience with technology relevant to the study.
+
+There participants were mostly male be a ratio of about 3:2, the younger age groups were better represented, however the gender disparity was greater among those younger age groups with a stronger male representation for those under 35 (about 5:2). This was down to the participants that were able to take part.
+
+**Gender**|**Count**
+:-----:|:-----:
+Female|9
+Male|14
+Table: Gender Demographics. {#tbl:demo-gender}
+
+**Age group**|**Count**
+:-----:|:-----:
+18-24|1
+25-29|5
+30-34|7
+35-39|3
+40-44|2
+45-49|1
+50+|4
+Table: Age Demographics. {#tbl:demo-age}
 
 
 </section>

@@ -144,8 +144,6 @@ Designing for Laptop or Desktop was largely pointless and therefore excluded.
 
 #### Building the Brand
 
-!! write about creating Fave, bottle, vending machine, Augmented reality
-
 Beyond just creating passable advertising material, it became apparent that for the experiments to run as smoothly as possible, trying to create experiences as true to life as possible was worth attempting.
 To that end, despite the artificial surroundings of the office space from which the User Research was conducted, the experience could simulate reality by building a convincing (yet imaginary) soft drink brand to provide a more concrete framework of context.
 Consequently extra work went into fleshing out the idea of the 'Fave' soft drink brand that was already partially nascent in the wireframes. 
