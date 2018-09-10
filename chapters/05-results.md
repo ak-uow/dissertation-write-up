@@ -19,6 +19,7 @@
 This chapter provides a selection of data presentations, be that in tabular form, graphical representation or both. 
 The assessment of the quantitative data spans over 50 sides of A4 and the aggregation of qualitative data is a similar length, so it's impractical to present all the data in this chapter.
 The entire set of data evaluation can be found as part of the appendices.
+This chapter will concentrate on the ways that the data was examined that are most significant to dissertation, with regard to best possible outcomes.
 
 ## Basic Participant Data 
 
@@ -53,7 +54,7 @@ Table: Age Demographics {#tbl:tb-demo-age}
 
 ### Familiarity with technology
 
-Data was captured from each participant to assess their familiarity with technology, specifically smartphone usage for various interactions and AR. 
+Data was also captured from each participant to assess their familiarity with technology, specifically smartphone usage for various interactions and AR. 
 These results are helpful to provide context for the results of the experiments.
 
 ![Mobile Email Use Across Age and Gender Groups](../assets/img/data/graph-use-email-1.png "Mobile Email Use Across Age and Gender Groups"){#fig:fig-use-mob-email}
@@ -80,5 +81,55 @@ Note having at least one person of each gender to cover the age ranges can be co
 One way the disparity in sample size per age group was for mitigated, to some merged age groups allowing for a broader trend analysis but with greater sample sizes per age group and this can be seen in the following analysis.
 Another technique used to allow age groups that were under represented to count for the amount they should with regard to normal population distribution for the UK was to apply proportionate weighting to the answers based on the demographics of the country.
 This kind of weight adjustment is common practice in order to allow the results to better reflect the population.
+
+## Initial Findings
+
+What follows is some basic evalution of the experiments based on some simple question regarding the component parts of the experiments and the particpants favourite experiement experience.
+These results provide more context from which later examination of the data can be compared.
+
+### Preferred Experiment
+
+The question about which experiment was the user's preferred experience gave the participants a choice just to pick one experiement out of the eight variations.
+This makes it an appropriate example to demonstrate how the result may differ if they were to take into account the relative population of the demographic subsets.
+
+<div class="table flex center">
+
+Preferred Exp|Count
+:-----:|:-----:
+#1|3
+#2|1
+#3|11
+#4|0
+#5|5
+#6|0
+#7|2
+#8|1
+Table: Preferred Experiment {#tbl:tb-pref-exp}
+
+
+Preferred Exp|Weighted Count
+:-----:|:-----:
+#1|5.023257
+#2|1.390666
+#3|7.363726
+#4|0.000000
+#5|3.942898
+#6|0.000000
+#7|1.555085
+#8|1.192840
+Table: Preferred Experiment {#tbl:tb-pref-exp-w}
+
+</div>
+
+![Preferred Experiment](../assets/img/data/graph-preferred-exp-1.png "Preferred Experiment"){#fig:fig-pref-exp}
+
+
+![Preferred Experiment Weighted for Population](../assets/img/data/graph-preferred-exp-weighted-1.png "Preferred Experiment Weighted for Population"){#fig:fig-pref-exp-w}
+
+ Experiment #3 was the most popular while the experiments #4 and #6 did not get a single vote; 
+ Experiment #3 was the simplest interaction that involved an element of reward.
+ Looking at these relatively crude results, those experiments - excluding the baseline - that also scored better rewarded the user.
+ Experiments #4 and #6 also happen to incorporate the Social Media element without the Digital Reward.
+ Figure {@fig:fig-pref-exp-w} demonstrates how weighting users feedback can change the findings, in this case with #1 being more highly regarded.
 
 </section>

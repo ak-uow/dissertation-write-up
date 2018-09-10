@@ -64,7 +64,15 @@
 <li><a href="#branding-assets">Branding Assets</a></li>
 </ul></li>
 <li><a href="#user-research-results">User Research Results</a><ul>
-<li><a href="#basic-particpant-data">Basic Particpant Data</a></li>
+<li><a href="#basic-participant-data">Basic Participant Data</a><ul>
+<li><a href="#familiarity-with-technology">Familiarity with technology</a></li>
+<li><a href="#weakness-in-the-sample-set">Weakness in the sample set</a></li>
+</ul></li>
+<li><a href="#initial-findings">Initial Findings</a><ul>
+<li><a href="#preferred-experiment">Preferred Experiment</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#final-outcome">Final Outcome</a><ul>
 <li><a href="#experiments-and-test-runner">Experiments and test runner</a></li>
 <li><a href="#report-of-findings">Report of findings</a></li>
 <li><a href="#web-interface">Web interface</a></li>
@@ -148,7 +156,7 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 <p>Below is a table defining the composition of the eight experiments created in order to expo the combination of aforementioned technologies. The first experiment was the control baseline experiment and the number attributed to the various combinations was used internally throughout the study and will therefore be used when describing the feedback and results.</p>
 <a name="tbl:tb-exp-list"></a>
 <table>
-<caption><span>Table 1:</span> List of experiments and their compostive elements. </caption>
+<caption><span>Table 1:</span> List of experiments and their composite elements. </caption>
 <thead>
 <tr class="header">
 <th style="text-align: right;">Experiment</th>
@@ -294,12 +302,12 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 <p>The structure of the feedback form was such that after a participant had consented to the study, they were required to enter data regarding their email address, age, and gender. Following on from that basic demographic data gathering was a question used to gather binary data regarding familiarity with: email on smartphones; mobile gaming; mobile payments; and AR experiences.</p>
 <p>A print version of the feedback form is available to examine as part of the appendices section but to summarise the design of the feedback form, the majority of the body is a repetition of the same set of questions 8 times; this generalised approach to gathering feedback relating to each experiment made it easy to compare the experiments. This questionnaire structure also removed the technical challenge of asking questions only relevant to a particular experiment experience without having to shuffle the online form; it’s actually not certain that this would have been a feasible option and the option of not using the University G Suite to capture data would have created another set of restrictions. Given these conditions, the way the user feedback was gathered can be considered more than acceptable, given the circumstances.</p>
 <p>The sections provided for each experiment provided the opportunity for qualitative feedback as well as qualitative feedback based on some characteristics that could be applied to all experiments: - Enjoyment - Annoyance - Ease of use - Brand connection - Engagement - Persuasiveness - Interest</p>
-<p>Each of the characteristics mentioned above (described as ‘facets’ during the analysis) were presented to the user per experiment, with mandatory scalar questions and optional long-form feedback text fields. Using this approach it was possible to capture essential sentiment data but also allowed more willing participants to provide more detailed feedback.</p>
-<p>After all the feedback sections aimed at individual experiments, there was a summary section, mainly focused on gathering: overall popularity scores; finding out general feedback regarding the elements composing the experiments; and more general feedback regarding the experiments study itself.</p>
+<p>Each of the characteristics mentioned above (described as ‘facets’ during the analysis) were presented to the user per experiment, with mandatory scalar questions and optional long-form feedback text fields. Using this approach it was possible to capture essential sentiment data but also allowed more willing participants to provide more detailed feedback. In order for the experiment testers to have each test fresh in their mind, they would fill in feedback immediately after completing one experience before going back to interacting with a new advert variant.</p>
+<p>After all the feedback sections aimed at individual experiments, there was a summary section, mainly focused on gathering: overall popularity scores; finding out general feedback regarding the elements composing the experiments; and more general feedback regarding the experiments study itself. To help participants identify the experiments at the end when being asked to compare them, they were provided with the wireframes to make is easier to decide their preferences.</p>
 <h2 id="data-analysis">Data Analysis</h2>
 <p>This subsection describes the processes involved after the conducting the practical element of the user research. This is includes the pre-processing of the data making it ready to work with as well as how the qualitative and quantitative data has been treated. Aside from the pre-processing stage, all data analysis involved to use of the language R, via and IDE called R Studio, in order to work on the results.</p>
 <h3 id="data-pre-processing">Data Pre-processing</h3>
-<p>The data from the online user feedback was easily downloaded from the G Suite service and saved as an Excel file. However, at this stage the data was not ready for analysis because the user feedback for each user was ordered according to the individual’s designated sequence as previously described. In order to resolve this issue, it was necessary to create a create a script to reorder the feedback so that the tabular data had the correct data in each column accounting for the requirement to resort the feedback sequence. Any attempt at undertaking this task manually was ruled out early on when the complexity of the effort involved became apparent. As with other code written, the preference was to write a script in TypeScript to be run as JavaScript through NodeJS; this script took advantage of an existing third=party NodeJS library called ‘xlsx’ that allowed for the data to be easily parsed into a JSON format which was then easily manipulated, resorting the data before saving out an updated Excel format. All in all, this turned out to be a longer task than was anticipated as more and more non-trivial requirements came to light as the data was traversed and transposed. Despite the unforeseen complexity in creating a script to pre-process the dataset, a manual approach would have been more susceptible to human error, whereas the script could be tested and validated iteratively until there was absolute confidence that the output was correct.</p>
+<p>The data from the online user feedback was easily downloaded from the G Suite service and saved as an Excel file. However, at this stage the data was not ready for analysis because the user feedback for each user was ordered according to the individual’s designated sequence as previously described. In order to resolve this issue, it was necessary to create a create a script to reorder the feedback so that the tabular data had the correct data in each column accounting for the requirement to resort the feedback sequence. Any attempt at undertaking this task manually was ruled out early on when the complexity of the effort involved became apparent. As with other code written, the preference was to write a script in TypeScript to be run as JavaScript through NodeJS; this script took advantage of an existing third=party NodeJS library called ‘xlsx’ that allowed for the data to be easily parsed into a JSON format which was then easily manipulated, resorting the data before saving out an updated Excel format. All in all, this turned out to be a longer task than was anticipated as more and more non-trivial requirements came to light as the data was traversed and transposed. Despite the unforeseen complexity in creating a script to pre-process the dataset, a manual approach would have been more susceptible to human error, whereas the script could be tested and validated iteratively until there was absolute confidence that the output was correct. This script was also used to replace the participant email addresses with an ID to anonymise the data.</p>
 <h3 id="qualitative-data">Qualitative data</h3>
 <p>Some qualitative responses were noted down informally as the participants were interacting with the experiments, pausing between experiment to explicitly express an opinion, or at the end of their session with a brief discussion. That being said, the bulk of the qualitative data captured was as part of the user feedback form and this has been the easier to collate as it was easy to extract as part of the data analysis conducted using R Studio. These qualitative sections of the feedback form were designed open ended questions that could elicit long-form answers from the participants. Fundamentally these particular response have formed the latter half of the data analysis document (presented as part of the appendices), without any modification, just some categorisation of the responses; for example, all participant response for a given experiment are grouped together as opposed to grouping all feedback by respondent. Advanced sentiment analysis would have been interesting to attempt but this idea was de-scoped due to time constraints and the already sizeable amount of analysis that had been undertaken.</p>
 <h3 id="quantitative-data">Quantitative data</h3>
@@ -316,9 +324,9 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 </section>
 <section>
 <h1 id="user-research-results">User Research Results</h1>
-<p>This chapter provides a selection of data presentations, be that in tabular form, graphical representation or both. The assessment of the qauntitive data spans over 50 sides of A4 and the aggregation of qualitative data is a similar length, so it’s impractical to present all the data in this chapeter. The entire set of data evaluation can be found as part of the appendices.</p>
-<h2 id="basic-particpant-data">Basic Particpant Data</h2>
-<p>What follows is some minimal demographic information about the 23 particpants that made up the group of experiment testers, as well as some information concerning their experience with technology relevant to the study.</p>
+<p>This chapter provides a selection of data presentations, be that in tabular form, graphical representation or both. The assessment of the quantitative data spans over 50 sides of A4 and the aggregation of qualitative data is a similar length, so it’s impractical to present all the data in this chapter. The entire set of data evaluation can be found as part of the appendices. This chapter will concentrate on the ways that the data was examined that are most significant to dissertation, with regard to best possible outcomes.</p>
+<h2 id="basic-participant-data">Basic Participant Data</h2>
+<p>What follows is some minimal demographic information about the 23 participants that made up the group of experiment testers, as well as some information concerning their experience with technology relevant to the study.</p>
 <p>There participants were mostly male be a ratio of about 3:2, the younger age groups were better represented, however the gender disparity was greater among those younger age groups with a stronger male representation for those under 35 (about 5:2). This was down to the participants that were able to take part.</p>
 <div class="inline table flex center">
 <a name="tbl:tb-demo-gender"></a>
@@ -385,9 +393,133 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 <figure>
 <img src="../assets/img/data/graph-demographics-2.png" alt="Figure 1: Age Demographics" id="fig:fig-demo-age" /><figcaption><span>Figure 1:</span> Age Demographics</figcaption>
 </figure>
+<figure>
+<img src="../assets/img/data/graph-demographics-3.png" alt="Figure 2: Age and Gender Demographics" id="fig:fig-demo-age-gender" /><figcaption><span>Figure 2:</span> Age and Gender Demographics</figcaption>
+</figure>
+<h3 id="familiarity-with-technology">Familiarity with technology</h3>
+<p>Data was also captured from each participant to assess their familiarity with technology, specifically smartphone usage for various interactions and AR. These results are helpful to provide context for the results of the experiments.</p>
+<figure>
+<img src="../assets/img/data/graph-use-email-1.png" alt="Figure 3: Mobile Email Use Across Age and Gender Groups" id="fig:fig-use-mob-email" /><figcaption><span>Figure 3:</span> Mobile Email Use Across Age and Gender Groups</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-use-games-1.png" alt="Figure 4: Mobile Game Use Across Age and Gender Groups" id="fig:fig-use-mob-game" /><figcaption><span>Figure 4:</span> Mobile Game Use Across Age and Gender Groups</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-use-mobile-pay-1.png" alt="Figure 5: Mobile Payment Use Across Age and Gender Groups" id="fig:fig-use-mob-pay" /><figcaption><span>Figure 5:</span> Mobile Payment Use Across Age and Gender Groups</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-use-social-media-1.png" alt="Figure 6: Mobile Social Media Use Across Age and Gender Groups" id="fig:fig-use-mob-sm" /><figcaption><span>Figure 6:</span> Mobile Social Media Use Across Age and Gender Groups</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-use-augmented-reality-1.png" alt="Figure 7: Augmented Reality Familiarity Across Age and Gender Groups" id="fig:fig-fam-ar" /><figcaption><span>Figure 7:</span> Augmented Reality Familiarity Across Age and Gender Groups</figcaption>
+</figure>
+<p>All participants accessed their emails on their mobile phones and every single demographic that was captured by the study, apart from those over fifty used social media on their mobile phones. Participants at the older end of the spectrum appear not to play games on their mobile phones, nor do those in the young age groups of this sample of users whereas the middle age groups 30-34, 35-39, and 40-44 seem to be more inclined to play games on their mobile phones. Broadly speaking using a smartphone to make mobile payments is more popular among females but more significantly those of both genders in the younger age groups show a higher frequency of mobile payment, with the frequency declining with age. The data also suggest familiarity with Augmented Reality to be more frequent among males with no prior experience for females of any age group. Any correlation between age and familiarity cannot be said to be linear, though the 50+ age group was the only male demographic to have no prior experience.</p>
+<h3 id="weakness-in-the-sample-set">Weakness in the sample set</h3>
+<p>The 18-24 and 45-49 age groups were populated by just one participant each, consequently feedback for these demographics were the least reliable; the next least reliable age groups are the 40-44 and 35-39 age groups, in that order. Note having at least one person of each gender to cover the age ranges can be considered a major point of concern, and ideally age demographic subset would each have at least five to ten people to allow for more variation of opinion within a given demographic. One way the disparity in sample size per age group was for mitigated, to some merged age groups allowing for a broader trend analysis but with greater sample sizes per age group and this can be seen in the following analysis. Another technique used to allow age groups that were under represented to count for the amount they should with regard to normal population distribution for the UK was to apply proportionate weighting to the answers based on the demographics of the country. This kind of weight adjustment is common practice in order to allow the results to better reflect the population.</p>
+<h2 id="initial-findings">Initial Findings</h2>
+<p>What follows is some basic evalution of the experiments based on some simple question regarding the component parts of the experiments and the particpants favourite experiement experience. These results provide more context from which later examination of the data can be compared.</p>
+<h3 id="preferred-experiment">Preferred Experiment</h3>
+<p>The question about which experiment was the user’s preferred experience gave the participants a choice just to pick one experiement out of the eight variations. This makes it an appropriate example to demonstrate how the result may differ if they were to take into account the relative population of the demographic subsets.</p>
+<div class="table flex center">
+<a name="tbl:tb-pref-exp"></a>
+<table>
+<caption><span>Table 4:</span> Preferred Experiment </caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Preferred Exp</th>
+<th style="text-align: center;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">#1</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#2</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#4</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#6</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#7</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#8</td>
+<td style="text-align: center;">1</td>
+</tr>
+</tbody>
+</table>
+<a name="tbl:tb-pref-exp-w"></a>
+<table>
+<caption><span>Table 5:</span> Preferred Experiment </caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Preferred Exp</th>
+<th style="text-align: center;">Weighted Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">#1</td>
+<td style="text-align: center;">5.023257</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#2</td>
+<td style="text-align: center;">1.390666</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">7.363726</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#4</td>
+<td style="text-align: center;">0.000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">3.942898</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#6</td>
+<td style="text-align: center;">0.000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#7</td>
+<td style="text-align: center;">1.555085</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#8</td>
+<td style="text-align: center;">1.192840</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure>
+<img src="../assets/img/data/graph-preferred-exp-1.png" alt="Figure 8: Preferred Experiment" id="fig:fig-pref-exp" /><figcaption><span>Figure 8:</span> Preferred Experiment</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-preferred-exp-weighted-1.png" alt="Figure 9: Preferred Experiment Weighted for Population" id="fig:fig-pref-exp-w" /><figcaption><span>Figure 9:</span> Preferred Experiment Weighted for Population</figcaption>
+</figure>
+<p>Experiment #3 was the most popular while the experiments #4 and #6 did not get a single vote; Experiment #3 was the simplest interaction that involved an element of reward. Looking at these relatively crude results, those experiments - excluding the baseline - that also scored better rewarded the user. Experiments #4 and #6 also happen to incorporate the Social Media element without the Digital Reward. Figure <a href="#fig:fig-pref-exp-w">9</a> demonstrates how weighting users feedback can change the findings, in this case with #1 being more highly regarded.</p>
 </section>
 <section>
-<p>#Final Outcome</p>
+<h1 id="final-outcome">Final Outcome</h1>
 <p>The intended final outcome is in three-parts: firstly, to conduct the research a framework of tools will need to be written to enable the tests to be run several times over; the second part is the report of the findings, which should point to the best blend of technology. interaction design &amp; user experience for positive user feedback; the last deliverable would be a proof-of-concept web platform as a means of deploying this new form of advertising.</p>
 <h2 id="experiments-and-test-runner">Experiments and test runner</h2>
 <p>This will be a collection of static HTML, CSS, JavaScript that will be accompanied by a simple application that will allow for the sequential hosting of the experiments on a local HTTP server.</p>

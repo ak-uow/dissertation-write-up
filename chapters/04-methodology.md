@@ -346,12 +346,14 @@ The sections provided for each experiment provided the opportunity for qualitati
 - Interest
 
 Each of the characteristics mentioned above (described as 'facets' during the analysis) were presented to the user per experiment, with mandatory scalar questions and optional long-form feedback text fields.
-Using this approach it was possible to capture essential sentiment data but also allowed more willing participants to provide more detailed feedback.
+Using this approach it was possible to capture essential sentiment data but also allowed more willing participants to provide more detailed feedback. 
+In order for the experiment testers to have each test fresh in their mind, they would fill in feedback immediately after completing one experience before going back to interacting with a new advert variant.
 
 After all the feedback sections aimed at individual experiments, there was a summary section, mainly focused on gathering: 
 overall popularity scores; 
 finding out general feedback regarding the elements composing the experiments; 
 and more general feedback regarding the experiments study itself.
+To help participants identify the experiments at the end when being asked to compare them, they were provided with the wireframes to make is easier to decide their preferences.
 
 ## Data Analysis
 
