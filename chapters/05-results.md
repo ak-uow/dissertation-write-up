@@ -209,7 +209,34 @@ To re-iterate, the facets of the experiments intended to be measured were:
 
 This perspective of analysis makes it easier to compare the experiments against one another on a more nuanced level that has less to do with the users (at this stage) and more about how the experiences felt to the users in ways that would be otherwise difficult to quantify.
 It is because of this that the approach to interpreting the data can add extra value through a different lens.
+A high level desciption of what the follwing graphs depicts is provided but for further detail, the full report in the appendix is available.
 
-### User Feeback for Enjoyment
+![Experiment Facet: Enjoyment](../assets/img/data/graph-facet-enjoyable-1.png "Experiment Facet: Enjoyment"){#fig:fig-facet-enjoyment}
+
+![Experiment Facet: Annoyance](../assets/img/data/graph-facet-annoying-1.png "Experiment Facet: Annoyance"){#fig:fig-facet-annoyance}
+
+![Experiment Facet: Ease of use](../assets/img/data/graph-facet-easy-1.png "Experiment Facet: Ease of use"){#fig:fig-facet-ease-of-use}
+
+![Experiment Facet: Engagement](../assets/img/data/graph-facet-engaging-1.png "Experiment Facet: Engagement"){#fig:fig-facet-engagement}
+
+### Facet Evaluation Summaries
+
+#### Enjoyment
+
+Figure {@fig:fig-facet-enjoyment} shows experiments #3 (Loyalty Reward) and #5 (Loyalty Reward, Augmented Reality) have the most positive results with ranges that are mostly positive and very much skewed to the top end. With greater inspection it appears that #5 is considered most enjoyable because the candlestick median line is the highest of all experiments, just one below the maximum value on the scale.
+
+#### Annoyance
+
+The lowest median lines in figure {@fig:fig-facet-annoyance} suggest that, experiments #1 (baseline) and #3 (Loyalty Reward) were considered least annoying, with both having median lines drawn at the second lowest position on the scale; experiment #1 has a longer candlestick, indicating more variation in participant scores for this quality when compared to experiment #3 which is more skewed to the bottom.
+
+#### Ease of use
+
+It is easy to see from {@fig:fig-facet-ease-of-use} that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Loyalty Reward), the baseline #1, and #4 (Social Media); 
+all three of these experiment have the majority of participant scores in the top two points on the scale but while #3 and #1 have a distribution that includes scores in the lower half of the y scale, #4 was considered easy to use to greater or lesser degrees by every participant.
+
+#### Engagement
+
+The most engaging experiments by participant scores both have median lines that at the second highest position on the scale, though they have quite different patterns of distributions; 
+figure {@fig:fig-facet-engagement} suggests experiment #8 is the second most engaging experiment experience, having more scores towards the lower half compared to #5, which has almost entirely scored in the top half of the scale, and thus the most engaging.
 
 </section>
