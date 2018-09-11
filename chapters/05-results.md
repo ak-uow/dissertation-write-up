@@ -308,4 +308,23 @@ if an experiment managed to deliver an enjoyable experience but in a way that wa
 This technique promotes experiments that are more universally positive even if they lack a majority measure of acceptance from the user base.
 When this project is trying to determine the most successful form of advertising for this relatively new form of interaction with a brand, universality is less important then being able to define an audience that could be receptive to the experience.
 
+## Cumulative Rankings
+
+Another way to get more granularity out of the users feedback was to ask them to not only cast a vote for their most preferred version of the advertisement but also require that they rank every experiment in order of best experience to worst.
+This will inevitably provide more detail about the succuss of a given experience by allowing the experiment to collect positive scores even if it was not an outright favourite for any given  participant.
+
+Mean score|Exp|Scaled mean score
+:-----:|:-----:|:-----:
+5.39130434782609|#3|1.0000000
+4.78260869565217|#5|0.8571429
+4.56521739130435|#1|0.7142857
+3.43478260869565|#7|0.5714286
+2.82608695652174|#2|0.4285714
+2.52173913043478|#8|0.2857143
+2.34782608695652|#6|0.1428571
+2.1304347826087|#4|0.0000000
+Table: Scaled Means Rankings Values {#tbl:tb-rank-exp-scaled-mean-pc}
+
+
+
 </section>
