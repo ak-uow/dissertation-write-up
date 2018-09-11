@@ -188,8 +188,28 @@ Table: Most Preferred Experiments Adjusted for Population Weighting and Aggregat
 
 Now that there are larger age demographic subsets it's more possible to get competing values for the preferred experiment.
 With the increased likelihood of competing results comes greater confidence that if a given value is noticeably greater than another, then it represents something meaningful pertaining to public perception.
-In this case in particular, it is now more reliable to suggest that experiment #3 is the most popular experience for the 30-34 and 45+ groups while #5 is most popular with the youngest age group.
+In this case in particular, it is now more reliable to suggest that experiment #3 is the most popular experience for the 30-34 and 45+ groups while #5 is most popular with the youngest age group and males in the 35-44 bracket.
 Nevertheless, this evaluation isn't definitive and shouldn't be taken as fact in any way as it is only one way the data has been examined; in particular, this evaluation relies on fewer data points to come to these suggestions.
 Ostensibly, the more data points used when trying to derive meaning, the greater the potential for accuracy, so long as the observations used are relevant to the question looking to be answered.
+
+## Evaluating Feedback Through Experiment Qualities
+
+Another way of inspecting the feedback is to not take an angle that filters based on the human properties of the particpants but instead looks at the properties of the experiments.
+The experiments were scored by the test users against various properties (described as 'facets' within the study report) the experiments could possess.
+The feedback questionnaire required mandatory evaluation of these characteristics using a scalar metric, based on the level of agreement with the statement related to the potential attributes of each experiment.
+
+To re-iterate, the facets of the experiments intended to be measured were:
+- Enjoyment
+- Annoyance
+- Ease of use
+- Brand connection
+- Engagement
+- Persuasiveness
+- Interest
+
+This perspective of analysis makes it easier to compare the experiments against one another on a more nuanced level that has less to do with the users (at this stage) and more about how the experiences felt to the users in ways that would be otherwise difficult to quantify.
+It is because of this that the approach to interpreting the data can add extra value through a different lens.
+
+### User Feeback for Enjoyment
 
 </section>
