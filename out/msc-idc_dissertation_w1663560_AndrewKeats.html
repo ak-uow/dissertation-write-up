@@ -76,6 +76,13 @@
 <li><a href="#evaluating-feedback-through-experiment-qualities">Evaluating Feedback Through Experiment Qualities</a><ul>
 <li><a href="#facet-evaluation-summaries">Facet Evaluation Summaries</a></li>
 <li><a href="#multiple-facet-comparison">Multiple Facet Comparison</a></li>
+<li><a href="#scaled-geometric-mean-of-experiment-facets">Scaled Geometric Mean of Experiment Facets</a></li>
+</ul></li>
+<li><a href="#cumulative-rankings">Cumulative Rankings</a><ul>
+<li><a href="#combining-rankings-with-facet-means">Combining Rankings With Facet Means</a></li>
+</ul></li>
+<li><a href="#examining-demographic-for-the-top-three-experiments-relative-to-the-baseline">Examining Demographic for the Top Three Experiments Relative To the Baseline</a><ul>
+<li><a href="#evaluation-of-top-three-experiments-over-the-baseline">Evaluation of Top Three Experiments Over The Baseline</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#final-outcome">Final Outcome</a><ul>
@@ -732,47 +739,137 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 </figure>
 <h3 id="facet-evaluation-summaries">Facet Evaluation Summaries</h3>
 <h4 id="enjoyment">Enjoyment</h4>
-<p>Figure <a href="#fig:fig-facet-enjoyment">14</a> shows experiments #3 (Loyalty Reward) and #5 (Loyalty Reward, Augmented Reality) have the most positive results with ranges that are mostly positive and very much skewed to the top end. With greater inspection it appears that #5 is considered most enjoyable because the candlestick median line is the highest of all experiments, just one below the maximum value on the scale.</p>
+<p>Figure <a href="#fig:fig-facet-enjoyment">14</a> shows experiments #3 (Digital Reward) and #5 (Digital Reward, Augmented Reality) have the most positive results with ranges that are mostly positive and very much skewed to the top end. With greater inspection it appears that #5 is considered most enjoyable because the candlestick median line is the highest of all experiments, just one below the maximum value on the scale.</p>
 <h4 id="annoyance">Annoyance</h4>
-<p>The lowest median lines in figure <a href="#fig:fig-facet-annoyance">15</a> suggest that, experiments #1 (baseline) and #3 (Loyalty Reward) were considered least annoying, with both having median lines drawn at the second lowest position on the scale; experiment #1 has a longer candlestick, indicating more variation in participant scores for this quality when compared to experiment #3 which is more skewed to the bottom.</p>
+<p>The lowest median lines in figure <a href="#fig:fig-facet-annoyance">15</a> suggest that, experiments #1 (baseline) and #3 (Digital Reward) were considered least annoying, with both having median lines drawn at the second lowest position on the scale; experiment #1 has a longer candlestick, indicating more variation in participant scores for this quality when compared to experiment #3 which is more skewed to the bottom.</p>
 <h4 id="ease-of-use">Ease of use</h4>
-<p>It is easy to see from figure <a href="#fig:fig-facet-ease-of-use">16</a> that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Loyalty Reward), the baseline #1, and #4 (Social Media); all three of these experiment have the majority of participant scores in the top two points on the scale but while #3 and #1 have a distribution that includes scores in the lower half of the y scale, #4 was considered easy to use to greater or lesser degrees by every participant.</p>
+<p>It is easy to see from figure <a href="#fig:fig-facet-ease-of-use">16</a> that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Digital Reward), the baseline #1, and #4 (Social Media); all three of these experiment have the majority of participant scores in the top two points on the scale but while #3 and #1 have a distribution that includes scores in the lower half of the y scale, #4 was considered easy to use to greater or lesser degrees by every participant.</p>
 <h4 id="brand-connection">Brand connection</h4>
 <p>Experiments #3 and #8 are the experiments that could potentially connect users with a brand the most according to figure <a href="#fig:fig-facet-brand-connection">17</a> These two experiments have lower quartiles at the halfway mark with most scores in the positive half of the scale. Determining which experiment between #3 or #8 has most potential brand connection by looking at the candlesticks is not straightforward. Experiment #8 is less evenly distributed, with a stronger concentration around the second and third positions on the y axis and far fewer and the extremes; this means that #8 is more consistent but #3 had the potential to deliver stronger sentiment among the participants.</p>
 <h4 id="engagement">Engagement</h4>
 <p>The most engaging experiments by participant scores both have median lines that at the second highest position on the scale, though they have quite different patterns of distributions; figure <a href="#fig:fig-facet-engagement">18</a> suggests experiment #8 is the second most engaging experiment experience, having more scores towards the lower half compared to #5, which has almost entirely scored in the top half of the scale, and thus the most engaging.</p>
 <h4 id="persuasiveness">Persuasiveness</h4>
-<p>According to figure <a href="#fig:fig-facet-persuasiveness">19</a> experiments #3 and #5 are the most persuasive, however the candlestick weighting of #5 is lower than #3, making the Loyalty Reward only experiment (#3) supposedly more persuasive than the combined experience of Loyalty Reward and Augmented Reality (#5).</p>
+<p>According to figure <a href="#fig:fig-facet-persuasiveness">19</a> experiments #3 and #5 are the most persuasive, however the candlestick weighting of #5 is lower than #3, making the Digital Reward only experiment (#3) supposedly more persuasive than the combined experience of Digital Reward and Augmented Reality (#5).</p>
 <h4 id="interest">Interest</h4>
 <p>Looking at figure <a href="#fig:fig-facet-interest">20</a>, six out of the eight experiments have the same median line on their respective candlesticks but #5 and #8 are marginally more positive for this category; the experiment composed of every element has perhaps just slightly more votes towards the top end of the scale but they could ostensibly be considered more or less equally interesting.</p>
 <h3 id="multiple-facet-comparison">Multiple Facet Comparison</h3>
-<p>Another interesting way of comparing the experiement is by plotting the mean of the scalar values for each of the facets for each of the experiments to be viewed alongside one another. Using a type of graph known as a Radar or Spider plot, it is possible to create a shaoe that is an abstraction of the characteristics of the experiments. If all characteristics are on a scale that is percieved as better as it rises, then the size of the area created by the graph can be a visual demonstration of the overall performance of the experiment; to that end, the one scalar metric that was initially on a scale that moved towards a an increasingly nagative position has been inverted such that for the purposes of these graphs the levels of Annoyance have become levels of non-Annoyance.</p>
-<div class="flex two-cols">
+<p>Another interesting way of comparing the experiment is by plotting the mean of the scalar values for each of the facets for each of the experiments to be viewed alongside one another. Using a type of graph known as a Radar or Spider plot, it is possible to create a shape that is an abstraction of the characteristics of the experiments. If all characteristics are on a scale that is perceived as better as it rises, then the size of the area created by the graph can be a visual demonstration of the overall performance of the experiment; to that end, the one scalar metric that was initially on a scale that moved towards a an increasingly negative position has been inverted such that for the purposes of these graphs the levels of Annoyance have become levels of non-Annoyance.</p>
+<div class="flex two-col">
 <figure>
-<img src="../assets/img/data/graph-radar-facets-1.png" alt="Figure 21: Experiment Facets: Experiment 1" id="fig:fig-facets-exp-1" class="inline" /><figcaption><span>Figure 21:</span> Experiment Facets: Experiment 1</figcaption>
+<img src="../assets/img/data/graph-radar-facets-1.png" alt="Figure 21: Experiment Facets: Experiment 1" id="fig:fig-facets-exp-1" /><figcaption><span>Figure 21:</span> Experiment Facets: Experiment 1</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-2.png" alt="Figure 22: Experiment Facets: Experiment 2" id="fig:fig-facets-exp-2" class="inline" /><figcaption><span>Figure 22:</span> Experiment Facets: Experiment 2</figcaption>
+<img src="../assets/img/data/graph-radar-facets-2.png" alt="Figure 22: Experiment Facets: Experiment 2" id="fig:fig-facets-exp-2" /><figcaption><span>Figure 22:</span> Experiment Facets: Experiment 2</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-3.png" alt="Figure 23: Experiment Facets: Experiment 3" id="fig:fig-facets-exp-3" class="inline" /><figcaption><span>Figure 23:</span> Experiment Facets: Experiment 3</figcaption>
+<img src="../assets/img/data/graph-radar-facets-3.png" alt="Figure 23: Experiment Facets: Experiment 3" id="fig:fig-facets-exp-3" /><figcaption><span>Figure 23:</span> Experiment Facets: Experiment 3</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-4.png" alt="Figure 24: Experiment Facets: Experiment 4" id="fig:fig-facets-exp-4" class="inline" /><figcaption><span>Figure 24:</span> Experiment Facets: Experiment 4</figcaption>
+<img src="../assets/img/data/graph-radar-facets-4.png" alt="Figure 24: Experiment Facets: Experiment 4" id="fig:fig-facets-exp-4" /><figcaption><span>Figure 24:</span> Experiment Facets: Experiment 4</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-5.png" alt="Figure 25: Experiment Facets: Experiment 5" id="fig:fig-facets-exp-5" class="inline" /><figcaption><span>Figure 25:</span> Experiment Facets: Experiment 5</figcaption>
+<img src="../assets/img/data/graph-radar-facets-5.png" alt="Figure 25: Experiment Facets: Experiment 5" id="fig:fig-facets-exp-5" /><figcaption><span>Figure 25:</span> Experiment Facets: Experiment 5</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-6.png" alt="Figure 26: Experiment Facets: Experiment 6" id="fig:fig-facets-exp-6" class="inline" /><figcaption><span>Figure 26:</span> Experiment Facets: Experiment 6</figcaption>
+<img src="../assets/img/data/graph-radar-facets-6.png" alt="Figure 26: Experiment Facets: Experiment 6" id="fig:fig-facets-exp-6" /><figcaption><span>Figure 26:</span> Experiment Facets: Experiment 6</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-7.png" alt="Figure 27: Experiment Facets: Experiment 7" id="fig:fig-facets-exp-7" class="inline" /><figcaption><span>Figure 27:</span> Experiment Facets: Experiment 7</figcaption>
+<img src="../assets/img/data/graph-radar-facets-7.png" alt="Figure 27: Experiment Facets: Experiment 7" id="fig:fig-facets-exp-7" /><figcaption><span>Figure 27:</span> Experiment Facets: Experiment 7</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-radar-facets-8.png" alt="Figure 28: Experiment Facets: Experiment 8" id="fig:fig-facets-exp-8" class="inline" /><figcaption><span>Figure 28:</span> Experiment Facets: Experiment 8</figcaption>
+<img src="../assets/img/data/graph-radar-facets-8.png" alt="Figure 28: Experiment Facets: Experiment 8" id="fig:fig-facets-exp-8" /><figcaption><span>Figure 28:</span> Experiment Facets: Experiment 8</figcaption>
 </figure>
 </div>
+<h3 id="scaled-geometric-mean-of-experiment-facets">Scaled Geometric Mean of Experiment Facets</h3>
+<p>While the two-dimensional shapes are interesting to look at they are as easy to interpret as a single value to represent all facets at once. Given that the idea is to get one numeric value from a dataset that has been represented as a shape, it seems logical to consider this in terms of a geometric 2D shape being converted into a one-dimensional vector. Instead of just taking a normal median of the facets (which were already median values derived from every participant’s scoring), it is possible to use a geometric mean to prevent an extreme results disproportionately affecting the final median value.</p>
+<p>Because the difference between the mean values is relatively subtle, the values have also been rescaled between 0 and 1 such that the lowest result is now 0 and the greatest value is now 1; doing this helps with observing the deltas more easily.</p>
+<figure>
+<img src="../assets/img/data/graph-facet-means-1.png" alt="Figure 29: Geometric Means of Experiment Facets" id="fig:fig-facets-geom-means" /><figcaption><span>Figure 29:</span> Geometric Means of Experiment Facets</figcaption>
+</figure>
+<p>What this data transformation allows is a way to assess the entire set scalar values provided by the testers during the feedback stages, for every variation of the advertising experience. Essentially this la a way of comparing each experiment based on the user perception of the attributes instead of relying on a single vote of the most favoured option. This approach to the data starts to take take into account the cumulative effect of strong positive feedback for experiments that were so obliviously popular based on a single metric; if an experiment managed to deliver an enjoyable experience but in a way that wasn’t extreme and polarising then this was as way looking at the data will highlight the otherwise unrecognised potential. This technique promotes experiments that are more universally positive even if they lack a majority measure of acceptance from the user base. When this project is trying to determine the most successful form of advertising for this relatively new form of interaction with a brand, universality is less important then being able to define an audience that could be receptive to the experience.</p>
+<h2 id="cumulative-rankings">Cumulative Rankings</h2>
+<p>Another way to get more granularity out of the users feedback was to ask them to not only cast a vote for their most preferred version of the advertisement but also require that they rank every experiment in order of best experience to worst. This will inevitably provide more detail about the success of a given experience by allowing the experiment to collect positive scores even if it was not an outright favourite for any given participant. The derivation of these values involved another reasonable use of inversion of the users original responses because they were explicitly requested to rank in descending order so that a rank of 1 would be understood as the best possible rank; to turn the ranking values into points, the 8 potential rankings were inverted so that a top rank of ‘1’ would become a score of seven while the bottom rank of ‘8’ would give a score of zero. The interpretation below also include scaled values so that the scores have been adjusted so that the highest values it 1 and the rest descend towards 0. Scaling the values allows for two or more values to be compared more easily which in turn allows for more ways to combine the observations so that more subtle insights can be allowed to surface.</p>
+<a name="tbl:tb-rank-exp-scaled-mean-pc"></a>
+<table>
+<caption><span>Table 7:</span> Scaled Means Rankings Values </caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Mean score</th>
+<th style="text-align: center;">Exp</th>
+<th style="text-align: center;">Scaled mean score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">5.39130434782609</td>
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">1.0000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4.78260869565217</td>
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">0.8571429</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4.56521739130435</td>
+<td style="text-align: center;">#1</td>
+<td style="text-align: center;">0.7142857</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3.43478260869565</td>
+<td style="text-align: center;">#7</td>
+<td style="text-align: center;">0.5714286</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2.82608695652174</td>
+<td style="text-align: center;">#2</td>
+<td style="text-align: center;">0.4285714</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2.52173913043478</td>
+<td style="text-align: center;">#8</td>
+<td style="text-align: center;">0.2857143</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2.34782608695652</td>
+<td style="text-align: center;">#6</td>
+<td style="text-align: center;">0.1428571</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2.1304347826087</td>
+<td style="text-align: center;">#4</td>
+<td style="text-align: center;">0.0000000</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../assets/img/data/graph-rankings-1.png" alt="Figure 30: Scaled Means Rankings Values" id="fig:fig-exp-ranking" /><figcaption><span>Figure 30:</span> Scaled Means Rankings Values</figcaption>
+</figure>
+<p>These results show a different order of preference when the user is asked to pick their second and third best experiments and those experiments are scored to reflect this. Experiments #3 and #5 preserve their top positions but the other experiments in the middle ground have been shuffled a little compared to the previous assessments of popularity. At the lower end change is less likely and the very worst scoring experiment, #4 does not get evaluated as being any better than before.</p>
+<h3 id="combining-rankings-with-facet-means">Combining Rankings With Facet Means</h3>
+<p>Having scaled the results for the rankings and the facet means, it is possible to take two vectors, a value from 0 to 5, the other between 0 and 7 and merge them so that the final output is a value to effectively takes the two ways the user has been aped to consider the experiments and interpret those in a way that is potentially more reflective of their instinctive perceptions. The outcome of multiplying these two calculated values for each experiment is effectively a sum of <em>characteristics</em> with <em>relative rank</em> to produce a value that is a way of allowing the facets of an experiment to still hold value while being <em>corrected</em> by the user when reflecting on the entire session as a whole.</p>
+<figure>
+<img src="../assets/img/data/graph-facets-rankings-1.png" alt="Figure 31: Scaled Sum of Rankings and Facets" id="fig:fig-sum-ranking-facets" /><figcaption><span>Figure 31:</span> Scaled Sum of Rankings and Facets</figcaption>
+</figure>
+<p>By multiplying these two sets of values, it emphasises which experiments were received most positively suggesting that there are two clear leaders followed by a third place experiment that all apply a Digital Reward element. The two lowest ranking experiments incorporate the Social Media component and exclude the Digital Reward.</p>
+<h2 id="examining-demographic-for-the-top-three-experiments-relative-to-the-baseline">Examining Demographic for the Top Three Experiments Relative To the Baseline</h2>
+<p>Many more stages of interrogation of the data was undertaken before the following graphs were obtained but these are the final output of the analysis. Incorporating many of the techniques demonstrated earlier, experiments #3, #5, #7 are evaluated against #1 (the baseline control experiment) across the age and gender demographics of the users. The evaluation of the experiments compared to the baseline allows the experiments to be compared not only against each other but also using the control experiment as a benchmark; to do this, the individual users’ facet means for #1 have been used to create a personal unit from which the other experiments can be compared. The idea behind this arose because (as can be seen in the full report) there where tendencies for certain demographics to score everything more highly or more negatively; by creating personal baseline units for comparison, any bias based on the individual’s general outlook could be reduced and in doing so, attempt to equalise the weight of each persons opinions.</p>
+<figure>
+<img src="../assets/img/data/graph-demographic-facet-means-over-baseline-exp-3-1.png" alt="Figure 32: Facet Means for Experiment #3 Over Baseline Across Gender and Age" id="fig:fig-means-over-baseline-age-gender-exp-3" /><figcaption><span>Figure 32:</span> Facet Means for Experiment #3 Over Baseline Across Gender and Age</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-demographic-facet-means-over-baseline-exp-5-1.png" alt="Figure 33: Facet Means for Experiment #5 Over Baseline Across Gender and Age" id="fig:fig-means-over-baseline-age-gender-exp-5" /><figcaption><span>Figure 33:</span> Facet Means for Experiment #5 Over Baseline Across Gender and Age</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-demographic-facet-means-over-baseline-exp-7-1.png" alt="Figure 34: Facet Means for Experiment #7 Over Baseline Across Gender and Age" id="fig:fig-means-over-baseline-age-gender-exp-7" /><figcaption><span>Figure 34:</span> Facet Means for Experiment #7 Over Baseline Across Gender and Age</figcaption>
+</figure>
+<h3 id="evaluation-of-top-three-experiments-over-the-baseline">Evaluation of Top Three Experiments Over The Baseline</h3>
+<h4 id="experiment-3">Experiment 3</h4>
+<p>Figure <a href="#fig:fig-means-over-baseline-age-gender-exp-3">32</a> illustrates that when #3 is compared against the baseline, almost all the males actually rated this more positively, whereas for females the experience was not significantly better or worse, with the exception of the 45+ group that had a median line around 1.25. Males in the 30-34 age group were most positive overall with nearly all participants in this demographic scoring this experiment fifty percent higher than the baseline.</p>
+<h4 id="experiment-5">Experiment 5</h4>
+<p>As demonstrated in figure <a href="#fig:fig-means-over-baseline-age-gender-exp-5">33</a>, experiment #5 was most successful relative to the baseline for the males in the 30-34 and 18-29 groups having median lines over 1.5. The only female demographic to receive this experiment positively over the baseline is the 18-29 age group.</p>
+<h4 id="experiment-7">Experiment 7</h4>
+<p>Experiment #7 (as seen in figure <a href="#fig:fig-means-over-baseline-age-gender-exp-7">34</a>) scored most positively against the baseline for the males in the 30-34 and 45+ age groups, followed by females in the 18-29 and 35-44 demographics. The 35-44 males had a neutral experience relative to the baseline, while all other age groups had less positive experiences.</p>
 </section>
 <section>
 <h1 id="final-outcome">Final Outcome</h1>

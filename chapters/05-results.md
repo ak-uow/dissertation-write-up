@@ -343,6 +343,38 @@ The outcome of multiplying these two calculated values for each experiment is ef
 ![Scaled Sum of Rankings and Facets](../assets/img/data/graph-facets-rankings-1.png "Scaled Sum of Rankings and Facets"){#fig:fig-sum-ranking-facets}
 
 By multiplying these two sets of values, it emphasises which experiments were received most positively suggesting that there are two clear leaders followed by a third place experiment that all apply a Digital Reward element. 
-The two lowest ranking experiments incorporate the Social Media component and exclude the Digital Reward
+The two lowest ranking experiments incorporate the Social Media component and exclude the Digital Reward.
+
+## Examining Demographic for the Top Three Experiments Relative To the Baseline
+
+Many more stages of interrogation of the data was undertaken before the following graphs were obtained but these are the final output of the analysis.
+Incorporating many of the techniques demonstrated earlier, experiments #3, #5, #7 are evaluated against #1 (the baseline control experiment) across the age and gender demographics of the users.
+The evaluation of the experiments compared to the baseline allows the experiments to be compared not only against each other but also using the control experiment as a benchmark; 
+to do this, the individual users' facet means for #1 have been used to create a personal unit from which the other experiments can be compared. 
+The idea behind this arose because (as can be seen in the full report) there where tendencies for certain demographics to score everything more highly or more negatively;
+by creating personal baseline units for comparison, any bias based on the individual's general outlook could be reduced and in doing so, attempt to equalise the weight of each persons opinions.
+
+![Facet Means for Experiment #3 Over Baseline Across Gender and Age](../assets/img/data/graph-demographic-facet-means-over-baseline-exp-3-1.png "Facet Means for Experiment #3 Over Baseline Across Gender and Age"){#fig:fig-means-over-baseline-age-gender-exp-3}
+
+![Facet Means for Experiment #5 Over Baseline Across Gender and Age](../assets/img/data/graph-demographic-facet-means-over-baseline-exp-5-1.png "Facet Means for Experiment #5 Over Baseline Across Gender and Age"){#fig:fig-means-over-baseline-age-gender-exp-5}
+
+![Facet Means for Experiment #7 Over Baseline Across Gender and Age](../assets/img/data/graph-demographic-facet-means-over-baseline-exp-7-1.png "Facet Means for Experiment #7 Over Baseline Across Gender and Age"){#fig:fig-means-over-baseline-age-gender-exp-7}
+ 
+### Evaluation of Top Three Experiments Over The Baseline
+
+#### Experiment 3
+
+Figure {@fig:fig-means-over-baseline-age-gender-exp-3} illustrates that when #3 is compared against the baseline, almost all the males actually rated this more positively, whereas for females the experience was not significantly better or worse, with the exception of the 45+ group that had a median line around 1.25. 
+Males in the 30-34 age group were most positive overall with nearly all participants in this demographic scoring this experiment fifty percent higher than the baseline.
+
+#### Experiment 5
+
+As demonstrated in figure {@fig:fig-means-over-baseline-age-gender-exp-5}, experiment #5 was most successful relative to the baseline for the males in the 30-34 and 18-29 groups having median lines over 1.5. 
+The only female demographic to receive this experiment positively over the baseline is the 18-29 age group.
+
+#### Experiment 7
+
+Experiment #7 (as seen in figure {@fig:fig-means-over-baseline-age-gender-exp-7}) scored most positively against the baseline for the males in the 30-34 and 45+ age groups, followed by females in the 18-29 and 35-44 demographics. 
+The 35-44 males had a neutral experience relative to the baseline, while all other age groups had less positive experiences.
 
 </section>
