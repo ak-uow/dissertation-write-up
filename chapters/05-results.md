@@ -194,7 +194,7 @@ Ostensibly, the more data points used when trying to derive meaning, the greater
 
 ## Evaluating Feedback Through Experiment Qualities
 
-Another way of inspecting the feedback is to not take an angle that filters based on the human properties of the particpants but instead looks at the properties of the experiments.
+Another way of inspecting the feedback is to not take an angle that filters based on the human properties of the participants but instead looks at the properties of the experiments.
 The experiments were scored by the test users against various properties (described as 'facets' within the study report) the experiments could possess.
 The feedback questionnaire required mandatory evaluation of these characteristics using a scalar metric, based on the level of agreement with the statement related to the potential attributes of each experiment.
 
@@ -209,7 +209,7 @@ To re-iterate, the facets of the experiments intended to be measured were:
 
 This perspective of analysis makes it easier to compare the experiments against one another on a more nuanced level that has less to do with the users (at this stage) and more about how the experiences felt to the users in ways that would be otherwise difficult to quantify.
 It is because of this that the approach to interpreting the data can add extra value through a different lens.
-A high level desciption of what the follwing graphs depicts is provided but for further detail, the full report in the appendix is available.
+A high level description of what the following graphs depicts is provided but for further detail, the full report in the appendix is available.
 
 ![Experiment Facet: Enjoyment](../assets/img/data/graph-facet-enjoyable-1.png "Experiment Facet: Enjoyment"){#fig:fig-facet-enjoyment}
 
@@ -217,7 +217,13 @@ A high level desciption of what the follwing graphs depicts is provided but for 
 
 ![Experiment Facet: Ease of use](../assets/img/data/graph-facet-easy-1.png "Experiment Facet: Ease of use"){#fig:fig-facet-ease-of-use}
 
+![Experiment Facet: Brand connection](../assets/img/data/graph-facet-brand-1.png "Experiment Facet: Brand connection"){#fig:fig-facet-brand-connection}
+
 ![Experiment Facet: Engagement](../assets/img/data/graph-facet-engaging-1.png "Experiment Facet: Engagement"){#fig:fig-facet-engagement}
+
+![Experiment Facet: Persuasiveness](../assets/img/data/graph-facet-persuasive-1.png "Experiment Facet: Persuasiveness"){#fig:fig-facet-persuasiveness}
+
+![Experiment Facet: Interest](../assets/img/data/graph-facet-interesting-1.png "Experiment Facet: Interest"){#fig:fig-facet-interest}
 
 ### Facet Evaluation Summaries
 
@@ -231,12 +237,29 @@ The lowest median lines in figure {@fig:fig-facet-annoyance} suggest that, exper
 
 #### Ease of use
 
-It is easy to see from {@fig:fig-facet-ease-of-use} that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Loyalty Reward), the baseline #1, and #4 (Social Media); 
+It is easy to see from figure {@fig:fig-facet-ease-of-use} that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Loyalty Reward), the baseline #1, and #4 (Social Media); 
 all three of these experiment have the majority of participant scores in the top two points on the scale but while #3 and #1 have a distribution that includes scores in the lower half of the y scale, #4 was considered easy to use to greater or lesser degrees by every participant.
+
+#### Brand connection
+
+Experiments #3 and #8 are the experiments that could potentially connect users with a brand the most according to figure {@fig:fig-facet-brand-connection}
+These two experiments have lower quartiles at the halfway mark with most scores in the positive half of the scale. 
+Determining which experiment between #3 or #8 has most potential brand connection by looking at the candlesticks is not straightforward.
+Experiment #8 is less evenly distributed, with a stronger concentration around the second and third positions on the y axis and far fewer and the extremes; 
+this means that #8 is more consistent but #3 had the potential to deliver stronger sentiment among the participants.
 
 #### Engagement
 
 The most engaging experiments by participant scores both have median lines that at the second highest position on the scale, though they have quite different patterns of distributions; 
 figure {@fig:fig-facet-engagement} suggests experiment #8 is the second most engaging experiment experience, having more scores towards the lower half compared to #5, which has almost entirely scored in the top half of the scale, and thus the most engaging.
+
+#### Persuasiveness
+
+According to figure {@fig:fig-facet-persuasiveness} experiments #3 and #5 are the most persuasive, however the candlestick weighting of #5 is lower than #3, making the Loyalty Reward only experiment (#3) supposedly more persuasive than the combined experience of Loyalty Reward and Augmented Reality (#5).
+
+#### Interest
+
+Looking at figure {@fig:fig-facet-interest}, six out of the eight experiments have the same median line on their respective candlesticks but #5 and #8 are marginally more positive for this category; 
+the experiment composed of every element has perhaps just slightly more votes towards the top end of the scale but they could ostensibly be considered more or less equally interesting.
 
 </section>

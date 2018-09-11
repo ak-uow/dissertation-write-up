@@ -69,7 +69,11 @@
 <li><a href="#weakness-in-the-sample-set">Weakness in the sample set</a></li>
 </ul></li>
 <li><a href="#initial-findings">Initial Findings</a><ul>
+<li><a href="#component-perception">Component Perception</a></li>
 <li><a href="#preferred-experiment">Preferred Experiment</a></li>
+</ul></li>
+<li><a href="#evaluating-feedback-through-experiment-qualities">Evaluating Feedback Through Experiment Qualities</a><ul>
+<li><a href="#facet-evaluation-summaries">Facet Evaluation Summaries</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#final-outcome">Final Outcome</a><ul>
@@ -417,9 +421,18 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 <h3 id="weakness-in-the-sample-set">Weakness in the sample set</h3>
 <p>The 18-24 and 45-49 age groups were populated by just one participant each, consequently feedback for these demographics were the least reliable; the next least reliable age groups are the 40-44 and 35-39 age groups, in that order. Note having at least one person of each gender to cover the age ranges can be considered a major point of concern, and ideally age demographic subset would each have at least five to ten people to allow for more variation of opinion within a given demographic. One way the disparity in sample size per age group was for mitigated, to some merged age groups allowing for a broader trend analysis but with greater sample sizes per age group and this can be seen in the following analysis. Another technique used to allow age groups that were under represented to count for the amount they should with regard to normal population distribution for the UK was to apply proportionate weighting to the answers based on the demographics of the country. This kind of weight adjustment is common practice in order to allow the results to better reflect the population.</p>
 <h2 id="initial-findings">Initial Findings</h2>
-<p>What follows is some basic evalution of the experiments based on some simple question regarding the component parts of the experiments and the particpants favourite experiement experience. These results provide more context from which later examination of the data can be compared.</p>
+<p>What follows is some basic evaluation of the experiments based on some simple question regarding the component parts of the experiments and the participants favourite experiment experience. These results provide more context from which later examination of the data can be compared.</p>
+<h3 id="component-perception">Component Perception</h3>
+<p>Two components that are included in all the experiments, in fact being the bedrock of all interactions are the use of a smartphone for the bulk of the interaction and the IoT BLE beacon prompting the phone. The following box plot graphs indicate how these fundamental element were received by the testers.</p>
+<figure>
+<img src="../assets/img/data/graph-perception-exp-iot-1.png" alt="Figure 8: Perception of Experiment Mobile Interactions" id="fig:fig-perc-mob" /><figcaption><span>Figure 8:</span> Perception of Experiment Mobile Interactions</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-perception-exp-smartphone-1.png" alt="Figure 9: Perception of Experiment IoT" id="fig:fig-perc-iot" /><figcaption><span>Figure 9:</span> Perception of Experiment IoT</figcaption>
+</figure>
+<p>Broadly speaking most participant across every demographic, with the exception of a few outliers, were comfortable with the idea of using a smartphone as part of these interactions. The IoT element has more polarising results with more overall positivity from the entire subset of females when compared to males, which not only had greater variation but a significant number of scores below the top half of the sentiment scale.</p>
 <h3 id="preferred-experiment">Preferred Experiment</h3>
-<p>The question about which experiment was the user’s preferred experience gave the participants a choice just to pick one experiement out of the eight variations. This makes it an appropriate example to demonstrate how the result may differ if they were to take into account the relative population of the demographic subsets.</p>
+<p>The question about which experiment was the user’s preferred experience gave the participants a choice just to pick one experiment out of the eight variations. This makes it an appropriate example to demonstrate how the result may differ if they were to take into account the relative population of the demographic subsets.</p>
 <div class="table flex center">
 <a name="tbl:tb-pref-exp"></a>
 <table>
@@ -511,12 +524,207 @@ Ultimately this project aims to explore ways to make more compelling and positiv
 </table>
 </div>
 <figure>
-<img src="../assets/img/data/graph-preferred-exp-1.png" alt="Figure 8: Preferred Experiment" id="fig:fig-pref-exp" /><figcaption><span>Figure 8:</span> Preferred Experiment</figcaption>
+<img src="../assets/img/data/graph-preferred-exp-1.png" alt="Figure 10: Preferred Experiment" id="fig:fig-pref-exp" /><figcaption><span>Figure 10:</span> Preferred Experiment</figcaption>
 </figure>
 <figure>
-<img src="../assets/img/data/graph-preferred-exp-weighted-1.png" alt="Figure 9: Preferred Experiment Weighted for Population" id="fig:fig-pref-exp-w" /><figcaption><span>Figure 9:</span> Preferred Experiment Weighted for Population</figcaption>
+<img src="../assets/img/data/graph-preferred-exp-weighted-1.png" alt="Figure 11: Preferred Experiment Weighted for Population" id="fig:fig-pref-exp-w" /><figcaption><span>Figure 11:</span> Preferred Experiment Weighted for Population</figcaption>
 </figure>
-<p>Experiment #3 was the most popular while the experiments #4 and #6 did not get a single vote; Experiment #3 was the simplest interaction that involved an element of reward. Looking at these relatively crude results, those experiments - excluding the baseline - that also scored better rewarded the user. Experiments #4 and #6 also happen to incorporate the Social Media element without the Digital Reward. Figure <a href="#fig:fig-pref-exp-w">9</a> demonstrates how weighting users feedback can change the findings, in this case with #1 being more highly regarded.</p>
+<p>Experiment #3 was the most popular while the experiments #4 and #6 did not get a single vote; Experiment #3 was the simplest interaction that involved an element of reward. Looking at these relatively crude results, those experiments - excluding the baseline - that also scored better rewarded the user. Experiments #4 and #6 also happen to incorporate the Social Media element without the Digital Reward. Figure <a href="#fig:fig-pref-exp-w">11</a> demonstrates how weighting users feedback can change the findings, in this case with #1 being more highly regarded.</p>
+<h4 id="preferred-experiments-by-age-group">Preferred Experiments by Age Group</h4>
+<p>This next graph is an example of the granularity with which the data can be studied but also the potential flaws in doing so. In this case the relatively small sample size manages to demonstrate how it’s not necessarily possible to gain truly meaningful data if the results are examined too finely.</p>
+<figure>
+<img src="../assets/img/data/graph-preferred-exp-ages-1.png" alt="Figure 12: Preferred Experiment Across Age Groups" id="fig:fig-pref-exp-ages" /><figcaption><span>Figure 12:</span> Preferred Experiment Across Age Groups</figcaption>
+</figure>
+<p>While the data suggests results that can point to preferences within all age groups, when two age demographics only contain one participant (18-24, 45-49) as well as the 40-44 age group only having two and the 35-39 group only having three, then if the findings are looked at in this level of detail, it’s not wise to attribute too much confidence to the results. The larger the sample size for a given sub-group, the more confidence can be given to findings even if the analysis is covering a broader group of people.</p>
+<h4 id="preferred-experiments-across-age-and-gender-with-weighted-values">Preferred Experiments Across Age and Gender With Weighted Values</h4>
+<p>Given the previous example, what follows is an example of how the data was transformed with the intent of making the data more likely to present results that can be more confidently considered as representative of the general public.</p>
+<div class="table flex center">
+<a name="tbl:tb-pref-exp-age-gender-weighted-pc"></a>
+<table>
+<caption><span>Table 6:</span> Most Preferred Experiments Adjusted for Population Weighting and Aggregated Age Groups </caption>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Preferred experiment</th>
+<th style="text-align: center;">Your age range</th>
+<th style="text-align: center;">Your gender</th>
+<th style="text-align: center;">Weight</th>
+<th style="text-align: center;">Weight percent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">18-29</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">0.6102901</td>
+<td style="text-align: center;">0.5000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">18-29</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">0.6102901</td>
+<td style="text-align: center;">0.5000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#1</td>
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">0.5834226</td>
+<td style="text-align: center;">0.5000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">0.5834226</td>
+<td style="text-align: center;">0.5000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#7</td>
+<td style="text-align: center;">35-44</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">1.3224872</td>
+<td style="text-align: center;">0.5257713</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#8</td>
+<td style="text-align: center;">35-44</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">1.1928405</td>
+<td style="text-align: center;">0.4742287</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#2</td>
+<td style="text-align: center;">45+</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">1.3906661</td>
+<td style="text-align: center;">0.3333333</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">45+</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">2.7813323</td>
+<td style="text-align: center;">0.6666667</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#1</td>
+<td style="text-align: center;">18-29</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">0.4038044</td>
+<td style="text-align: center;">0.1659284</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">18-29</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">0.8076089</td>
+<td style="text-align: center;">0.3318569</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">18-29</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">1.2221926</td>
+<td style="text-align: center;">0.5022147</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">0.6977944</td>
+<td style="text-align: center;">0.6000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">0.2325981</td>
+<td style="text-align: center;">0.2000000</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#7</td>
+<td style="text-align: center;">30-34</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">0.2325981</td>
+<td style="text-align: center;">0.2000000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">35-44</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">0.5879894</td>
+<td style="text-align: center;">0.2384573</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#5</td>
+<td style="text-align: center;">35-44</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">1.8778167</td>
+<td style="text-align: center;">0.7615427</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">#1</td>
+<td style="text-align: center;">45+</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">4.0360299</td>
+<td style="text-align: center;">0.7570416</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">#3</td>
+<td style="text-align: center;">45+</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">1.2952884</td>
+<td style="text-align: center;">0.2429584</td>
+</tr>
+</tbody>
+</table>
+</div>
+<figure>
+<img src="../assets/img/data/graph-preferred-exp-new-ages-weighted-gender-1.png" alt="Figure 13: Most Preferred Experiments Adjusted for Population Weighting and Aggregated Age Groups" id="fig:fig-pref-exp-age-gender-weighted-pc" /><figcaption><span>Figure 13:</span> Most Preferred Experiments Adjusted for Population Weighting and Aggregated Age Groups</figcaption>
+</figure>
+<p>Now that there are larger age demographic subsets it’s more possible to get competing values for the preferred experiment. With the increased likelihood of competing results comes greater confidence that if a given value is noticeably greater than another, then it represents something meaningful pertaining to public perception. In this case in particular, it is now more reliable to suggest that experiment #3 is the most popular experience for the 30-34 and 45+ groups while #5 is most popular with the youngest age group and males in the 35-44 bracket. Nevertheless, this evaluation isn’t definitive and shouldn’t be taken as fact in any way as it is only one way the data has been examined; in particular, this evaluation relies on fewer data points to come to these suggestions. Ostensibly, the more data points used when trying to derive meaning, the greater the potential for accuracy, so long as the observations used are relevant to the question looking to be answered.</p>
+<h2 id="evaluating-feedback-through-experiment-qualities">Evaluating Feedback Through Experiment Qualities</h2>
+<p>Another way of inspecting the feedback is to not take an angle that filters based on the human properties of the particpants but instead looks at the properties of the experiments. The experiments were scored by the test users against various properties (described as ‘facets’ within the study report) the experiments could possess. The feedback questionnaire required mandatory evaluation of these characteristics using a scalar metric, based on the level of agreement with the statement related to the potential attributes of each experiment.</p>
+<p>To re-iterate, the facets of the experiments intended to be measured were: - Enjoyment - Annoyance - Ease of use - Brand connection - Engagement - Persuasiveness - Interest</p>
+<p>This perspective of analysis makes it easier to compare the experiments against one another on a more nuanced level that has less to do with the users (at this stage) and more about how the experiences felt to the users in ways that would be otherwise difficult to quantify. It is because of this that the approach to interpreting the data can add extra value through a different lens. A high level desciption of what the follwing graphs depicts is provided but for further detail, the full report in the appendix is available.</p>
+<figure>
+<img src="../assets/img/data/graph-facet-enjoyable-1.png" alt="Figure 14: Experiment Facet: Enjoyment" id="fig:fig-facet-enjoyment" /><figcaption><span>Figure 14:</span> Experiment Facet: Enjoyment</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-facet-annoying-1.png" alt="Figure 15: Experiment Facet: Annoyance" id="fig:fig-facet-annoyance" /><figcaption><span>Figure 15:</span> Experiment Facet: Annoyance</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-facet-easy-1.png" alt="Figure 16: Experiment Facet: Ease of use" id="fig:fig-facet-ease-of-use" /><figcaption><span>Figure 16:</span> Experiment Facet: Ease of use</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-facet-brand-1.png" alt="Figure 17: Experiment Facet: Brand connection" id="fig:fig-facet-brand-connection" /><figcaption><span>Figure 17:</span> Experiment Facet: Brand connection</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-facet-engaging-1.png" alt="Figure 18: Experiment Facet: Engagement" id="fig:fig-facet-engagement" /><figcaption><span>Figure 18:</span> Experiment Facet: Engagement</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-facet-persuasive-1.png" alt="Figure 19: Experiment Facet: Persuasiveness" id="fig:fig-facet-persuasiveness" /><figcaption><span>Figure 19:</span> Experiment Facet: Persuasiveness</figcaption>
+</figure>
+<figure>
+<img src="../assets/img/data/graph-facet-interesting-1.png" alt="Figure 20: Experiment Facet: Interest" id="fig:fig-facet-interest" /><figcaption><span>Figure 20:</span> Experiment Facet: Interest</figcaption>
+</figure>
+<h3 id="facet-evaluation-summaries">Facet Evaluation Summaries</h3>
+<h4 id="enjoyment">Enjoyment</h4>
+<p>Figure <a href="#fig:fig-facet-enjoyment">14</a> shows experiments #3 (Loyalty Reward) and #5 (Loyalty Reward, Augmented Reality) have the most positive results with ranges that are mostly positive and very much skewed to the top end. With greater inspection it appears that #5 is considered most enjoyable because the candlestick median line is the highest of all experiments, just one below the maximum value on the scale.</p>
+<h4 id="annoyance">Annoyance</h4>
+<p>The lowest median lines in figure <a href="#fig:fig-facet-annoyance">15</a> suggest that, experiments #1 (baseline) and #3 (Loyalty Reward) were considered least annoying, with both having median lines drawn at the second lowest position on the scale; experiment #1 has a longer candlestick, indicating more variation in participant scores for this quality when compared to experiment #3 which is more skewed to the bottom.</p>
+<h4 id="ease-of-use">Ease of use</h4>
+<p>It is easy to see from figure <a href="#fig:fig-facet-ease-of-use">16</a> that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Loyalty Reward), the baseline #1, and #4 (Social Media); all three of these experiment have the majority of participant scores in the top two points on the scale but while #3 and #1 have a distribution that includes scores in the lower half of the y scale, #4 was considered easy to use to greater or lesser degrees by every participant.</p>
+<h4 id="brand-connection">Brand connection</h4>
+<p>Experiments #3 and #8 are the experiments that could potentially connect users with a brand the most according to figure <a href="#fig:fig-facet-brand-connection">17</a> These two experiments have lower quartiles at the halfway mark with most scores in the positive half of the scale. Determining which experiment between #3 or #8 has most potential brand connection by looking at the candlesticks is not straightforward. Experiment #8 is less evenly distributed, with a stronger concentration around the second and third positions on the y axis and far fewer and the extremes; this means that #8 is more consistent but #3 had the potential to deliver stronger sentiment among the participants.</p>
+<h4 id="engagement">Engagement</h4>
+<p>The most engaging experiments by participant scores both have median lines that at the second highest position on the scale, though they have quite different patterns of distributions; figure <a href="#fig:fig-facet-engagement">18</a> suggests experiment #8 is the second most engaging experiment experience, having more scores towards the lower half compared to #5, which has almost entirely scored in the top half of the scale, and thus the most engaging.</p>
+<h4 id="persuasiveness">Persuasiveness</h4>
+<p>According to figure <a href="#fig:fig-facet-persuasiveness">19</a> experiments #3 and #5 are the most persuasive, however the candlestick weighting of #5 is lower than #3, making the Loyalty Reward only experiment (#3) supposedly more persuasive than the combined experience of Loyalty Reward and Augmented Reality (#5).</p>
+<h4 id="interest">Interest</h4>
+<p>Six out of the eight experiments have the same median line on their respective candlesticks but #5 and #8 are marginally more positive for this category; the experiment composed of every element has perhaps just slightly more votes towards the top end of the scale but they could ostensibly be considered more or less equally interesting.</p>
 </section>
 <section>
 <h1 id="final-outcome">Final Outcome</h1>
