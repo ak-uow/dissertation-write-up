@@ -12,6 +12,7 @@
 (Label, Bottle, Vending Machine, Banner)
 
 </section>
+
 <section>
           
 # User Research Results
@@ -262,5 +263,33 @@ According to figure {@fig:fig-facet-persuasiveness} experiments #3 and #5 are th
 
 Looking at figure {@fig:fig-facet-interest}, six out of the eight experiments have the same median line on their respective candlesticks but #5 and #8 are marginally more positive for this category; 
 the experiment composed of every element has perhaps just slightly more votes towards the top end of the scale but they could ostensibly be considered more or less equally interesting.
+
+### Multiple Facet Comparison
+
+Another interesting way of comparing the experiement is by plotting the mean of the scalar values for each of the facets for each of the experiments to be viewed alongside one another.
+Using a type of graph known as a Radar or Spider plot, it is possible to create a shaoe that is an abstraction of the characteristics of the experiments.
+If all characteristics are on a scale that is percieved as better as it rises, then the size of the area created by the graph can be a visual demonstration of the overall performance of the experiment;
+to that end, the one scalar metric that was initially on a scale that moved towards a an increasingly nagative position has been inverted such that for the purposes of these graphs the levels of Annoyance have become levels of non-Annoyance.
+
+<div class="flex two-col">
+
+![Experiment Facets: Experiment 1](../assets/img/data/graph-radar-facets-1.png "Experiment Facets: Experiment 1"){#fig:fig-facets-exp-1 .inline}
+
+![Experiment Facets: Experiment 2](../assets/img/data/graph-radar-facets-2.png "Experiment Facets: Experiment 2"){#fig:fig-facets-exp-2 .inline}
+
+![Experiment Facets: Experiment 3](../assets/img/data/graph-radar-facets-3.png "Experiment Facets: Experiment 3"){#fig:fig-facets-exp-3 .inline}
+
+![Experiment Facets: Experiment 4](../assets/img/data/graph-radar-facets-4.png "Experiment Facets: Experiment 4"){#fig:fig-facets-exp-4 .inline}
+
+![Experiment Facets: Experiment 5](../assets/img/data/graph-radar-facets-5.png "Experiment Facets: Experiment 5"){#fig:fig-facets-exp-5 .inline}
+
+![Experiment Facets: Experiment 6](../assets/img/data/graph-radar-facets-6.png "Experiment Facets: Experiment 6"){#fig:fig-facets-exp-6 .inline}
+
+![Experiment Facets: Experiment 7](../assets/img/data/graph-radar-facets-7.png "Experiment Facets: Experiment 7"){#fig:fig-facets-exp-7 .inline}
+
+![Experiment Facets: Experiment 8](../assets/img/data/graph-radar-facets-8.png "Experiment Facets: Experiment 8"){#fig:fig-facets-exp-8 .inline}
+
+
+</div>
 
 </section>

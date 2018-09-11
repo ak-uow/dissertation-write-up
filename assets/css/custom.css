@@ -224,6 +224,17 @@ blockquote {
     justify-content: center;
 }
 
+.flex.two-col {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex.two-col > * {
+    margin-left: 0;
+    margin-right: 0;
+    width: 49%;
+}
+
 .non-code pre {
     page-break-inside: auto;
     overflow-x: hidden;
@@ -255,6 +266,11 @@ img.third-page-height {
 
 .flex table {
     margin: 0 1em;
+}
+
+.flow-images figure {
+    display: inline-block;
+    width: 38%;
 }
 
 /*#TOC ul {
