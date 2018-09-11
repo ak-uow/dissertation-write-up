@@ -199,6 +199,7 @@ The experiments were scored by the test users against various properties (descri
 The feedback questionnaire required mandatory evaluation of these characteristics using a scalar metric, based on the level of agreement with the statement related to the potential attributes of each experiment.
 
 To re-iterate, the facets of the experiments intended to be measured were:
+
 - Enjoyment
 - Annoyance
 - Ease of use

@@ -337,6 +337,7 @@ it's actually not certain that this would have been a feasible option and the op
 Given these conditions, the way the user feedback was gathered can be considered more than acceptable, given the circumstances.
 
 The sections provided for each experiment provided the opportunity for qualitative feedback as well as qualitative feedback based on some characteristics that could be applied to all experiments:
+
 - Enjoyment
 - Annoyance
 - Ease of use
