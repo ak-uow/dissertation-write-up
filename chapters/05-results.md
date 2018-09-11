@@ -266,30 +266,46 @@ the experiment composed of every element has perhaps just slightly more votes to
 
 ### Multiple Facet Comparison
 
-Another interesting way of comparing the experiement is by plotting the mean of the scalar values for each of the facets for each of the experiments to be viewed alongside one another.
-Using a type of graph known as a Radar or Spider plot, it is possible to create a shaoe that is an abstraction of the characteristics of the experiments.
-If all characteristics are on a scale that is percieved as better as it rises, then the size of the area created by the graph can be a visual demonstration of the overall performance of the experiment;
-to that end, the one scalar metric that was initially on a scale that moved towards a an increasingly nagative position has been inverted such that for the purposes of these graphs the levels of Annoyance have become levels of non-Annoyance.
+Another interesting way of comparing the experiment is by plotting the mean of the scalar values for each of the facets for each of the experiments to be viewed alongside one another.
+Using a type of graph known as a Radar or Spider plot, it is possible to create a shape that is an abstraction of the characteristics of the experiments.
+If all characteristics are on a scale that is perceived as better as it rises, then the size of the area created by the graph can be a visual demonstration of the overall performance of the experiment;
+to that end, the one scalar metric that was initially on a scale that moved towards a an increasingly negative position has been inverted such that for the purposes of these graphs the levels of Annoyance have become levels of non-Annoyance.
 
 <div class="flex two-col">
 
-![Experiment Facets: Experiment 1](../assets/img/data/graph-radar-facets-1.png "Experiment Facets: Experiment 1"){#fig:fig-facets-exp-1 .inline}
+![Experiment Facets: Experiment 1](../assets/img/data/graph-radar-facets-1.png "Experiment Facets: Experiment 1"){#fig:fig-facets-exp-1}
 
-![Experiment Facets: Experiment 2](../assets/img/data/graph-radar-facets-2.png "Experiment Facets: Experiment 2"){#fig:fig-facets-exp-2 .inline}
+![Experiment Facets: Experiment 2](../assets/img/data/graph-radar-facets-2.png "Experiment Facets: Experiment 2"){#fig:fig-facets-exp-2}
 
-![Experiment Facets: Experiment 3](../assets/img/data/graph-radar-facets-3.png "Experiment Facets: Experiment 3"){#fig:fig-facets-exp-3 .inline}
+![Experiment Facets: Experiment 3](../assets/img/data/graph-radar-facets-3.png "Experiment Facets: Experiment 3"){#fig:fig-facets-exp-3}
 
-![Experiment Facets: Experiment 4](../assets/img/data/graph-radar-facets-4.png "Experiment Facets: Experiment 4"){#fig:fig-facets-exp-4 .inline}
+![Experiment Facets: Experiment 4](../assets/img/data/graph-radar-facets-4.png "Experiment Facets: Experiment 4"){#fig:fig-facets-exp-4}
 
-![Experiment Facets: Experiment 5](../assets/img/data/graph-radar-facets-5.png "Experiment Facets: Experiment 5"){#fig:fig-facets-exp-5 .inline}
+![Experiment Facets: Experiment 5](../assets/img/data/graph-radar-facets-5.png "Experiment Facets: Experiment 5"){#fig:fig-facets-exp-5}
 
-![Experiment Facets: Experiment 6](../assets/img/data/graph-radar-facets-6.png "Experiment Facets: Experiment 6"){#fig:fig-facets-exp-6 .inline}
+![Experiment Facets: Experiment 6](../assets/img/data/graph-radar-facets-6.png "Experiment Facets: Experiment 6"){#fig:fig-facets-exp-6}
 
-![Experiment Facets: Experiment 7](../assets/img/data/graph-radar-facets-7.png "Experiment Facets: Experiment 7"){#fig:fig-facets-exp-7 .inline}
+![Experiment Facets: Experiment 7](../assets/img/data/graph-radar-facets-7.png "Experiment Facets: Experiment 7"){#fig:fig-facets-exp-7}
 
-![Experiment Facets: Experiment 8](../assets/img/data/graph-radar-facets-8.png "Experiment Facets: Experiment 8"){#fig:fig-facets-exp-8 .inline}
-
+![Experiment Facets: Experiment 8](../assets/img/data/graph-radar-facets-8.png "Experiment Facets: Experiment 8"){#fig:fig-facets-exp-8}
 
 </div>
+
+### Scaled Geometric Mean of Experiment Facets
+
+While the two-dimensional shapes are interesting to look at they are as easy to interpret as a single value to represent all facets at once.
+Given that the idea is to get one numeric value from a dataset that has been represented as a shape, it seems logical to consider this in terms of a geometric 2D shape being converted into a one-dimensional vector.
+Instead of just taking a normal median of the facets (which were already median values derived from every participant's scoring), it is possible to use a geometric mean to prevent an extreme results disproportionately affecting the final median value.
+
+Because the difference between the mean values is relatively subtle, the values have also been rescaled between 0 and 1 such that the lowest result is now 0 and the greatest value is now 1; doing this helps with observing the deltas more easily.
+
+![Geometric Means of Experiment Facets](../assets/img/data/graph-facet-means-1.png "Geometric Means of Experiment Facets"){#fig:fig-facets-geom-means}
+
+What this data transformation allows is a way to assess the entire set scalar values provided by the testers during the feedback stages, for every variation of the advertising experience.
+Essentially this la a way of comparing each experiment based on the user perception of the attributes instead of relying on a single vote of the most favoured option.
+This approach to the data starts to take take into account the cumulative effect of strong positive feedback for experiments that were so obliviously popular based on a single metric; 
+if an experiment managed to deliver an enjoyable experience but in a way that wasn't extreme and polarising then this was as way looking at the data will highlight the otherwise unrecognised potential. 
+This technique promotes experiments that are more universally positive even if they lack a majority measure of acceptance from the user base.
+When this project is trying to determine the most successful form of advertising for this relatively new form of interaction with a brand, universality is less important then being able to define an audience that could be receptive to the experience.
 
 </section>
