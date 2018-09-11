@@ -231,15 +231,15 @@ A high level description of what the following graphs depicts is provided but fo
 
 #### Enjoyment
 
-Figure {@fig:fig-facet-enjoyment} shows experiments #3 (Loyalty Reward) and #5 (Loyalty Reward, Augmented Reality) have the most positive results with ranges that are mostly positive and very much skewed to the top end. With greater inspection it appears that #5 is considered most enjoyable because the candlestick median line is the highest of all experiments, just one below the maximum value on the scale.
+Figure {@fig:fig-facet-enjoyment} shows experiments #3 (Digital Reward) and #5 (Digital Reward, Augmented Reality) have the most positive results with ranges that are mostly positive and very much skewed to the top end. With greater inspection it appears that #5 is considered most enjoyable because the candlestick median line is the highest of all experiments, just one below the maximum value on the scale.
 
 #### Annoyance
 
-The lowest median lines in figure {@fig:fig-facet-annoyance} suggest that, experiments #1 (baseline) and #3 (Loyalty Reward) were considered least annoying, with both having median lines drawn at the second lowest position on the scale; experiment #1 has a longer candlestick, indicating more variation in participant scores for this quality when compared to experiment #3 which is more skewed to the bottom.
+The lowest median lines in figure {@fig:fig-facet-annoyance} suggest that, experiments #1 (baseline) and #3 (Digital Reward) were considered least annoying, with both having median lines drawn at the second lowest position on the scale; experiment #1 has a longer candlestick, indicating more variation in participant scores for this quality when compared to experiment #3 which is more skewed to the bottom.
 
 #### Ease of use
 
-It is easy to see from figure {@fig:fig-facet-ease-of-use} that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Loyalty Reward), the baseline #1, and #4 (Social Media); 
+It is easy to see from figure {@fig:fig-facet-ease-of-use} that all experiences scored well in this category but the top three experiment for ease of use in ascending order are #3 (Digital Reward), the baseline #1, and #4 (Social Media); 
 all three of these experiment have the majority of participant scores in the top two points on the scale but while #3 and #1 have a distribution that includes scores in the lower half of the y scale, #4 was considered easy to use to greater or lesser degrees by every participant.
 
 #### Brand connection
@@ -257,7 +257,7 @@ figure {@fig:fig-facet-engagement} suggests experiment #8 is the second most eng
 
 #### Persuasiveness
 
-According to figure {@fig:fig-facet-persuasiveness} experiments #3 and #5 are the most persuasive, however the candlestick weighting of #5 is lower than #3, making the Loyalty Reward only experiment (#3) supposedly more persuasive than the combined experience of Loyalty Reward and Augmented Reality (#5).
+According to figure {@fig:fig-facet-persuasiveness} experiments #3 and #5 are the most persuasive, however the candlestick weighting of #5 is lower than #3, making the Digital Reward only experiment (#3) supposedly more persuasive than the combined experience of Digital Reward and Augmented Reality (#5).
 
 #### Interest
 
@@ -311,7 +311,11 @@ When this project is trying to determine the most successful form of advertising
 ## Cumulative Rankings
 
 Another way to get more granularity out of the users feedback was to ask them to not only cast a vote for their most preferred version of the advertisement but also require that they rank every experiment in order of best experience to worst.
-This will inevitably provide more detail about the succuss of a given experience by allowing the experiment to collect positive scores even if it was not an outright favourite for any given  participant.
+This will inevitably provide more detail about the success of a given experience by allowing the experiment to collect positive scores even if it was not an outright favourite for any given  participant.
+The derivation of these values involved another reasonable use of inversion of the users original responses because they were explicitly requested to rank in descending order so that a rank of 1 would be understood as the best possible rank;
+to turn the ranking values into points, the 8 potential rankings were inverted so that a top rank of '1' would become a score of seven while the bottom rank of '8' would give a score of zero.
+The interpretation below also include scaled values so that the scores have been adjusted so that the highest values it 1 and the rest descend towards 0.
+Scaling the values allows for two or more values to be compared more easily which in turn allows for more ways to combine the observations so that more subtle insights can be allowed to surface.
 
 Mean score|Exp|Scaled mean score
 :-----:|:-----:|:-----:
@@ -325,6 +329,20 @@ Mean score|Exp|Scaled mean score
 2.1304347826087|#4|0.0000000
 Table: Scaled Means Rankings Values {#tbl:tb-rank-exp-scaled-mean-pc}
 
+![Scaled Means Rankings Values](../assets/img/data/graph-rankings-1.png "Scaled Means Rankings Values"){#fig:fig-exp-ranking}
 
+These results show a different order of preference when the user is asked to pick their second and third best experiments and those experiments are scored to reflect this.
+Experiments #3 and #5 preserve their top positions but the other experiments in the middle ground have been shuffled a little compared to the previous assessments of popularity.
+At the lower end change is less likely and the very worst scoring experiment, #4 does not get evaluated as being any better than before.
+
+### Combining Rankings With Facet Means
+
+Having scaled the results for the rankings and the facet means, it is possible to take two vectors, a value from 0 to 5, the other between 0 and 7 and merge them so that the final output is a value to effectively takes the two ways the user has been aped to consider the experiments and interpret those in a way that is potentially more reflective of their instinctive perceptions.
+The outcome of multiplying these two calculated values for each experiment is effectively a sum of _characteristics_ with _relative rank_ to produce a value that is a way of allowing the facets of an experiment to still hold value while being _corrected_ by the user when reflecting on the entire session as a whole.
+
+![Scaled Sum of Rankings and Facets](../assets/img/data/graph-facets-rankings-1.png "Scaled Sum of Rankings and Facets"){#fig:fig-sum-ranking-facets}
+
+By multiplying these two sets of values, it emphasises which experiments were received most positively suggesting that there are two clear leaders followed by a third place experiment that all apply a Digital Reward element. 
+The two lowest ranking experiments incorporate the Social Media component and exclude the Digital Reward
 
 </section>
