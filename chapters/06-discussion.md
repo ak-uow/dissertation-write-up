@@ -40,7 +40,18 @@ If users are not given a concrete idea of what they have to gain, they are far l
 
 > I do believe that there would be added value if the app were to have a login that offered a loyalty card and was added as a smartphone wallet so that one could chose there favourite drink and just automatically wave their phone at the vending machine pick up their drink and leave.
 
-There were numerous ways in which ... >>
+There were many suggestions that were specific to the experiments and the features therein; 
+the full report in the appendix documents these suggestions but as they are, generally speaking, comments around implemntation details they are not sufficiently abstract to be considered applicable to the entire study.
+One suggestion that was frequently mentioned was in relation to the nature of the Digital Reward:
+Firstly a more explicit declaration of how many points would better compell the user;
+if the interface were able to display the user's entire accumulation of Digital Reward this would also help motivate the user to collect points;
+if the interaction could message a suggested value of accrued points in terms of a real world commodity this would help to give meaning to the Digital Reward.
+
+While the augmented reality game was more of a proof-of-concept demonstration, some feedback around this part of the experience was quite insightful with regards to a real world implementation:
+it could be more challenging, a certain level of difficulty could make it more interesting;
+the game could influence the reward, should a reward be offered, the better you perform the more points you get;
+if the augmented reality marker that instigated the game was on the bottle label rather than the vending machine then people could play the game away from the original location.
+
 
 ## Interpretation of Results
 
