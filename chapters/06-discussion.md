@@ -55,7 +55,14 @@ if the augmented reality marker that instigated the game was on the bottle label
 
 ## Interpretation of Results
 
-!! TODO talk!
+Discerning meaning from the feedback is not straight forward but it's clear that certain elements are more compelling than others. 
+The social media element was widely eschewed which was expressed not only in the qualititive feedback but also in the quantitive scorings of the experiments that included this feature.
+The worst performing experiment was #4 which only used social media on top of the baseline.
+Users also tended to prefer an experience that was relatively quick so experiment #8 which was composed of every possible aspect of the study was not regarded favourably, not just because of the inclusion of social media but also because the interaction was prolonged relative to the other experiments.
+All experiments that had an element of reward for the user scored well, with experiment #3 scoring highest and being composed only of the baseline and Digital Reward feature. 
+The augmented reality experience was polarising being broadly well received by younger demographics and not the older age groups, but it was most effective when combined with Digital Reward.
+Looking at the best performing experiments compared to the baseline allows for the composite features of them to be compared independently of the common characteristics of all experiments. 
+
 
 ## Further Research
 
