@@ -52,8 +52,16 @@ it could be more challenging, a certain level of difficulty could make it more i
 the game could influence the reward, should a reward be offered, the better you perform the more points you get;
 if the augmented reality marker that instigated the game was on the bottle label rather than the vending machine then people could play the game away from the original location.
 
-
 ## Interpretation of Results
+
+## Probable Audience
+
+Given that the starting point for these interactive advertisements is the use of a mobile phone as a means of payment in reality this form of marketing is only going to be exposed to those that are comfortable with using their mobile phone as a wallet. 
+Additionally there is the assumption that the user has bluetooth enabled on their smart phone. 
+With that in mind the feedback data suggests that the target market is under forty years of age and more likely to be female.  
+In contrast if the use of augmented reality is part of the real world experience then the demographic that engages most is more likely to be male. 
+
+## Efficacy of Characteristics
 
 Discerning meaning from the feedback is not straight forward but it's clear that certain elements are more compelling than others. 
 The social media element was widely eschewed which was expressed not only in the qualititive feedback but also in the quantitive scorings of the experiments that included this feature.
@@ -62,7 +70,6 @@ Users also tended to prefer an experience that was relatively quick so experimen
 All experiments that had an element of reward for the user scored well, with experiment #3 scoring highest and being composed only of the baseline and Digital Reward feature. 
 The augmented reality experience was polarising being broadly well received by younger demographics and not the older age groups, but it was most effective when combined with Digital Reward.
 Looking at the best performing experiments compared to the baseline allows for the composite features of them to be compared independently of the common characteristics of all experiments. 
-
 
 ## Further Research
 
