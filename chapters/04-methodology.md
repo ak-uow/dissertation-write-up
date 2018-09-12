@@ -45,7 +45,7 @@ It would be naive to suggest that other ways to combining these elements would n
 
 ### Experiment list
 
-Below is a table defining the composition of the eight experiments created in order to expo the combination of aforementioned technologies. 
+Below is a table defining the composition of the eight experiments created in order to show the combination of aforementioned technologies. 
 The first experiment was the control baseline experiment and the number attributed to the various combinations was used internally throughout the study and will therefore be used when describing the feedback and results.
 
 | Experiment | Alias ID       | IoT Beacon | Interactive AR | Blockchain Reward | Social Media |

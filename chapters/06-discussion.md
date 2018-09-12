@@ -73,7 +73,12 @@ Looking at the best performing experiments compared to the baseline allows for t
 
 ## Further Research
 
-This user experience study has been enlightening when it has come to 
+Eight unique experiments were created to be compared against one another with the intent of finding which were the most successful at generating a positive connection between a person and a commercial product. 
+As described in the methodology for the design of the study there are potentially many more variations. 
+A more thorough undertaking would include variations that are not present in this study and are composed of the same elements but ordered differently. 
+Nevertheless the findings from this study can be used as a way of refining which elements to explore in more detail; 
+considering this, any further research can omit the social media aspect and expand the study of location based interactive advertisements involving incentives and playfulness. 
+
 
 ## Conclusion
 
