@@ -1,20 +1,12 @@
 <section>
 
-# Interpreatation and Conclusion
+# Interpretation and Conclusion
 
-## Report of findings
-
-This deliverable is essentially the main body of vocational research and the report following analysis of the results obtained. 
-Essentially this will be part of the main content of the thesis document as well as supporting evidence in an appendix section. 
-This appendix is likely to include an example of the questionnaire and a copy of the anonymised data from respondents' answers.
-
-## Interpreting the Results
-
-## Particpant Concerns
+## Participant Concerns
 
 As is to be be expected with this form interaction with technology, not all of the feedback was positive. 
-This section aims to ecord the most highlight the prevalent sentiments that were wary of or absolutly in opposition to the entire idea of this form of interaction.
-What follows are some excerpts from the qualitative feedback that exemplify some of the most popular or intersting concerns.
+This section aims to record the most highlight the prevalent sentiments that were wary of or absolutely in opposition to the entire idea of this form of interaction.
+What follows are some excerpts from the qualitative feedback that exemplify some of the most popular or interesting concerns.
 
 > as there were several steps to go through, although i enjoyed the interactive element, when you are in a rush and on the go you might not have time to play the game
 
@@ -33,12 +25,12 @@ I don’t care about the coins as they are worth 1000th of a penny or whatever a
 > I think there needs to be an option for people to take their drink and go rather than engage in the technology. 
 The technology might be welcomed by some people but not everyone wants to go through this especially giving their email address.
 
-The quotes above are taken directly from partipant feedback. These citations reflect concerns that were not exclusive to the invidiuals but also expressed in other words by other testers.
-It is clear that there will be some resistance to this form of advertising, not least because people are becoming more aware of how valuable their personal informationis and that they would rather maintain a higher level of privacy that has previously been the norm.
-This attitude is not shared across all ages though, and younger age groups were less likely to voice this sort of concenr, especially if the interaction was swift.
-Sharing one's relationship with a brand also seems to perceived in a poor light in a generaly sense and especially if there is no obviousl incentive for doing so.
+The quotes above are taken directly from participant feedback. These citations reflect concerns that were not exclusive to the individuals but also expressed in other words by other testers.
+It is clear that there will be some resistance to this form of advertising, not least because people are becoming more aware of how valuable their personal information is and that they would rather maintain a higher level of privacy that has previously been the norm.
+This attitude is not shared across all ages though, and younger age groups were less likely to voice this sort of concern, especially if the interaction was swift.
+Sharing one's relationship with a brand also seems to perceived in a poor light in a general sense and especially if there is no obvious incentive for doing so.
 Additionally, the reward for engaging with the experience needs to be as clear as possible in order to deliver a positive feedback loop. 
-If users are not given a concrete idea of what they have to gain, they are far less likely to take part and consequently, even less likely to propogate the idea.
+If users are not given a concrete idea of what they have to gain, they are far less likely to take part and consequently, even less likely to propagate the idea.
 
 ## Scope for Improvement
 
@@ -46,8 +38,20 @@ If users are not given a concrete idea of what they have to gain, they are far l
 
 > i like the game idea, especially if its fun and quick. Making the game result tied to the amount of fave coins awarded could make the game more engaging and make me look forward to buying my next can of sweet sweet Fave!
 
+> I do believe that there would be added value if the app were to have a login that offered a loyalty card and was added as a smartphone wallet so that one could chose there favourite drink and just automatically wave their phone at the vending machine pick up their drink and leave.
+
+There were numerous ways in which ... >>
+
+## Interpretation of Results
+
+!! TODO talk!
+
 ## Further Research
 
+This user experience study has been enlightening when it has come to 
+
 ## Conclusion
+
+The most important interpretation of the results 
 
 </section>
