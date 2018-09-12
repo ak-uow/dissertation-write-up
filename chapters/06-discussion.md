@@ -11,7 +11,7 @@ What follows are some excerpts from the qualitative feedback that exemplify some
 > as there were several steps to go through, although i enjoyed the interactive element, when you are in a rush and on the go you might not have time to play the game
 
 > Firstly thank you for being welcoming and supportive. My experience of these experiments has been to recognise how much technology intrudes into purchasing experiences and my view is that the more our purchasing is tracked by technology the more our freedoms and autonomy are threatened. 
-I am very ambivalent now about loyalty incentives because they track my life and I find this intrusive. Most people are involved with social media and this technology re-inforces the power of social media. This is of concern to me, especially as I am aware of the risks to mental health that social media presents and especially to young people who I believe are mainly targetted by this technology.
+I am very ambivalent now about loyalty incentives because they track my life and I find this intrusive. Most people are involved with social media and this technology re-in-forces the power of social media. This is of concern to me, especially as I am aware of the risks to mental health that social media presents and especially to young people who I believe are mainly targetted by this technology.
 
 > Massively disliked the social media aspect, especially if there’s no reward
 
@@ -34,16 +34,16 @@ If users are not given a concrete idea of what they have to gain, they are far l
 
 ## Scope for Improvement
 
-> The AR element is fun for being new(ish) and different, but forcing the customer to stay near the vending machine to play might put me off. I could feel awkward standing in front of the machine or i might have places to be. | |would be good to reward for things like - coins go to your favorite charity / rewards for using provided bins - maybe using qi codes to register disposal etc and reward | |No social media, make rewards better or make prizes traded for rewards amazing, AR game better or not at all, email okay (to be expected) but only in return for coins or not at all - all other aspects good | |The social media element needs more incentive, and there should be more explanation on why I am getting the notification and how it benefits me before i am asked to do anything, the gaming thing is fun - but if you’re in a rush it would be good to be able to have an option to ‘play later’ | |Game with coin was best - however also shorter versions of this advert |
+> The AR element is fun for being new(ish) and different, but forcing the customer to stay near the vending machine to play might put me off. I could feel awkward standing in front of the machine or i might have places to be. | |would be good to reward for things like - coins go to your favourite charity / rewards for using provided bins - maybe using qi codes to register disposal etc. and reward | |No social media, make rewards better or make prizes traded for rewards amazing, AR game better or not at all, email okay (to be expected) but only in return for coins or not at all - all other aspects good | |The social media element needs more incentive, and there should be more explanation on why I am getting the notification and how it benefits me before i am asked to do anything, the gaming thing is fun - but if you’re in a rush it would be good to be able to have an option to ‘play later’ | |Game with coin was best - however also shorter versions of this advert |
 
 > i like the game idea, especially if its fun and quick. Making the game result tied to the amount of fave coins awarded could make the game more engaging and make me look forward to buying my next can of sweet sweet Fave!
 
 > I do believe that there would be added value if the app were to have a login that offered a loyalty card and was added as a smartphone wallet so that one could chose there favourite drink and just automatically wave their phone at the vending machine pick up their drink and leave.
 
 There were many suggestions that were specific to the experiments and the features therein; 
-the full report in the appendix documents these suggestions but as they are, generally speaking, comments around implemntation details they are not sufficiently abstract to be considered applicable to the entire study.
+the full report in the appendix documents these suggestions but as they are, generally speaking, comments around implementation details they are not sufficiently abstract to be considered applicable to the entire study.
 One suggestion that was frequently mentioned was in relation to the nature of the Digital Reward:
-Firstly a more explicit declaration of how many points would better compell the user;
+Firstly a more explicit declaration of how many points would better compel the user;
 if the interface were able to display the user's entire accumulation of Digital Reward this would also help motivate the user to collect points;
 if the interaction could message a suggested value of accrued points in terms of a real world commodity this would help to give meaning to the Digital Reward.
 
@@ -57,14 +57,14 @@ if the augmented reality marker that instigated the game was on the bottle label
 ## Probable Audience
 
 Given that the starting point for these interactive advertisements is the use of a mobile phone as a means of payment in reality this form of marketing is only going to be exposed to those that are comfortable with using their mobile phone as a wallet. 
-Additionally there is the assumption that the user has bluetooth enabled on their smart phone. 
+Additionally there is the assumption that the user has Bluetooth enabled on their smart phone. 
 With that in mind the feedback data suggests that the target market is under forty years of age and more likely to be female.  
 In contrast if the use of augmented reality is part of the real world experience then the demographic that engages most is more likely to be male. 
 
 ## Efficacy of Characteristics
 
 Discerning meaning from the feedback is not straight forward but it's clear that certain elements are more compelling than others. 
-The social media element was widely eschewed which was expressed not only in the qualititive feedback but also in the quantitive scorings of the experiments that included this feature.
+The social media element was widely eschewed which was expressed not only in the qualitative feedback but also in the quantitative scoring of the experiments that included this feature.
 The worst performing experiment was #4 which only used social media on top of the baseline.
 Users also tended to prefer an experience that was relatively quick so experiment #8 which was composed of every possible aspect of the study was not regarded favourably, not just because of the inclusion of social media but also because the interaction was prolonged relative to the other experiments.
 All experiments that had an element of reward for the user scored well, with experiment #3 scoring highest and being composed only of the baseline and Digital Reward feature. 
@@ -78,10 +78,5 @@ As described in the methodology for the design of the study there are potentiall
 A more thorough undertaking would include variations that are not present in this study and are composed of the same elements but ordered differently. 
 Nevertheless the findings from this study can be used as a way of refining which elements to explore in more detail; 
 considering this, any further research can omit the social media aspect and expand the study of location based interactive advertisements involving incentives and playfulness. 
-
-
-## Conclusion
-
-The most important interpretation of the results 
 
 </section>
