@@ -4,12 +4,64 @@
 
 ## Persona and Wireframes
 
+### Persona 
+
 <div class="rot90">
 
-![User Persona](../assets/img/ux/persona.png "User Persona"){#fig:fig-use-mob-email}
+![User Persona](../assets/img/ux/persona.png "User Persona"){#fig:fig-persona}
  
- </div>
-!! annotate persona & wireframes here
+</div>
+
+### Wireframes
+ 
+<div class="rot90">
+
+![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1.png "Wireframes Exp 1"){#fig:fig-wf-1}
+ 
+</div>
+
+<div class="rot90">
+
+![Wireframes Exp 2](../assets/img/ux/experiment-2-iotb-iar-x-x_v1.png "Wireframes Exp 2"){#fig:fig-wf-2}
+ 
+</div>
+
+<div class="rot90">
+
+![Wireframes Exp 3](../assets/img/ux/experiment-3-iotb-br-x-x_v1.png "Wireframes Exp 3"){#fig:fig-wf-3}
+ 
+</div>
+
+<div class="rot90">
+
+![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1.png "Wireframes Exp 1"){#fig:fig-wf-1}
+ 
+</div>
+
+<div class="rot90">
+
+![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1.png "Wireframes Exp 1"){#fig:fig-wf-1}
+ 
+</div>
+
+
+<div class="rot90">
+
+![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1.png "Wireframes Exp 1"){#fig:fig-wf-1}
+ 
+</div>
+
+<div class="rot90">
+
+![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1.png "Wireframes Exp 1"){#fig:fig-wf-1}
+ 
+</div>
+
+<div class="rot90">
+
+![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1.png "Wireframes Exp 1"){#fig:fig-wf-1}
+ 
+</div>
 
 ## Branding Assets
 
