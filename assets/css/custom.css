@@ -73,6 +73,34 @@
         page-break-after: always;
     }
 
+    .whole-page-width {
+        width: 30cm;
+    }
+
+    .nine-tenth-page-width {
+        width: 27cm;
+    }
+
+    .four-fth-page-width {
+        width: 24cm;
+    }
+
+    .three-qtr-page-width {
+        width: 22.5cm;
+    }
+
+    .two-third-page-width {
+        width: 20cm;
+    }
+
+    .half-page-width {
+        width: 15cm;
+    }
+
+    .third-page-width {
+        width: 10cm;
+    }
+    
     .whole-page-height {
         height: 30cm;
     }
@@ -253,6 +281,13 @@ figure figcaption {
     text-align: center;
 }
 
+img.whole-page-width,
+img.nine-tenth-page-width,
+img.four-fth-page-width,
+img.three-qtr-page-width,
+img.two-third-page-width,
+img.half-page-width,
+img.third-page-width,
 img.whole-page-height,
 img.nine-tenth-page-height,
 img.four-fth-page-height,
@@ -288,5 +323,28 @@ img.third-page-height {
 }
 
 .rot90 {
-    transform: rotate(90deg); /* Equal to rotateZ(90deg) *
+    transform: rotate(90deg); /* Equal to rotateZ(90deg) */
+}
+
+.rot-content {
+    display: inline-block;
+    clear: both;
+}
+
+.neg-margin-self {
+    margin-top: -100%;
+}
+
+.img-rot {
+    margin: 0;
+    display: inline-block;
+}
+
+.fit-img {
+    text-align: center;
+}
+
+.fit-img figure,
+.fit-img img {
+    height: inherit;
 }
