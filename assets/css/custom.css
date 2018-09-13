@@ -286,3 +286,7 @@ img.third-page-height {
 #refs div p em:last-child strong {
     display: block;
 }
+
+.rot90 {
+    transform: rotate(90deg); /* Equal to rotateZ(90deg) *
+}

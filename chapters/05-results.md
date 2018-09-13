@@ -4,6 +4,11 @@
 
 ## Persona and Wireframes
 
+<div class="rot90">
+
+![User Persona](../assets/img/ux/persona.png "User Persona"){#fig:fig-use-mob-email}
+ 
+ </div>
 !! annotate persona & wireframes here
 
 ## Branding Assets
