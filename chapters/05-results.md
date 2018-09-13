@@ -82,6 +82,11 @@
 
 </div>
 
+<div class="page-break-before four-fth-page-height fit-img">
+
+![Fave soft-drink vending machine design](../assets/img/design/fave-vending-machine-m.png "Fave soft-drink vending machine design"){#fig:fig-vending-m-design}
+
+</div>
 
 </section>
 
