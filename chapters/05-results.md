@@ -68,6 +68,21 @@
 !! present visual designs here
 (Label, Bottle, Vending Machine, Banner)
 
+### Fave Bottle and Label
+
+<div class="fit-img">
+
+![Fave soft-drink bottle](../assets/img/design/fave-bottle.png "Fave soft-drink bottle"){#fig:fig-bottle}
+
+</div>
+
+<div class="fit-img">
+
+![Fave soft-drink label](../assets/img/design/fave-bottle-label.png "Fave soft-drink label"){#fig:fig-label}
+
+</div>
+
+
 </section>
 
 <section>
