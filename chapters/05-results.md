@@ -79,13 +79,13 @@
 
 </div>
 
-<div class="page-break-before four-fth-page-height fit-img">
+<div class="page-break-before three-qtr-page-height fit-img">
 
 ![Fave soft-drink vending machine design](../assets/img/design/fave-vending-machine-m.png "Fave soft-drink vending machine design"){#fig:fig-vending-m-design}
 
 </div>
 
-<div class="page-break-before four-fth-page-height fit-img">
+<div class="page-break-before three-qtr-page-height fit-img">
 
 ![Fave soft-drink vending machine banner](../assets/img/rep/fave-vending-machine-banner.jpg "Fave soft-drink vending machine banner"){#fig:fig-vending-m-banner}
 
@@ -397,6 +397,8 @@ to turn the ranking values into points, the 8 potential rankings were inverted s
 The interpretation below also include scaled values so that the scores have been adjusted so that the highest values it 1 and the rest descend towards 0.
 Scaling the values allows for two or more values to be compared more easily which in turn allows for more ways to combine the observations so that more subtle insights can be allowed to surface.
 
+<div class="table flex center">
+
 Mean score|Exp|Scaled mean score
 :-----:|:-----:|:-----:
 5.39130434782609|#3|1.0000000
@@ -408,6 +410,8 @@ Mean score|Exp|Scaled mean score
 2.34782608695652|#6|0.1428571
 2.1304347826087|#4|0.0000000
 Table: Scaled Means Rankings Values {#tbl:tb-rank-exp-scaled-mean-pc}
+
+</div>
 
 ![Scaled Means Rankings Values](../assets/img/data/graph-rankings-1.png "Scaled Means Rankings Values"){#fig:fig-exp-ranking}
 
