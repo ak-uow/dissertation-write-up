@@ -29,8 +29,6 @@ Given the scope of the project, it was not possible to deliver the project in th
 This research is documented below, with justifications provided for the libraries and any other software chosen for inclusion in the project. 
 Hardware research is also covered.
 
-!! TODO: Add more info here about technologies used...
-
 ## Design of the Study
 
 The study was designed to fulfil the criteria of comparing and contrasting various location sensitive mobile advertisements that had a bedrock of an Internet of Things device prompting the launch of web content on a smartphone with one control experiment used various combinations of Augmented Reality (AR), Social Media, and Digital Rewards.
@@ -125,8 +123,6 @@ The personally envisaged place in which the advertisement is triggered undoubted
 Another peculiarity of the UX designs that might have had some unforeseen consequences, was to begin and end every advert variant with the same opening and closing screens. 
 Each experiment launched from the IoT device landed on a view that messaged to the user "Thank You" and they ended with a view stating "Amazing", with the intent that these elements would help signify the beginning and end of the individual advertising experiences.
 This may have been an unnecessary distraction for some participants, not least because over the course of the experiments, this repetition seemed to have the side-effect of mesmerising some participants, causing them to 'zone-out'.
-
-!! insert annotated wireframes
 
 ### Visual Designs
 

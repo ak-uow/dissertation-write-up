@@ -6,7 +6,7 @@
 
 ### Persona 
 
-<div class="page-break-after">
+<div class="page-break-after half-page-height fit-img">
 
 ![User Persona](../assets/img/ux/persona-r90.png "User Persona"){#fig:fig-persona}
  
@@ -14,59 +14,56 @@
 
 ### Wireframes {.page-break-before}
  
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 1](../assets/img/ux/experiment-1-iotb-x-x-x_v1-r90.png "Wireframes Exp 1"){#fig:fig-wf-1}
  
 </div>
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 2](../assets/img/ux/experiment-2-iotb-iar-x-x_v1-r90.png "Wireframes Exp 2"){#fig:fig-wf-2}
  
 </div>
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 3](../assets/img/ux/experiment-3-iotb-br-x-x_v1-r90.png "Wireframes Exp 3"){#fig:fig-wf-3}
  
 </div>
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 4](../assets/img/ux/experiment-4-iotb-sm-x-x_v1-r90.png "Wireframes Exp 4"){#fig:fig-wf-4}
  
 </div>
 
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 5](../assets/img/ux/experiment-5-iotb-iar-br-x_v1-r90.png "Wireframes Exp 5"){#fig:fig-wf-5}
  
 </div>
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 6](../assets/img/ux/experiment-6-iotb-iar-sm-x_v1-r90.png "Wireframes Exp 6"){#fig:fig-wf-6}
  
 </div>
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 7](../assets/img/ux/experiment-7-iotb-br-sm-x_v1-r90.png "Wireframes Exp 7"){#fig:fig-wf-7}
  
 </div>
 
-<div class="page-break-after four-fth-page-height fit-img">
+<div class="page-break-after two-third-page-height fit-img">
 
 ![Wireframes Exp 8](../assets/img/ux/experiment-8-iotb-iar-br-sm_v1-r90.png "Wireframes Exp 8"){#fig:fig-wf-8}
  
 </div>
 
 ## Branding Assets
-
-!! present visual designs here
-(Label, Bottle, Vending Machine, Banner)
 
 ### Fave Bottle and Label
 
