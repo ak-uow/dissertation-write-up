@@ -88,6 +88,12 @@
 
 </div>
 
+<div class="page-break-before four-fth-page-height fit-img">
+
+![Fave soft-drink vending machine banner](../assets/img/rep/fave-vending-machine-banner.jpg "Fave soft-drink vending machine banner"){#fig:fig-vending-m-banner}
+
+</div>
+
 </section>
 
 <section>
