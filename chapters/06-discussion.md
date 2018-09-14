@@ -71,7 +71,7 @@ All experiments that had an element of reward for the user scored well, with exp
 The augmented reality experience was polarising being broadly well received by younger demographics and not the older age groups, but it was most effective when combined with Digital Reward.
 Looking at the best performing experiments compared to the baseline allows for the composite features of them to be compared independently of the common characteristics of all experiments. 
 
-## Further Research
+## Further Research {.page-break-before}
 
 Eight unique experiments were created to be compared against one another with the intent of finding which were the most successful at generating a positive connection between a person and a commercial product. 
 As described in the methodology for the design of the study there are potentially many more variations. 
